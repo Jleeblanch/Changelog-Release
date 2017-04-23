@@ -1,0 +1,238 @@
+
+ ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+
+
+ ▼ 04/22/2017
+
+
+ ▪ project device/motorola/athene/
+ ▪ d0dd13f Rename CMActions from gestures to Moto Actions
+ ▪ c0def01 This is said to fix call recording using third party apps
+
+ ▪ project external/stagefright-plugins/
+ ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
+
+ ▪ project frameworks/base/
+ ▪ 5dc497d1eb0 Revert "Fix exploit where can hide the fact that a location was mocked"
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ c293302 Update ota_conf for athene ;)
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ d40aee26b Update Moto G4 Plus Maintainer (#760)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 04/21/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 22974ab37 Fix screenshots delay default value
+ ▪ 71280d1db Add me as Sirius maintainer (#758)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 04/20/2017
+
+
+ ▪ project device/motorola/athene/
+ ▪ cd7a3d6 athene: fix Wi-Fi Display
+ ▪ 2b2a727 athene: add metadata_block_device
+
+ ▪ project frameworks/base/
+ ▪ f1e008ad1dd SystemUI:Notification bar custom notification display problems
+ ▪ d44c3f30763 BT: Update wait function in ManagerService to handle  BLE states
+ ▪ e5e5b092274 SystemUI: Fix QSTileHost exception
+ ▪ 8a6203859df SystemUI: [RJIL new function] AutoBrightness
+ ▪ 3f767d03803 SystemUI: Fix SystemUI ANR
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 41cd40d0 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.15' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ ce39c306 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/display-caf/msm8994/
+ ▪ 434068f62 Fix duplicate copy file rules
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 5f3d10543 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
+ ▪ eaf848b DUI: Basenavigationbar: Catch Slippery Exception
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Gello/
+
+ ▪ project packages/apps/Profiles/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/Settings/
+ ▪ 304dc7702 Fix the build up !
+ ▪ 7b807dcab Add Capricorn maintanier (#757)
+ ▪ 9f4c6318d Add Nougat Maintainer for LeEco Le Max2 (x2) (#755)
+ ▪ 1257948cf Settings: update string
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/ThemeChooser/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/ThemesProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/services/CMAudioService/
+
+ ▪ project packages/services/LiveLockScreenService/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project packages/services/ThemeManagerService/
+
+ ▪ project packages/services/WeatherService/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 04/19/2017
+
+
+ ▪ project android/
+ ▪ 30d3069 crowdin: fix sync
+
+ ▪ project packages/apps/Dialer/
+
+ ▼ 04/18/2017
+
+
+ ▪ project android/
+ ▪ d1362da [2/2] crowdin: add OmniJaws
+
+ ▪ project external/boringssl/
+ ▪ 84b7017 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
+ ▪ 7609007 Don't set a default armcap state in dynamic armcap modes.
+ ▪ 733592a Rewrite ARM feature detection.
+ ▪ d50af31 Remove CRYPTO_set_NEON_functional.
+
+ ▪ project frameworks/base/
+ ▪ 3da5ccced06 Improve Hw keys Tile
+ ▪ 9703f9a0736 Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
+ ▪ a04a27f9455 Make Data/Wifi activity icon in statusbar optional [1/2]
+ ▪ 65916883030 Data activity icon in statusbar
+ ▪ 88921e111b0 SystemUI: Add tile for enable/disable HW keys
+ ▪ bc651feee76 fix wrong algorithm in WifiPowerPerPacket()
+ ▪ 23130208f07 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+ ▪ 87763528368 Ticker:Set default color to White [1/2]
+ ▪ f8609ef2e29 Fix missing lockscreen shortcut icons after reboot
+ ▪ 0d361756901 Themes: Allow volume slider and thumb to work with custom images.
+ ▪ 8355307c2b1 Separate tile label color from icon drawable color
+ ▪ 11576a86314 Basestatusbar:Fix Headsup Not Working
+ ▪ 036a71d1b15 Fix Another Illegal Argument Exception when Changing DPI
+ ▪ 0c31a309671 base:Optional weather info in expanded header [1/2]
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ dea4c30d2 add device vega (#754)
+ ▪ c5ce86a1d Settings: Fix ugly whitespacing and build
+ ▪ 5e5d45ce8 add maintainer for clark, flounder, manta, vs980, d2lte, and tenderloin (#753)
+
+ ▼ 04/17/2017
+
+
+ ▪ project packages/apps/Dialer/
+ ▪ a5b497f3b Dialpad: option to show dialpad automatically (#1)
+
+ ▪ project packages/apps/Settings/
+ ▪ e2bb742b8 Fix 7.1.2 mismerge
+ ▪ b6aa3ee9d Option to disable data & wifi indicators
+ ▪ cf618916f Add HWkeys Settings as an activity
+ ▪ 08a6aa1f9 Ticker:Set default colors to white [2/2]
+
+ ▪ project system/extras/
+ ▪ b5332df Update verity_verifier from master branch
+ ▪ 196ed2f verity: Include libcrypto_utils_static
+ ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
+ ▪ 442b784 Revert "Switch to BoringSSL for crypto."
+
+ ▼ 04/16/2017
+
+
+ ▪ project android/
+ ▪ 34db8bf Revert "Sync infra-related projects"
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 8a346c215 Add Headsup Settings as an Activity
+ ▪ cad32b82e Update Z2 Tablet Maintainer
+ ▪ 1e7d35be3 Optional Expanded statusbar Weather info [2/2]
+
+ ▪ project vendor/motorola/
+ ▪ 108aa973 shamu: add faceunlock proprietary file libfrsdk.so
+
