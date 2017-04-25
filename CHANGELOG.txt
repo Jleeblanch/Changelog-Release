@@ -2,6 +2,36 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/24/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ 60d8ca202e5 Do this for now.. GetResurrected
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 04/23/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ fc1c0d9f Add special case for stereo camcorder
+ ▪ 97baada3 hal: Featureize APE/VORBIS/WMA offload support
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ e27dd961f Add Galaxy S7/edge maintainer (#761)
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/22/2017
 
 
@@ -115,8 +145,6 @@
 
  ▪ project packages/apps/Terminal/
 
- ▪ project packages/apps/ThemeChooser/
-
  ▪ project packages/apps/Trebuchet/
 
  ▪ project packages/apps/TvSettings/
@@ -131,8 +159,6 @@
 
  ▪ project packages/providers/DownloadProvider/
 
- ▪ project packages/providers/ThemesProvider/
-
  ▪ project packages/providers/WeatherProvider/
 
  ▪ project packages/resources/devicesettings/
@@ -142,8 +168,6 @@
  ▪ project packages/services/LiveLockScreenService/
 
  ▪ project packages/services/OmniJaws/
-
- ▪ project packages/services/ThemeManagerService/
 
  ▪ project packages/services/WeatherService/
 
@@ -197,42 +221,4 @@
  ▪ dea4c30d2 add device vega (#754)
  ▪ c5ce86a1d Settings: Fix ugly whitespacing and build
  ▪ 5e5d45ce8 add maintainer for clark, flounder, manta, vs980, d2lte, and tenderloin (#753)
-
- ▼ 04/17/2017
-
-
- ▪ project packages/apps/Dialer/
- ▪ a5b497f3b Dialpad: option to show dialpad automatically (#1)
-
- ▪ project packages/apps/Settings/
- ▪ e2bb742b8 Fix 7.1.2 mismerge
- ▪ b6aa3ee9d Option to disable data & wifi indicators
- ▪ cf618916f Add HWkeys Settings as an activity
- ▪ 08a6aa1f9 Ticker:Set default colors to white [2/2]
-
- ▪ project system/extras/
- ▪ b5332df Update verity_verifier from master branch
- ▪ 196ed2f verity: Include libcrypto_utils_static
- ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
- ▪ 442b784 Revert "Switch to BoringSSL for crypto."
-
- ▼ 04/16/2017
-
-
- ▪ project android/
- ▪ 34db8bf Revert "Sync infra-related projects"
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 8a346c215 Add Headsup Settings as an Activity
- ▪ cad32b82e Update Z2 Tablet Maintainer
- ▪ 1e7d35be3 Optional Expanded statusbar Weather info [2/2]
-
- ▪ project vendor/motorola/
- ▪ 108aa973 shamu: add faceunlock proprietary file libfrsdk.so
 
