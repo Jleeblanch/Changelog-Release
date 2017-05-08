@@ -2,6 +2,154 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/07/2017
+
+
+ ▪ project device/motorola/athene/
+ ▪ 86b9982 athene : Enable google move gestures
+ ▪ 1118ae7 Remove unneeded sepolicy/themeservice_app.te
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f93 Configs: remove audio sink buffer size property
+ ▪ a9f2c000 hal: fix kw issue in hal
+ ▪ 61918047 hal: remove redundant logs from utils.c
+ ▪ 905d1d8f audiod: Skip enumerating non-ADSP sound cards
+
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ b7a301067 display: Add color metadata definition
+ ▪ 26cd5045c display: Add color metadata definition
+ ▪ eb495123a sdm: Use ColorMetadata in SDM
+ ▪ 37d5aff1b display: Add support for Rec.2020
+ ▪ b6a2bfbd5 sdm: Use safe mode on External display on low end device
+ ▪ 9c6421096 HWC: Set skip to layers with Non Integral Source Crop
+ ▪ 93afadf42 sdm: skip null commit on command mode panels
+ ▪ 2428bc491 libmemtrack: Fix integer overflow in kgsl function
+
+ ▪ project hardware/qcom/media-caf/msm8937/
+ ▪ de0c52ed5 media: libOmxSw encoders require prop headers :(
+ ▪ fcd1cfd90 mm-video-v4l2: serialize FTB's for dropped frames
+ ▪ 057d1c7bf mm-video-v4l2: vidc: venc: Free buffer FDs and handles
+ ▪ a5da2d3e6 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
+ ▪ 76dd49f77 mm-video-v4l2: Update max level for h264 decoder to 5.1
+ ▪ 46aa731c9 mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
+ ▪ 5dc8e7ec4 mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
+ ▪ 0a4ad7e00 mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
+ ▪ 9e702ea45 mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
+ ▪ 6076eb611 mm-video-v4l2: vdec: Support for HDR Info extension
+
+ ▪ project packages/apps/Settings/
+ ▪ 372d14fbb Add missing string
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/motorola/
+ ▪ 5f8b3e6b addison: Display blobs update
+ ▪ 12285bf9 addison: Drop unneeded blobs
+ ▪ 17d357d5 addison: Switch to OSS GPS
+ ▪ 3a43b3d8 victara: Add libtqi-perfd-client.so
+
+ ▼ 05/06/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 948bba934f7 base: SystemUI: use content observer for recent grid config
+ ▪ 73dbc18833c base:refactor recents code to switch between recents
+ ▪ b0f21223cb8 [1/2] base: featureize ro.recents.grid
+ ▪ 319c5f7b075 Update OmniSwitch string
+ ▪ 9733626f54a OmniJawsClient : Move to framework
+ ▪ e2192bcb6cb SysUI : Use a different approach to Make perf profile tile invisible
+ ▪ 7805dad2973 base: SystemUI: add dedicated TextView for OmniJaws error marker
+ ▪ 9bdaacffb3d base: SystemUI: dont show OmniJaws error that prominent
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ 2f46bbe Update ota_conf for athene ;)
+ ▪ b0b0b4a ResurrectionOTA: squash all translations
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 20ea10d ROMStats: modify for ResurrectionRemix
+
+ ▪ project packages/apps/Settings/
+ ▪ 048aad925 Refactor Recents Category
+ ▪ d55ce18f4 Settings:featurize ro.recents.grid [2/2]
+ ▪ c415aa0b9 Mantainers: Delete WinKarbik from ido mantainer (#784)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/05/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 34a8e66fc Change codename of K3 Note (#783)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project system/bt/
+ ▪ 0ebf465d Do not include the trailing NULL from the C-String in the SDP service name
+
+ ▼ 05/04/2017
+
+
+ ▪ project frameworks/base/
+ ▪ ed3936ee3f7 Make Scrolling for TaskManager list a lot easier
+ ▪ 03a9a2ed77e Base:Dont do anything on weather errors for header & keyguard
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2006774 Jelly: no need of using srcCompat for imageviews
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 008a015c1 Update resurrection_device_maintainers_strings.xml (#782)
+ ▪ 33f769f7a Add device_maintainers_fragment for device thea (#780)
+ ▪ 3e9cabcc2 Add Device Maintainer for motorola moto g2 LTE (#781)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/03/2017
+
+
+ ▪ project bootable/recovery/
+ ▪ 616bf9a recovery: Fix event system
+
+ ▪ project frameworks/base/
+ ▪ e67fe653545 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
+ ▪ 640db943193 Base: Make sure keyguard and header handle weather errors as well
+ ▪ d9c5ba7c620 base: SystemUI: dont hide navbar for screenshot crop
+ ▪ 9fa52a54508 base: SystemUI: qs: location tile quickbar press is just toggle
+ ▪ 3db79794f1f base: SystemUI: dont hide weather forcast data on errors
+ ▪ 4c605724d86 base: SystemUI: use new OmniJaws error broadcasts
+ ▪ ad493bf657c Fix keyguard is black background while screen turning off/on quickly
+ ▪ 41d90baeccd Reboot/Recovery QS Tile: Use vectorized icons
+
+ ▪ project packages/apps/Jelly/
+ ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
+ ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
+
+ ▪ project packages/apps/Settings/
+ ▪ a2cd85e36 update a string
+
+ ▪ project packages/services/OmniJaws/
+ ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
+ ▪ a169929 OmniJaws: weather widget fixes
+ ▪ a9b5863 OmniJaws: add weather widget
+ ▪ d106dcd OmniJaws: add error broadcast
+
+ ▪ project vendor/motorola/
+ ▪ 9b102078 victara: Hexedit libqc-opt.so for N
+ ▪ 35319b9b victara: Switch to using libqc-opt
+
  ▼ 05/02/2017
 
 
@@ -60,12 +208,18 @@
  ▪ a8ca4b42d Add v521 device and maintainer  (#774)
  ▪ 9283d7e25 Add Galaxy Grand Prime As Official. (#773)
 
+ ▪ project packages/apps/Trebuchet/
+ ▪ c69c73627 Trebuchet: Add Jelly to hotseat
+
  ▪ project system/core/
  ▪ 259efc162 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
 
  ▪ project vendor/cm/
  ▪ 137c340c cm: nuke browser, welcome jelly
  ▪ b43a7980 cm: Remove obsolete and unused overlays and configs
+
+ ▪ project vendor/motorola/
+ ▪ 43d0c430 shamu: update blobs from N6F27C factory image
 
  ▼ 05/01/2017
 
@@ -97,104 +251,4 @@
 
  ▪ project system/core/
  ▪ d7cbf4b4c Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▼ 04/30/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ 17755b3 Jelly: add option to clear cookies
-
- ▪ project packages/apps/Settings/
-
- ▪ project system/extras/su/
- ▪ 7344440 su: Don't start daemon for adb only mode
-
- ▼ 04/29/2017
-
-
- ▪ project bootable/recovery/
- ▪ 5d701cc recovery: Complete project pathmap usage
-
- ▪ project build/
- ▪ 1856c8bcb Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
- ▪ 37969284d build: fix verity generation
-
- ▪ project frameworks/base/
- ▪ 42c3f5845ef am: Handle unchecked activity starts for protected components (2)
-
- ▪ project packages/apps/Dialer/
- ▪ 8c8f1395f InCallUI: Don't force enable the prox sensor for incoming calls
-
- ▪ project packages/apps/Jelly/
- ▪ 13c1311 Jelly: Fix typo
-
- ▪ project packages/apps/Settings/
- ▪ 4a73b1be6 Added Device Maintainer For K3 Note (K50a40) (#771)
-
- ▼ 04/28/2017
-
-
- ▪ project bootable/recovery/
- ▪ 39ce741 Revert "recovery:updater: Changes to support 32->64 bit upgrades"
-
- ▪ project device/qcom/common/
- ▪ 0dc3673 recovery: Use project pathmap for recovery
-
- ▪ project hardware/libhardware_legacy/
- ▪ ec33ac3 wifi: add firmware loader support for the non-LKM case
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/Settings/
- ▪ 57fbef231 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
- ▪ 800c80e03 Fix SB ticker icon and text default color
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project system/core/
- ▪ 3efb4eca7 fs_mgr: Use project pathmap for recovery
- ▪ 783cb54ee healthd: Use project pathmap for recovery
-
- ▪ project system/extras/
- ▪ f30ae7f Use project pathmap for recovery
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▼ 04/27/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 40e3809 JobService: Expose configuration shim refresh delay
- ▪ 3f3c33b Add a looper to the locale change handler
-
- ▼ 04/26/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6bace74d msm8996: audio: Add l/r mic swapping when using stereo mics
-
- ▪ project packages/apps/Settings/
- ▪ c50d9a616 added zuk Z2 plus (#768)
-
- ▪ project packages/apps/Trebuchet/
- ▪ 29b0b0a29 Trebuchet: lineage launcher icon
- ▪ c9e76546f Trebuchet: Do not crash if normalized string for sorting is empty
-
- ▪ project packages/services/OmniJaws/
 
