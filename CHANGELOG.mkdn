@@ -2,7 +2,173 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/07/2017
+ ▼ 05/13/2017
+
+
+ ▪ project device/motorola/athene/
+ ▪ cd2a9b3 Add Kernel Adiutor beta v0.9.7.1
+ ▪ cee017d athene: enable SVELTE memory configuration
+
+ ▪ project frameworks/base/
+ ▪ 59afca83ac8 fix build
+ ▪ d3fff6c7dbe incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
+ ▪ 6a61a8fefac frameworks/base: reduce the setTransactions
+ ▪ 4c50d5ee521 hwui: skip draw empty frame
+ ▪ 9a1acd4a27e Stop holding mProxyLock while downloading PAC script data.
+ ▪ c065fddfe1f sensors: fix native crash when dynamic sensor is removed
+ ▪ c5b1119168a sensors: intern jstrings for memory savings
+ ▪ b8ca031cb2f NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+ ▪ 147dc3bfc84 Keyguard: disable logspilling debug
+ ▪ 9ba0ce50d45 Fix carrier label not getting scaled properly
+ ▪ 33c5cabe486 StatusBar: Catch OOM caused by third-party icons
+ ▪ 3d1c711d08c The network event should be an asynchronous callback.
+ ▪ ebf3cbee878 wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+ ▪ b79fd00f763 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+ ▪ 492cf8634b9 Destroy Allocation right away on exception
+ ▪ 2e58436a421 Destroy Allocation with ScriptIntrinsicLut
+ ▪ 4c1a6e90a24 Aapt2: Fix png leak
+ ▪ e5e45713297 Deadlock in PackageInstallerSession
+ ▪ 8465fcfba9d Save "mState.restored" in onSaveInstanceState of FilesActivity
+ ▪ c0d9ee27087 Avoid deadlock when installing app
+ ▪ e7be2273efa Resolve deadlock between ActivityManagerService and PowerManagerService
+ ▪ d2a6ccc4851 OBEX : Handle Negative index Exception
+ ▪ 7492ebd44c7 ExtShared build as priv-app
+ ▪ 8b797f8f1ea Fix dead lock in Tethering state machine
+ ▪ 3383e64664f Skip ListPopupWindow position update if detached
+ ▪ 385f7d6fc24 Fix system server crash caused by CME in usage stats
+ ▪ 11ef661f6de Fix NPE while attempting to get length of null array in FileRotator
+ ▪ 3b26d60f53a Fix NPE in SettingsLib
+ ▪ 6c32d05510c Validate handler of wakelock option for flashlight.
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ 4e4a513c66e Add a Bunch Of Governors
+ ▪ 7c2ea081187 msm_performance: Make input boosting optional
+ ▪ 6adcece0928 zram: lz4 default
+ ▪ 06633e3c1c0 Resurrected Kernel v0.1
+
+ ▪ project packages/apps/DUI/
+ ▪ 5d95ee1 Improve MediaMonitor readability
+ ▪ d450ac0 DUI: Fix Smartbar back button hiding on lockscreen intents
+
+ ▪ project packages/apps/Dialer/
+ ▪ 24f39efb6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
+ ▪ 4ad8faa38 Dialer:Remove redundant vibration options for InCallUI
+
+ ▪ project packages/apps/Settings/
+ ▪ debffd211 Settings:Incall Vibration options [3/3]
+
+ ▪ project packages/services/Telecomm/
+ ▪ 566782eb Use double vibration on hang-up call
+ ▪ 14a17744 incall vibration options [2/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
+
+ ▼ 05/12/2017
+
+
+ ▪ project android/
+ ▪ 6bab65e crowdin: add DUI [1/2]
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ 5d2854069ea Do this for now.. GetResurrected
+ ▪ 82aa67c5b9b prima : update to CAF LA.BR.1.3.6_rb1.17
+ ▪ 5edf71e68d7 ANDROID: make PF_KEY SHA256 use RFC-compliant truncation.
+ ▪ 100a42c2396 ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
+ ▪ 86931c911c4 Revert "BACKPORT: [UPSTREAM] ext2: convert to mbcache2"
+ ▪ ea9c6cb4e41 Revert "BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache"
+ ▪ fa8c2737257 ANDROID: sdcardfs: Don't iput if we didn't igrab
+ ▪ 9e948777981 UPSTREAM: tty: n_hdlc: get rid of racy n_hdlc.tbuf
+ ▪ 139a7761d68 UPSTREAM: TTY: n_hdlc, fix lockdep false positive
+ ▪ 94fd78cef61 ANDROID: Add untag hacks to inet_release function
+ ▪ d73eaeb986b UPSTREAM: timerfd: Protect the might cancel mechanism proper
+ ▪ 509be32a323 UPSTREAM: ext4: fix fencepost in s_first_meta_bg validation
+ ▪ c4d1813e2e1 BACKPORT: ext4: validate s_first_meta_bg at mount time
+ ▪ 1be5e31c34a ANDROID: sdcardfs: Call lower fs's revalidate
+ ▪ fbdec3d644e ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
+ ▪ c610d01b1b3 Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
+ ▪ 7dbe2b90408 ANDROID: sdcardfs: Use filesystem specific hash
+ ▪ 19ac2c45d85 Revert "Android: sdcardfs: Don't do d_add for lower fs"
+ ▪ eee60aa0bad Android: sdcardfs: Don't complain in fixup_lower_ownership
+ ▪ de0a1d5d325 Android: sdcardfs: Don't do d_add for lower fs
+ ▪ 7648c1ead98 ANDROID: sdcardfs: ->iget fixes
+ ▪ f871fb28963 Android: sdcardfs: Change cache GID value
+ ▪ 249ac3ea011 BACKPORT: [UPSTREAM] ext2: convert to mbcache2
+ ▪ adf9c0419b6 BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache
+ ▪ e16156f4f82 BACKPORT: [UPSTREAM] udf: Check component length before reading it
+ ▪ 41e54940051 UPSTREAM: char: lack of bool string made CONFIG_DEVPORT always on
+ ▪ 37e6eb5879d UPSTREAM: char: Drop bogus dependency of DEVPORT on !M68K
+ ▪ 5fcae74862a UPSTREAM: net: socket: Make unnecessarily global sockfs_setattr() static
+ ▪ 29ec2f0b726 soc: qcom: pil: Explicitly clear the subsystem loading address
+ ▪ 8afb99b4702 slim-msm: Synchronize SSR callbacks
+ ▪ c0c2d148c28 msm: vidc: Protect debug_buffer access in core_info_read with lock.
+ ▪ 3fd5dd4912e ASoC: msm: qdspv2: add mutex to prevent access same memory simultaneously
+ ▪ f34110c69b6 ion: blacklist %p kptr_restrict
+ ▪ b3388e28437 msm: thermal-dev: Protect IOCTL from race condition
+ ▪ f371a424dd0 soc: qcom: Do not clear segments if pil boot failed in memory allocation
+ ▪ 3035dfdd1c4 soc: qcom: Skip clearing modem FW region post load failure
+ ▪ 14279693f78 input: touchscreen: synaptics_dsx: Remove fw_update sysfs entries
+ ▪ 3a7e35269d6 ASoC: msm: qdsp6v2: set pointer to NULL after free
+ ▪ fc3bff0e5e5 usb: dwc3: Replace sscanf with kstrtou8_from_user
+ ▪ f15decf96e7 qseecom: check img_len and mdt_len against ion buf len
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/11/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 695bd5c117c base: Allow to disable qs footer warnings [1/2]
+ ▪ 6fd71cfa12c telecom: Fix order of arguments when creating Details object
+
+ ▪ project hardware/qcom/display/
+ ▪ 03afd1014 hwc2: Only set display_width and display_height when equal to zero
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ d37d080c0 Add Maintainer for Coolpad Note 3 Lite(CP8298_I00) (#788)
+ ▪ aeb32457c Settings:Allow to disable qs footer warnings [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/10/2017
+
+
+ ▪ project frameworks/av/
+ ▪ 5d49fde2a Merge pull request #3 from github-cygwin/nougat
+ ▪ a93018337 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+ ▪ 299da89c85c NetworkTraffic: Dont show wrong values when connected to VPN
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ ed3445d41 Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
+
+ ▼ 05/09/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ 31499ecf2 Snap: Fix crash switching from back to front cam in video mode
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/08/2017
 
 
  ▪ project device/motorola/athene/
@@ -11,6 +177,39 @@
 
  ▪ project frameworks/base/
 
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ b7a301067 display: Add color metadata definition
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 372d14fbb Add missing string
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/motorola/
+ ▪ 5f8b3e6b addison: Display blobs update
+ ▪ 12285bf9 addison: Drop unneeded blobs
+ ▪ 17d357d5 addison: Switch to OSS GPS
+ ▪ 3a43b3d8 victara: Add libtqi-perfd-client.so
+
+ ▼ 05/07/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 948bba934f7 base: SystemUI: use content observer for recent grid config
+ ▪ 73dbc18833c base:refactor recents code to switch between recents
+ ▪ b0f21223cb8 [1/2] base: featureize ro.recents.grid
+ ▪ 319c5f7b075 Update OmniSwitch string
+ ▪ 9733626f54a OmniJawsClient : Move to framework
+ ▪ e2192bcb6cb SysUI : Use a different approach to Make perf profile tile invisible
+ ▪ 7805dad2973 base: SystemUI: add dedicated TextView for OmniJaws error marker
+ ▪ 9bdaacffb3d base: SystemUI: dont show OmniJaws error that prominent
+
  ▪ project hardware/qcom/audio-caf/msm8937/
  ▪ 99617f93 Configs: remove audio sink buffer size property
  ▪ a9f2c000 hal: fix kw issue in hal
@@ -18,7 +217,6 @@
  ▪ 905d1d8f audiod: Skip enumerating non-ADSP sound cards
 
  ▪ project hardware/qcom/display-caf/msm8937/
- ▪ b7a301067 display: Add color metadata definition
  ▪ 26cd5045c display: Add color metadata definition
  ▪ eb495123a sdm: Use ColorMetadata in SDM
  ▪ 37d5aff1b display: Add support for Rec.2020
@@ -39,32 +237,6 @@
  ▪ 9e702ea45 mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
  ▪ 6076eb611 mm-video-v4l2: vdec: Support for HDR Info extension
 
- ▪ project packages/apps/Settings/
- ▪ 372d14fbb Add missing string
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/motorola/
- ▪ 5f8b3e6b addison: Display blobs update
- ▪ 12285bf9 addison: Drop unneeded blobs
- ▪ 17d357d5 addison: Switch to OSS GPS
- ▪ 3a43b3d8 victara: Add libtqi-perfd-client.so
-
- ▼ 05/06/2017
-
-
- ▪ project frameworks/base/
- ▪ 948bba934f7 base: SystemUI: use content observer for recent grid config
- ▪ 73dbc18833c base:refactor recents code to switch between recents
- ▪ b0f21223cb8 [1/2] base: featureize ro.recents.grid
- ▪ 319c5f7b075 Update OmniSwitch string
- ▪ 9733626f54a OmniJawsClient : Move to framework
- ▪ e2192bcb6cb SysUI : Use a different approach to Make perf profile tile invisible
- ▪ 7805dad2973 base: SystemUI: add dedicated TextView for OmniJaws error marker
- ▪ 9bdaacffb3d base: SystemUI: dont show OmniJaws error that prominent
-
- ▪ project packages/apps/Dialer/
-
  ▪ project packages/apps/ResurrectionOTA/
  ▪ 2f46bbe Update ota_conf for athene ;)
  ▪ b0b0b4a ResurrectionOTA: squash all translations
@@ -78,177 +250,4 @@
  ▪ c415aa0b9 Mantainers: Delete WinKarbik from ido mantainer (#784)
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 05/05/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 34a8e66fc Change codename of K3 Note (#783)
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/bt/
- ▪ 0ebf465d Do not include the trailing NULL from the C-String in the SDP service name
-
- ▼ 05/04/2017
-
-
- ▪ project frameworks/base/
- ▪ ed3936ee3f7 Make Scrolling for TaskManager list a lot easier
- ▪ 03a9a2ed77e Base:Dont do anything on weather errors for header & keyguard
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 2006774 Jelly: no need of using srcCompat for imageviews
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 008a015c1 Update resurrection_device_maintainers_strings.xml (#782)
- ▪ 33f769f7a Add device_maintainers_fragment for device thea (#780)
- ▪ 3e9cabcc2 Add Device Maintainer for motorola moto g2 LTE (#781)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/03/2017
-
-
- ▪ project bootable/recovery/
- ▪ 616bf9a recovery: Fix event system
-
- ▪ project frameworks/base/
- ▪ e67fe653545 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
- ▪ 640db943193 Base: Make sure keyguard and header handle weather errors as well
- ▪ d9c5ba7c620 base: SystemUI: dont hide navbar for screenshot crop
- ▪ 9fa52a54508 base: SystemUI: qs: location tile quickbar press is just toggle
- ▪ 3db79794f1f base: SystemUI: dont hide weather forcast data on errors
- ▪ 4c605724d86 base: SystemUI: use new OmniJaws error broadcasts
- ▪ ad493bf657c Fix keyguard is black background while screen turning off/on quickly
- ▪ 41d90baeccd Reboot/Recovery QS Tile: Use vectorized icons
-
- ▪ project packages/apps/Jelly/
- ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
- ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
-
- ▪ project packages/apps/Settings/
- ▪ a2cd85e36 update a string
-
- ▪ project packages/services/OmniJaws/
- ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
- ▪ a169929 OmniJaws: weather widget fixes
- ▪ a9b5863 OmniJaws: add weather widget
- ▪ d106dcd OmniJaws: add error broadcast
-
- ▪ project vendor/motorola/
- ▪ 9b102078 victara: Hexedit libqc-opt.so for N
- ▪ 35319b9b victara: Switch to using libqc-opt
-
- ▼ 05/02/2017
-
-
- ▪ project android/
- ▪ 7c6e872 manifests: 7.1.2_r2-> r8
- ▪ 16e5022 android: nuke browser, welcome jelly
- ▪ 8ead0d4 Manifest : Stop syncing blank intel sensor repo.
- ▪ 1aaf24e manifest: Track our external/libchrome
-
- ▪ project bionic/
- ▪ 22d6b5b57 libc: ARM: Add 32-bit Kryo memcpy
- ▪ 45a39871e libc: use Cortex-A7/A53 memset on Kryo
- ▪ ba97f82ba Add kryo support.
-
- ▪ project bootable/recovery/
- ▪ 8011e66 recovery: Fix UI freezing
-
- ▪ project build/
- ▪ fab5d1d51 Merge tag 'android-7.1.2_r8' into nougat
- ▪ e6c0264e5 Revert "We want Browser"
-
- ▪ project frameworks/av/
- ▪ 24697a328 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
- ▪ 0501270c3b3 Merge tag 'android-7.1.2_r8' into nougat
- ▪ e8d78b45e62 fix anr when concurrent request provider
- ▪ d0d7aee3365 Ensure that the decor view is attached to window.
- ▪ 119e0d3298c Bad token of activity when do the launch work at the app process side.
- ▪ 05558351189 Query geo description in worker thread to prevent ANR
- ▪ a87340f99fe remove duplicated incorrectly code in ProcessRecord
- ▪ 3f190335d14 fix foreground process will be mistakenly killed when it uses content provider.
- ▪ 1e33d08a439 Restart persistent process if start timeout.
- ▪ 88fd7c1467d fix system_server crash issue caused by fd leak.
- ▪ 2f5069ebe90 Compass qs tile: Fix icon in edit mode
-
- ▪ project frameworks/native/
- ▪ c544fcc05 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project packages/apps/DUI/
- ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
-
- ▪ project packages/apps/Dialer/
- ▪ b239b707a Dialer: InCallUI: Enable Sustained Performance Mode We should make sure that thermals are stable during active calls, so we should enable Sustained Performance Mode for the InCallActivity.
-
- ▪ project packages/apps/Messaging/
- ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
-
- ▪ project packages/apps/Settings/
- ▪ 2c2376a4f Change username of Github from PixlernBlitz to PainKiller3 (#776)
- ▪ 38863c06f Fix typo in resurrection_device_maintainers.xml (#775)
- ▪ e6d2f898d Merge tag 'android-7.1.2_r8' into nougat
- ▪ f69dd8c6e Revert "Settings: Lost cached BT devices in found devices list"
- ▪ 226f681b7 Settings[Wifi]: fix the input invalid length for WEP encryption.
- ▪ 20f7649f8 Settings: Fix internal storage summary for non-emulated storage
- ▪ a8ca4b42d Add v521 device and maintainer  (#774)
- ▪ 9283d7e25 Add Galaxy Grand Prime As Official. (#773)
-
- ▪ project packages/apps/Trebuchet/
- ▪ c69c73627 Trebuchet: Add Jelly to hotseat
-
- ▪ project system/core/
- ▪ 259efc162 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
-
- ▪ project vendor/cm/
- ▪ 137c340c cm: nuke browser, welcome jelly
- ▪ b43a7980 cm: Remove obsolete and unused overlays and configs
-
- ▪ project vendor/motorola/
- ▪ 43d0c430 shamu: update blobs from N6F27C factory image
-
- ▼ 05/01/2017
-
-
- ▪ project external/boringssl/
- ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/av/
- ▪ 16dcaaaca Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/base/
-
- ▪ project frameworks/native/
- ▪ b8fb318de Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project packages/apps/Jelly/
- ▪ 2f41ee6 Jelly: expose toolbar elevation
- ▪ 74270cc Jelly: history: swipe to delete
- ▪ 244fab9 Jelly: use custom dialog for home page selection
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/bt/
- ▪ 85d4e422 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project system/core/
- ▪ d7cbf4b4c Merge tag 'android-7.1.2_r8' into cm-14.1
 
