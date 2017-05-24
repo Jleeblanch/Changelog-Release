@@ -2,38 +2,61 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/22/2017
+ ▼ 05/24/2017
 
 
  ▪ project frameworks/base/
 
- ▪ project kernel/motorola/msm8952/
- ▪ 6ec2b36816a defconfig: Update Resurrected Kernel v1.1
- ▪ a09df33cff6 Add /dev/frandom support
- ▪ 6f945d485e7 qpnp-vibrator: implement sysfs interface for vibrator intensity control
- ▪ f64f5382918 (Squashed) powersuspend: new PM kerel driver for Android w/o early_suspend
- ▪ 83f8494e0ad (Squashed) Dynamic Fsync v2.0 by @faux123
- ▪ ee09f7d7bf1 cfq-iosched: fix the setting of IOPS mode on SSDs
- ▪ 148e6534009 mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
- ▪ 4e5eab8cab5 mmc: clk_scaling: add sysfs for avoiding scale down in write
- ▪ 91eca7e8131 msm: thermal: Add sysfs nodes to control parameters
- ▪ 898e9d28ef5 msm: thermal: Check temperature only if probed
- ▪ 4e38ebf2763 (Squashed) Add adrenoboost parameter, fine tune algorithm..     and disbable by default     (credits to @flar2) msm_adreno_tz: add adrenoboost parameter
- ▪ ffe49af6eab Add SIO and FIOPS i/o schedulers
- ▪ b231db8d769 (Squashed) Add zen I/O Scheduler @flar2
- ▪ ad2eed84b7e Boost HBM
- ▪ 4d93e495e45 Adjust MakeFile
- ▪ 6d8910817f6 Add a Bunch Of Governors
- ▪ f6878865664 msm_performance: Make input boosting optional
- ▪ b97c2d151dd zram: lz4 default
+ ▪ project packages/apps/DUI/
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/Email/
+ ▪ c0e5d54c0 Search in folder specified via URI parameter, if possible.
 
- ▪ project packages/apps/ResurrectionStats/
+ ▪ project packages/apps/Jelly/
+ ▪ c23c013 Jelly: Don't claim to be a simple WebView
+ ▪ c218521 Jelly: Define base class for Activities containing WebViewExt
+ ▪ 1607c0d Jelly: Make it easier to initiate gestures
+ ▪ 978e74e Jelly: Don't leak fileoutputstream if bm is null
 
  ▪ project packages/apps/Settings/
 
- ▼ 05/21/2017
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 5462df5cd Pass selected folder to message search.
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/23/2017
+
+
+ ▪ project external/DUtils/
+ ▪ 52668d8 Killapp action: restore home screen before killing the app
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+ ▪ 59a68e6 SmartBar editor: block quick popup when dragging the button
+
+ ▪ project packages/apps/Settings/
+ ▪ 46b451a93 Configurations:Add Some more Settings to Reset
+ ▪ 841d40b41 Avoid a NullPointerException in security
+ ▪ ad8e9317b Optimized Code: call direct method to get integer extra
+ ▪ fef2b3dec RejectedExecutionException  in DataUsageLIst
+ ▪ fb41cfd89 Optimize code on get UidDetail in AppDataUsage
+ ▪ e774dc492 Settings: Fix wrong wifi drawable in screen zooming preview
+ ▪ fab5b3502 Avoid FC when entering Accessibility Settings with a font size of 100%
+ ▪ 4f798e73e DisplaySettings: font size in 5% steps from 80% to 130%
+ ▪ f6fe632d6 Correct fingerprint position during setup
+ ▪ f83f0cb1f PowerUsageFeatureProviderImpl: little cleanup
+ ▪ cdbcb1b09 Fix synchronization of Wi-Fi hotspot switch
+
+ ▪ project system/core/
+ ▪ 8f5e34cdf Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cmsdk/
+ ▪ af33af3 cmsdk: Add CMSettings option for QS auto brightness
+ ▪ 6bd7762 Protect system profiles related broadcasts
+
+ ▼ 05/22/2017
 
 
  ▪ project frameworks/base/
@@ -50,6 +73,10 @@
  ▪ project packages/apps/Dialer/
  ▪ afc79eb04 Dialer: lock screen appear before incoming call screen
 
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
  ▪ project packages/apps/Settings/
  ▪ 1f45da190 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
 
@@ -63,11 +90,23 @@
  ▪ 2a46d48 Add interface to get API version and app authentication status
  ▪ 8e55d57 Fix permissions for CTS [2/2]
 
+ ▼ 05/21/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/20/2017
 
 
  ▪ project android/
  ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
+
+ ▪ project build/
+ ▪ c698ef784 envsetup: fix small derp calling root method chooser script
 
  ▪ project frameworks/base/
  ▪ a99c1364dbc Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
@@ -111,8 +150,20 @@
 
  ▪ project packages/apps/Dialer/
 
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 8829bce5 PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 2f4fee0a Fix PackageInstaller FC when tapping on a downloaded apk notification 2
+
  ▪ project packages/apps/Settings/
  ▪ 4fb4f6d76 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 397950cc2 Fix expandable desktop
+ ▪ 5af555620 Make sure to rebuild on app entries loaded
+ ▪ beff6c3e3 Don't re-populate the app list in rebuild()
+ ▪ 1a4cf5251 Move Headset Settings out of CMSettings
+ ▪ fa02ac36e Option to show Settings header in settings drawer[2/2]
+ ▪ 9accf7634 Launch music player on headset connect: add BT compatibility [2/2]
 
  ▪ project packages/services/OmniJaws/
 
@@ -123,41 +174,40 @@
 
 
  ▪ project build/
- ▪ c698ef784 envsetup: fix small derp calling root method chooser script
  ▪ 19852667d Merge branch 'optional-root-method' into nougat
  ▪ 179e18cc6 rr: show buildtype in dumpvar, call root method type chooser script
+ ▪ 3c0ffb426 Revert "Revert "ota: Remove cruft we don't care about""
+ ▪ f800e5fc2 apicheck_msg_current: Don't do this in LineageOS
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ a9da4b6aed6 Revert "proc: Remove verifiedbootstate flag from /proc/cmdline"
 
  ▪ project packages/apps/Jelly/
  ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
  ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
 
- ▪ project packages/apps/PackageInstaller/
- ▪ 8829bce5 PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
- ▪ 2f4fee0a Fix PackageInstaller FC when tapping on a downloaded apk notification 2
-
  ▪ project packages/apps/Settings/
- ▪ 397950cc2 Fix expandable desktop
- ▪ 5af555620 Make sure to rebuild on app entries loaded
- ▪ beff6c3e3 Don't re-populate the app list in rebuild()
- ▪ 1a4cf5251 Move Headset Settings out of CMSettings
- ▪ fa02ac36e Option to show Settings header in settings drawer[2/2]
- ▪ 9accf7634 Launch music player on headset connect: add BT compatibility [2/2]
  ▪ bf8c85955 Add J500Y (#795)
+
+ ▪ project packages/resources/devicesettings/
 
  ▪ project vendor/cm/
  ▪ 8ead5c50 Merge branch 'optional-root-method' into nougat
+ ▪ 0901e93f extract_utils: fix extracting XML files containing binary characters
+ ▪ ac48cb6a cm: Remove Gello
+ ▪ 782912bb rr: add in a script to choose root variant
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
  ▼ 05/18/2017
 
 
- ▪ project build/
- ▪ 3c0ffb426 Revert "Revert "ota: Remove cruft we don't care about""
- ▪ f800e5fc2 apicheck_msg_current: Don't do this in LineageOS
+ ▪ project frameworks/native/
+ ▪ c68520a0a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
 
  ▪ project hardware/qcom/fm/
-
- ▪ project kernel/motorola/msm8952/
- ▪ a9da4b6aed6 Revert "proc: Remove verifiedbootstate flag from /proc/cmdline"
 
  ▪ project packages/apps/CMBugReport/
 
@@ -188,147 +238,4 @@
  ▪ project packages/apps/TvSettings/
 
  ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project vendor/cm/
- ▪ 0901e93f extract_utils: fix extracting XML files containing binary characters
- ▪ ac48cb6a cm: Remove Gello
- ▪ 782912bb rr: add in a script to choose root variant
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 05/17/2017
-
-
- ▪ project frameworks/native/
- ▪ c68520a0a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
- ▪ a1d362b32 Mi Mix (Lithium) maintainer change (#794)
-
- ▼ 05/16/2017
-
-
- ▪ project device/motorola/athene/
- ▪ 08576f0 Add/Update Kernel Adiutor (v0.9.7.2)
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 3774bb8f2 add Jiayu S3 maintainer (#793)
-
- ▪ project system/sepolicy/
- ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
- ▪ a688894 sepolicy: Allow system_server to set theme_prop
-
- ▪ project vendor/motorola/
- ▪ 58a24f0d Remove "Device is HD Capable" Notification (**fingers crossed**)
-
- ▼ 05/15/2017
-
-
- ▪ project build/
- ▪ ca236d86c rr: optional root methods [2/2]
-
- ▪ project device/motorola/athene/
- ▪ c00b53e Rename CMActions from gestures to Moto Actions
- ▪ 2f98362 This is said to fix call recording using third party apps
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ 05e6b1e43 Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
-
- ▪ project system/keymaster/
- ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
-
- ▪ project vendor/cm/
- ▪ 2bfdf69e rr: add optional root methods [1/2]
-
- ▼ 05/14/2017
-
-
- ▪ project device/motorola/athene/
- ▪ 8508b8b Revert "athene: ship Gello"
- ▪ 25de40c athene : enable framework SCHED_BOOST
- ▪ 69d1e61 athene : update gov tunables and dalvik vm props
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6e8e9c54 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 332f57a2b Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 87965a028 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project packages/apps/AudioFX/
- ▪ e696bf0 AudioFX: Fix choppy preset transitions
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ eab04da Jelly: lint cleanup
- ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
- ▪ 5e5fb97 Jelly: Fix storage permission check
- ▪ c315497 Jelly: add Desktop mode toggle
- ▪ 5859bc6 Jelly: Actually disable cookies
- ▪ fd7418e Jelly: Flush cookies when calling onStop()
- ▪ eb6375d Jelly: Don't make app persistent
- ▪ 2d4853b Jelly: Add proguard rules
- ▪ d583aad Jelly: Improve URL/search query handling
- ▪ 21c6894 Jelly: strings: Various pedantics
-
- ▪ project packages/apps/Settings/
- ▪ 565e2113b Add Scorpio & Lithium maintanier (#790)
-
- ▼ 05/13/2017
-
-
- ▪ project device/motorola/athene/
- ▪ 4d72c08 athene : fix governor tunable derp
- ▪ 07ab656 athene: Restore zram settings and re-enable
- ▪ 5e02e5c athene : update prop values from stock
- ▪ 3bd3e69 athene: Align LED settings with liblights
- ▪ 064fd25 athene: Fix LED activation on full battery
- ▪ 1e8d5a8 athene : update gov-tunables from stock
- ▪ f2c5a5e sepolicy: remove themeservice_app.te
-
- ▪ project external/chromium-webview/
- ▪ b544e48 Update README
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 23be04d0 msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
-
- ▪ project kernel/motorola/msm8952/
- ▪ c7266b41335 athene: use a lower power level for GPU
- ▪ 79d5acbd9a8 sched: fix task-priority when using SCHED_RESET_ON_FORK
- ▪ d9f2ea2dc48 UPSTREAM: sched: Introduce preempt_count accessor functions
- ▪ 27b89de2ce1 sched/core: Fix a race between try_to_wake_up() and a woken up task
- ▪ 40b04e4a5a7 sched: s/do_each_thread/for_each_process_thread/ in core.c
- ▪ fc94433395c sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()
- ▪ c5b05c7052c sched: Queue RT tasks to head when prio drops
- ▪ 50a721b7afb sched/idle: Avoid spurious wakeup IPIs
- ▪ 7f3d785b28c sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
 
