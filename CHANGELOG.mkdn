@@ -2,6 +2,55 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/27/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 14cfa5d9547 Fix launch music player on headset connect on reboot
+ ▪ d36849a1cc4 Recents:Optional lock to task icon in recents task view header [1/2]
+ ▪ 4763e9edac1 Base:Add Lock task action to recents
+ ▪ 669850aa34c base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
+ ▪ 307bfad9b34 Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+ ▪ c34f0fe100f CaptivePortal: login activity UI improvements
+ ▪ e947bf6ad09 Fix an apk icon animation corruption issue
+ ▪ 21dd4e8e8c8 Fix crash by IllegalStateException in sendAccessibilityEvent
+ ▪ 13091e7cfb7 Clean up pending broadcast receivers when force stopping package
+ ▪ 018ff90cdee base: enable power save config of system apps [1/2]
+ ▪ 9df3a9e8593 Fix memory leak in WifP2pManager
+ ▪ 1b42b5b8653 Add QS pulldown with one swipe on fp sensor [1/2]
+ ▪ 1ca6a1762df SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
+ ▪ 8f1365c Jelly: Handle screenLayout changes
+
+ ▪ project packages/apps/Settings/
+ ▪ c018f9073 QSPulldown: Remove FP gesture if device FP doesnt support it
+ ▪ 8be928a96 Settings:Optional lock to task icon in recents task header [2/2]
+ ▪ 2aa08c3d0 Settings: enable power save config of system apps [2/2]
+ ▪ a99ac4b00 Add QS pulldown with one swipe on fp sensor [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/26/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/25/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Settings/
+ ▪ b6ee80686 Remove Z010D maintainer  ;( (#769)
+
  ▼ 05/24/2017
 
 
@@ -13,6 +62,7 @@
  ▪ c0e5d54c0 Search in folder specified via URI parameter, if possible.
 
  ▪ project packages/apps/Jelly/
+ ▪ c9f336c Jelly: Pause WebView along with the activity
  ▪ c23c013 Jelly: Don't claim to be a simple WebView
  ▪ c218521 Jelly: Define base class for Activities containing WebViewExt
  ▪ 1607c0d Jelly: Make it easier to initiate gestures
@@ -67,21 +117,30 @@
  ▪ 779a3e9463d Fixed NPE in canAddMoreManagedProfiles
  ▪ 60a339e5d4d Fix permissions for CTS [1/2]
 
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+ ▪ c4e406d OwmniJaws Use own API key
+
+ ▼ 05/21/2017
+
+
+ ▪ project frameworks/base/
+
  ▪ project frameworks/native/
  ▪ a0c6b9f6e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
 
  ▪ project packages/apps/Dialer/
  ▪ afc79eb04 Dialer: lock screen appear before incoming call screen
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
  ▪ project packages/apps/Settings/
  ▪ 1f45da190 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
 
  ▪ project packages/services/OmniJaws/
- ▪ c4e406d OwmniJaws Use own API key
  ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
  ▪ 299c137 OmniJaws: widget layout madness
  ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
@@ -89,153 +148,4 @@
  ▪ project packages/services/ThemeInterfacer/
  ▪ 2a46d48 Add interface to get API version and app authentication status
  ▪ 8e55d57 Fix permissions for CTS [2/2]
-
- ▼ 05/21/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/20/2017
-
-
- ▪ project android/
- ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
-
- ▪ project build/
- ▪ c698ef784 envsetup: fix small derp calling root method chooser script
-
- ▪ project frameworks/base/
- ▪ a99c1364dbc Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ 81b97bfc751 OMS: StrictMode and files under /data/system/theme/
- ▪ 22d22863a27 Add protected broadcast for app crash broadcast
- ▪ 452eb373150 Update Drawer header
- ▪ 185d71e3df1 Dont use CMSettings for Headset intents[1/2]
- ▪ c711fa32bdb Settings left drawer: make the view more compact and show more entries per page
- ▪ 6afb2ae75bf Fix lag when opening an entry from the Settings left drawer
- ▪ 08ad038c7aa Option to Show Custom header in settings drawer [1/2]
- ▪ 9efa551d387 Add SettingsDrawerActivity header
- ▪ eccc09632d4 Fix the Wi-Fi wrong status when turning Wi-Fi on
- ▪ 759c96e2bd1 Launch music player on headset connect: add BT compatibility [1/2]
- ▪ 313bf881448 Add navigation disabled notification [1/2]
-
- ▪ project kernel/motorola/msm8952/
- ▪ f2c75f474e1 msm: sensor: validating the flash initialization parameters
- ▪ d164d790fa3 input: touchscreen: remove data pointer from driver structure
- ▪ e9a9e5d818c mmc: card: block: check the user controlled parameters to avoid overflow
- ▪ c8954485ebf ASoC: msm: qdspv2: add result check when audio process fail
- ▪ 9a464ac4219 ion: Fix unprotected userspace access
- ▪ 185fa561b37 ANDROID: ion: Fix uninitialized variable
- ▪ 61187e6117f qseecom: add mutex around qseecom_set_client_mem_param
- ▪ e3c5ecbfb94 ANDROID: ion: Protect kref from userspace manipulation
- ▪ e16fcf60e64 soc: qcom: pil: Avoid possible buffer overflow during Modem boot
- ▪ 578ea429ca0 msm: kgsl: Fix the race between context create and destroy
- ▪ 46d0200c7a7 msm : rmnet_ipa: fix memory overflow issue
- ▪ 4d06095c516 wcnss: fix the potential memory leak and heap overflow
- ▪ 1caf2196661 soc: qcom: remove debugfs interface from ssr
- ▪ dcb791338b7 mmc: card: block: check the user controlled parameters to avoid overflow
- ▪ 91b9416828f crypto: msm: check invalid src and dst vbuf in qcedev.c
- ▪ 731e3304555 msm: mdss: fix race condition during mdp debugfs release
- ▪ e173651735c crypto: msm: Fix buffer overflow issue
- ▪ 7ec0a476c54 ashmem: remove cache maintenance support
- ▪ ac5703504bc msm: ipa: Fix memory leak in ipa driver
- ▪ 40ddf4dc68d drivers: qcom: ultrasound: check concurrent device open operations
- ▪ 24fa4ba1c91 msm-vidc: Allocate bus vote data during initialization
- ▪ b7c6ff32222 msm: kgsl: Fix kgsl memory allocation and free race condition
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 8829bce5 PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
- ▪ 2f4fee0a Fix PackageInstaller FC when tapping on a downloaded apk notification 2
-
- ▪ project packages/apps/Settings/
- ▪ 4fb4f6d76 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 397950cc2 Fix expandable desktop
- ▪ 5af555620 Make sure to rebuild on app entries loaded
- ▪ beff6c3e3 Don't re-populate the app list in rebuild()
- ▪ 1a4cf5251 Move Headset Settings out of CMSettings
- ▪ fa02ac36e Option to show Settings header in settings drawer[2/2]
- ▪ 9accf7634 Launch music player on headset connect: add BT compatibility [2/2]
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cm/
- ▪ 8b85edf5 cm: Remove root access prop
-
- ▼ 05/19/2017
-
-
- ▪ project build/
- ▪ 19852667d Merge branch 'optional-root-method' into nougat
- ▪ 179e18cc6 rr: show buildtype in dumpvar, call root method type chooser script
- ▪ 3c0ffb426 Revert "Revert "ota: Remove cruft we don't care about""
- ▪ f800e5fc2 apicheck_msg_current: Don't do this in LineageOS
-
- ▪ project kernel/motorola/msm8952/
- ▪ a9da4b6aed6 Revert "proc: Remove verifiedbootstate flag from /proc/cmdline"
-
- ▪ project packages/apps/Jelly/
- ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
- ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
-
- ▪ project packages/apps/Settings/
- ▪ bf8c85955 Add J500Y (#795)
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project vendor/cm/
- ▪ 8ead5c50 Merge branch 'optional-root-method' into nougat
- ▪ 0901e93f extract_utils: fix extracting XML files containing binary characters
- ▪ ac48cb6a cm: Remove Gello
- ▪ 782912bb rr: add in a script to choose root variant
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 05/18/2017
-
-
- ▪ project frameworks/native/
- ▪ c68520a0a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
 
