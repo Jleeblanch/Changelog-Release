@@ -2,11 +2,146 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 06/04/2017
+ ▼ 06/07/2017
 
 
  ▪ project device/motorola/athene/
- ▪ da11758 athene: cleanup camera.hal1.packagelist prop
+ ▪ 0d7da27 Revert "athene: drop custom dtbTool"
+
+ ▪ project external/chromium-webview/
+ ▪ 2909904 Update webviews
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 93bcb4cd8 Gallery2: support GIF animation
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Terminal/
+ ▪ 5856a60 Terminal: Fix keyboard Ctrl- and ALT-key input.
+
+ ▼ 06/06/2017
+
+
+ ▪ project android/
+ ▪ a46ed2f Revert "Track own system_media"
+ ▪ d73bf77 Track own system_media
+ ▪ 949aff4 manifest: android-7.1.2_r8 -> android-7.1.2_r17
+
+ ▪ project build/
+ ▪ cc30c3a54 Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project device/motorola/athene/
+ ▪ 3a10bd4 athene: drop custom dtbTool
+ ▪ e81e772 athene: drop net_raw from per_mgr service
+ ▪ 0ae3f86 athene: Add NET_BIND_SERVICE for cnss-daemon
+ ▪ df42811 athene: Add fs_config support for custom binary
+ ▪ 224d038 athene: Change the GLES version string to 3.2
+ ▪ 2fdb82c athene: Add AEP support config file
+ ▪ 99c971b athene: Set LED trigger only for charger mode
+ ▪ ffe17d4 athene: cleanup camera.hal1.packagelist prop
+ ▪ febf697 athene: add and build camera wrapper
+ ▪ 3e919b8 athene: disable HAL3
+ ▪ c845563 athene: update qcom parser value
+ ▪ e69937c athene: disable qcom aac encoder
+
+ ▪ project frameworks/base/
+ ▪ b8bb91fc226 Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project frameworks/native/
+ ▪ dae45e0ac Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Messaging/
+ ▪ ef18c3d Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 87cabde49 Reduce Volume panel dialog min timout to 350ms
+ ▪ a5dfd1551 Update Build ID
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 3ddceecd Settings: Implement ADB over network
+ ▪ bf8bc80b Settings: Add intent to launch LineageOS platlogo upon multiple taps
+ ▪ 0165eb88 settings: Add advanced reboot switch
+ ▪ e1c67c5d Settings: Set root access options appropriately
+ ▪ 253b262d settings: Add developer setting for root access
+ ▪ f4e82a32 Use more descriptive strings for add accessory page
+ ▪ 3733c2b4 About: Add LineageOS Updates
+ ▪ 0fe2e3b3 Add build date (ro.build.date from build.prop) to About screen.
+ ▪ 18c18a95 One does not simply become a Developer
+ ▪ 34001b81 Add LineageOS version to the About screen
+
+ ▪ project system/core/
+ ▪ 5504d461e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cm/
+ ▪ 0454ffda Vendor: Build AudioFX again
+
+ ▼ 06/05/2017
+
+
+ ▪ project android/
+ ▪ bcb3fb7 crowdin: add PackageInstaller
+
+ ▪ project external/stagefright-plugins/
+ ▪ 05bf4e7 ffmpeg-extractor: StageFright supports Opus files
+ ▪ 11bc5a2 Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"
+
+ ▪ project frameworks/base/
+ ▪ 0a001c560d4 Fix SystemUI FC due to Google Assistant
+ ▪ 16a622dbe35 Handle Illegal Argument Exception
+ ▪ 50b377865fb Reduce MTU Size
+ ▪ fc52d47c5fa FW_BASE: Rewrite restart SystemUI method
+ ▪ 42fa816689b Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project frameworks/native/
+ ▪ 1eed0779c Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project libcore/
+ ▪ b162f5e62 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ 9d274ac9 BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
+ ▪ 9efb588d Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 95cb32bbb Increase the size of the tiles when decoding images
+
+ ▪ project packages/apps/Jelly/
+ ▪ e28fd6c Jelly: Add HTTP auth login support
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 5910d2156 Settings:Rewrite Restart SystemUI
+
+ ▪ project system/bt/
+ ▪ aa318521 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 5e54c5fe0 libcutils: fix schedboost after 31f78ddf4ea2ab7963d873cb16db98e976346468
+ ▪ 14bdeb8c6 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ 69d60299 fix check_blacklist function to work on wiped /system partition
+ ▪ d0be1614 sensitive_pn: Add sensitive numbers for Serbia
+
+ ▼ 06/04/2017
+
+
+ ▪ project frameworks/base/
 
  ▪ project hardware/qcom/display-caf/msm8996/
  ▪ 92fa2ea2e Merge tag 'LA.UM.5.5.r1-04700-8x96.0' into HEAD
@@ -23,44 +158,33 @@
 
  ▪ project packages/apps/OmniSwitch/
 
+ ▪ project packages/apps/ResurrectionStats/
+
  ▪ project packages/apps/Settings/
  ▪ 40318114a Correction (#802)
  ▪ 3cc6e832d Add Galaxy S4 Mini as Official (#799)
 
- ▪ project vendor/motorola/athene/
- ▪ caff94e5 Remove "Device is HD Capable" Notification
+ ▪ project packages/services/OmniJaws/
 
  ▼ 06/03/2017
 
 
- ▪ project device/motorola/athene/
- ▪ 1a2ce0e athene: drop net_raw from per_mgr service
- ▪ 3d2ae29 athene: Add NET_BIND_SERVICE for cnss-daemon
- ▪ 2bcf1a6 athene: Add fs_config support for custom binary
- ▪ 34befdc athene: Change the GLES version string to 3.2
- ▪ 0c4cd66 athene: Add AEP support config file
- ▪ 82286d2 athene: Set LED trigger only for charger mode
- ▪ b54a49c athene: add and build camera wrapper
- ▪ 59be599 athene: disable HAL3
- ▪ 014e6d5 athene: update qcom parser value
- ▪ fd67f4d athene: disable qcom aac encoder
-
- ▪ project frameworks/base/
- ▪ 8ff5e2e07c9 Recents:improve task locking code & mechanism
-
  ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
 
+ ▪ project vendor/motorola/athene/
+ ▪ caff94e5 Remove "Device is HD Capable" Notification
+
  ▼ 06/02/2017
 
 
- ▪ project external/chromium-webview/
- ▪ 6613943 Update README
-
  ▪ project frameworks/base/
+ ▪ 8ff5e2e07c9 Recents:improve task locking code & mechanism
  ▪ d0bf58906cc fw: Don't consume home key press when KEY_ACTION_SLEEP is used
  ▪ cc8e5e68a9e SystemUI: Specify user while changing brightness mode
 
@@ -70,6 +194,8 @@
 
  ▪ project hardware/qcom/media-caf/msm8916/
  ▪ d781d8fd1 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
  ▪ ae7d2f6a8 Dialer: update fab color to match aosp primary color
@@ -118,56 +244,13 @@
 
 
  ▪ project frameworks/base/
- ▪ 9916373605f Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
  ▪ 3b35f1908 Settings: enable fast scroll for all app list views
 
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/WeatherProvider/
-
  ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/LiveLockScreenService/
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
@@ -176,95 +259,7 @@
  ▪ d299a15a athene : remove slpc hml and motosignature
  ▪ 9c2aacf4 athene : remove bloats
  ▪ 3d499a0d athene : add blur support
- ▪ f0ea807c athene: rename HAL for wrapper
 
  ▪ project vendor/qcom/opensource/cryptfs_hw/
  ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
-
- ▼ 05/31/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ 0106448 Jelly: Enable adjust bounds for incognito image
- ▪ c642120 Jelly: Never hide history view
- ▪ ea83c6c Jelly: Use an observer to refresh the history view
- ▪ 837ec77 Add an indicator icon for incognito mode.
-
- ▪ project packages/apps/OmniSwitch/
- ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
- ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
- ▪ e6e21ad OmniSwitch: shadow wars
- ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
- ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
- ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/resources/devicesettings/
- ▪ 1935d69 Add fingerprint sleep strings
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/30/2017
-
-
- ▪ project external/stagefright-plugins/
- ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
-
- ▪ project frameworks/base/
- ▪ 39b9d5b7be5 Recents: Ensure Lock icon animates only when Dismiss icon is visible
- ▪ 85736909a3f Fix launch music player on headset connect on reboot
- ▪ 7b24b4935c6 Recents:Optional lock to task icon in recents task view header [1/2]
- ▪ 352535992a7 Base:Add Lock task action to recents
-
- ▪ project hardware/qcom/display-caf/msm8960/
- ▪ d222af709 hwc: return correct color format string while layer dump
-
- ▪ project packages/apps/Jelly/
- ▪ c35cc24 Jelly: Update android tools build
- ▪ 020a697 Jelly: Don't accept cookies in incognito mode
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ f68cddc15 SnapdragonCamera: Fix torch mode with continuous shot
- ▪ c737df520 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
- ▪ 09a7a0b4e SnapdragonCamera: Camera2 force close after focused
- ▪ 018fdd0c5 SnapdragonCamera: GPS location can't be turn On in camera settings
- ▪ 26d9aecb6 Fixed camera crash on exit
-
- ▪ project vendor/cm/
- ▪ 46fc5413 typo fixed (#92)
-
- ▼ 05/29/2017
-
-
- ▪ project packages/apps/Email/
- ▪ b76ada5c5 Fix check for deleted messages.
- ▪ 70ccb25cd Close body InputStreams correctly.
-
- ▪ project packages/apps/Jelly/
- ▪ dc48da6 Jelly: Don't add duplicates to the history
- ▪ 78e3754 Jelly: Query an already ordered history
- ▪ c8e5ebe Jelly: Enable the DOM storage API
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Stk/
- ▪ f9f50a5 Do not display toast if alpha text is null.
-
- ▪ project packages/apps/Trebuchet/
- ▪ 1a65ab8b1 Trebuchet: Sign with platform key
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ e353ae2ea Properly close body InputStreams.
-
- ▪ project vendor/cm/
- ▪ a8b16ae8 Update pixel launcher
 
