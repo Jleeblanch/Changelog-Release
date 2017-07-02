@@ -2,178 +2,192 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 06/22/2017
+ ▼ 07/02/2017
 
 
  ▪ project device/motorola/athene/
- ▪ 39cbf1a athene: add lunch_combo
- ▪ 092db4e prebuilts: Update Kernel Adiutor (v0.9.71 beta)
+ ▪ 657a425 BoardConfig: Use resurrected_defconfig and linaro 7.x toolchain
+ ▪ d92ad2d Revert "overlay : disable lockscreen UI blur "
 
  ▪ project frameworks/base/
- ▪ 16cf7d01070 SystemUI: force a clock update if the screen is turned back on
- ▪ af8a38cfad9 SystemUI: disable statusbar time refresh when screen off
- ▪ cdf8770755e base: SystemUI: CPU Info: show CPU temp if supported
- ▪ e57631def84 Frameworks: Fix Null Pointer Issue
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 5578c76b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.22' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 9cddbb87 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.14' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/fm/
+ ▪ 7a29d93 FM: Fix helium hal build
+ ▪ 0df98d3 Change rename_dialog background color to default
+ ▪ f62c66a FMStats: fix GetFMStatsForFreq error for non-cherokee
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ 74c09745291 defconfig: Add resurrected_defconfig
+ ▪ 148efad2fcc Makefile: Fix device not booting with GCC 7.x and above
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ c45b89be6 Gallery2: Fix crash after returning from albums in wallpaper picker
+
+ ▪ project packages/apps/Jelly/
+ ▪ b8109ec Jelly: Update suggestions provider API URLs
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Settings/
- ▪ b2b509315 Settings: Fragment cleanups
 
- ▼ 06/21/2017
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 07/01/2017
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/ti/omap4/
+ ▪ 030bec5 BUGBASH-733 Memory leak in system_server caused by suspend / color fade
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+ ▪ a7659df Jelly: Make UrlResolvedReceiver final
+ ▪ b15286f Jelly: Move bing suggestions provider to https
+ ▪ f50b7e9 Jelly: Fix Suggestions Provider strings (suggestion / uggestion)
+ ▪ 697e32d Jelly: Remove unused parameter
+ ▪ 66d1b83 Jelly: Allow launching external apps
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 06/30/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 92653666a4d Fix potential KeyguardMonitor FC on unlock
+
+ ▪ project packages/apps/Jelly/
+ ▪ 9d693cc Jelly: Remove unneeded getApplicationContext call
+ ▪ d6b3b84 Jelly: Add non encrypted google search engine
+ ▪ 897fa20 Jelly: Propagate custom request headers to WebClient
+ ▪ 58c2aed Jelly: Add suggestions
+
+ ▪ project packages/apps/Settings/
+ ▪ 3e1184db0 Enable some more power menu actions
+
+ ▪ project packages/apps/WallpaperPicker/
+ ▪ 2b021c4 WallpaperPicker: Update for wallpaper API changes
+
+ ▼ 06/29/2017
 
 
  ▪ project build/
- ▪ e98448052 Clean option: deviceclean
+ ▪ a2f759c83 Disable recovery resource warning
+ ▪ 29849f1d1 Revert "Preventing default locale from being overridden because of buildinfo.sh"
+ ▪ 13505f0bb Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE""
+ ▪ dbe4d6120 Makefile: Add the missing dependency on FUTILITY.
+ ▪ 14e6c9f63 Build FUTILITY tool from futility-host.
+
+ ▪ project frameworks/av/
+ ▪ 0e7e3ed52 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
 
  ▪ project frameworks/base/
- ▪ 2e64d3aca21 SystemUI: Fix task lock & freeform buttons placement
- ▪ d7bad2d4e4b SymbolComparator operator() is missing const
- ▪ bf079b8f29c PowerProfile: allow reading from a file instead of resource
- ▪ 73645e52a1e When updating a split app, copy compiled files from base.apk only.
- ▪ a5691f66f1b QS Tile: increase DEFAULT_MAX_BOUND to 6
- ▪ 4bf8cbfe015 Fix service cannot start when service removed from restartList
- ▪ fcfcc0a5d26 Binder: Log details of pending exception.
- ▪ 648c2d41f7b Binder: Be forceful about a forceful exit.
- ▪ 11a0aac604b Only destory ce data when prepare user CE data failed.
- ▪ 8240c470656 When backup schedule version error will be caused system_server crash
- ▪ 63a5ada7e41 fix ArraySet crash
- ▪ a5ca9a46a2e Battery icon: Improve theme compatibility
- ▪ 9fba0b5ad80 Adopt lockscreen shortcut hint from AOSP
- ▪ 5ed7a438da7 Fingerprint swipe gesture to answer/silence incoming call [1/2]
- ▪ 12cadaaa6de Notification panel fingerprint gesture: fix axis on landscape [1/2]
+ ▪ b2edd938098 Revert "BluetoothTile: Fix in the off state while entering the detail view"
+ ▪ 2924709a761 ActivityStarter: Fix protected app intents
+ ▪ 7d5b280f25e SystemUI: Make play queue toggle more visible
+ ▪ c41bff4dbd8 Volume Panel: Fix Bluetooth music stream icon when muted
+ ▪ 0679fa44723 Add support for the .opus file format
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/DUI/
+ ▪ 08efc6c Fix button size not refreshing after a dpi change
+ ▪ f758ef8 Media arrows: hide them on keyguard bouncer
 
  ▪ project packages/apps/Settings/
- ▪ 7a3bbf24d Add nubia Z9 Max nx512j as official (#811)
- ▪ 1f920813c Settings: update OnePlus 3/3t maintainer, add flo, deb, dragon maintainer
- ▪ b5c3924dd Maintainers: Fix up somethings
- ▪ d0f0f3db7 Increase Max Small qs tiles to 9
- ▪ be420f3f1 Fingerprint swipe gesture to answer/silence incoming call [2/2]
+ ▪ dffe3ae29 Settings: Hide disabled lockscreen blur from search index
+ ▪ d033a65d1 Settings: handle decrypting larger pattern sizes for sw600dp
+ ▪ cc6905661 Revert "Settings: Fix internal storage summary for non-emulated storage"
+ ▪ afac3428b Settings: Fix automatic hotspot turn off summary
+ ▪ 962926d3c Settings: Make string untranslatable
 
- ▪ project packages/providers/MediaProvider/
- ▪ fadf365 MediaProvider: Fix where condition of delete queries
+ ▪ project vendor/cm/
+ ▪ 94925ac1 apns-conf: Add Japan Umobile APNs
+ ▪ 65227e74 sensitive_pn: Add sensitive numbers for Greece
+ ▪ 980082ef sensitive_pn: fix Czech Republic MCC
+ ▪ 93c47747 sensitive_pn: Add Taiwanese sensitive numbers
+ ▪ 0d0b4a0f Add sensitive numbers for Ukraine.
+ ▪ 25aa89e8 Add Virgin Media Ireland to APN's
+ ▪ 0d7863e9 sensitive_pn: Add additional FR number
+ ▪ ea6ec708 sensitive_pn: Add additional GB numbers
+ ▪ 5cdcee91 sensitive_pn: Add additional PT numbers
+ ▪ 5873f8b3 sensitive_pn: add missing phone number for Brazil
+ ▪ 1498b342 roomservice: Search for repos in lineage snippet too
+ ▪ e0f8cfc6 roomservice: Remove support for devices in main manifest
+ ▪ eb80e6fd Add sensitive numbers for Israel.
+ ▪ a6326821 sensitive_pn: Add sensitive phone numbers for Czech Republic
+ ▪ a0723e8e sensitive_pn: Add Canadian sensitive numbers
+ ▪ 3483b70e sensitive_pn: Add more numbers from the Netherlands
 
- ▼ 06/20/2017
+ ▼ 06/28/2017
 
 
  ▪ project frameworks/base/
- ▪ 5399cd94e7a Revert "edit app_label (#202)"
 
- ▪ project hardware/qcom/display/
- ▪ f3072db9f hwcomposer: Fix regression in hwc_sync
+ ▪ project packages/apps/DUI/
 
- ▪ project hardware/qcom/display-caf/apq8084/
- ▪ 38e457cdb hwcomposer: Fix regression in hwc_sync
-
- ▪ project hardware/qcom/display-caf/msm8916/
- ▪ 6700612a1 hwcomposer: Fix regression in hwc_sync
-
- ▪ project hardware/qcom/display-caf/msm8974/
- ▪ 24176c9df hwcomposer: Fix regression in hwc_sync
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 023758b1a hwcomposer: Fix regression in hwc_sync
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▼ 06/19/2017
-
-
- ▪ project hardware/qcom/bt-caf/
- ▪ 6473ddb Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
+ ▪ project packages/apps/Jelly/
+ ▪ 69173dd Jelly: Add show/hide keyboard utilities
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
 
- ▼ 06/18/2017
+ ▼ 06/27/2017
 
 
- ▪ project device/qcom/common/
- ▪ 5985a61 power: Use the correct opcode for STOR_CLK_SCALE_DIS
-
- ▪ project frameworks/base/
- ▪ 4dbe060a914 BatteryMeterDrawable:Make it more theme friendly
-
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/Jelly/
+ ▪ 9a5fcdd Jelly: Search on Enter key
+ ▪ 74c7e51 Jelly: Don't reload on keyboard changes
 
  ▪ project packages/apps/Settings/
- ▪ bf3bf5c58 add Lenovo A7000-a to Official (#810)
- ▪ 9c44dc11c Add Nextbit Robin as Official (#804)
+ ▪ 7470d8608 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
 
- ▪ project packages/apps/SetupWizard/
- ▪ d82d392 The bluetooth pairing page cannot be exited, disable it for now.
-
- ▼ 06/17/2017
+ ▼ 06/26/2017
 
 
- ▪ project frameworks/base/
- ▪ ebbfef389e5 edit app_label (#202)
- ▪ ac0c76ca0ff TaskViewHeader:Don't allow lock button icon to show on grid view
- ▪ 4bdd90089fd Base: Improve OmniSwitch implementation
+ ▪ project frameworks/av/
+ ▪ eb9cc2030 CameraService: Fix cameraId type of onDeviceStatusChanged
 
- ▪ project hardware/ril/
- ▪ 5758b0e ril: fix a memory leak.
+ ▪ project packages/apps/Gallery2/
+ ▪ e988d6ab7 Gallery2: Fix views overlap
 
- ▪ project hardware/ril-caf/
- ▪ 588e49d ril: fix a memory leak.
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 53163a7 Update Enable switch consistency
-
- ▪ project packages/apps/Settings/
- ▪ 2ebdc3d0d RecentsSettings:Make OmniSwitch fragment directly accessible
-
- ▪ project packages/apps/WallpaperPicker/
- ▪ 5b27292 Fix bad wallpaper preview image format
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ 37e893a Fix missing s/cyanogenmod/lineageos
-
- ▼ 06/16/2017
-
-
- ▪ project frameworks/base/
- ▪ 1aca92c9bb2 KernelCpuSpeedReader: Account for missing sysfs nodes
- ▪ bf156ad8464 Fix batterySendBroadcast not synchronized issue.
- ▪ dda58030068 bless python versions newer than 2.6
- ▪ 7638fee1358 Handle ActivityNotFoundException for contacts activity
- ▪ 94592858db6 extend PreferenceActivity for title text on a single pane mode
- ▪ 6ebcc53b69f Override onRestoreInstanceState() in MultiSelectListPreference
- ▪ 4253bcfd8c8 Fragment animations are not being saved across configuration changes
- ▪ 9ab8baea80a Fix to NullPointerException when activity is relaunched
- ▪ 7e41a2e9370 Fix right mLastTimeUsed when aggregate UsageStats
- ▪ 40378232b60 Fix ListView is not scrolled properly with arrows
- ▪ ed614304384 Synchronize access of mSubscriptions
- ▪ f3cfda48168 Provide synchronization to setview to avoid NPE
- ▪ d970a26954b AsyncTask: Fix to remove canceled tasks from executor's queue.
- ▪ 4c1c6bf730d frameworks/base: Fix to avoid crash when the tab is not set from app
- ▪ 3dff4015c84 IInputMethodWrapper to recycle SomeArgs in all cases.
- ▪ e62cfea1365 Catch corruptexception during Transaction operation
- ▪ 5e7b3b0a364 Fix force idle issue
- ▪ 8f0c3206d62 preloaded drawables few
- ▪ b2732eba194 Schedule agentDisconnected() in handler thread
- ▪ abeed169efe Fix PrcessRecord.renderThreadTid not reset in some case.
- ▪ ef47c88c7eb SoundPool: decrease binder call when calling SoundPool.play
- ▪ 3d9544db291 BluetoothTile: Fix in the off state while entering the detail view
- ▪ be8ceccff56 WiFiTile: Fix in the off state while entering the detail view
- ▪ d71604e1e1b Net monitor: fix arrows not showing when data saver is enabled
- ▪ 397e9466780 Adding PitchBlack skull header (#201)
- ▪ 780245f4798 Change of translation
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 074ff06e Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
-
- ▪ project packages/apps/CarrierConfig/
- ▪ 1249ef5 Remove TIM from non-roaming networks list of H3G IT
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
+ ▪ project packages/apps/Jelly/
+ ▪ cc66a61 Jelly: Add WebChromeClientCompat
+ ▪ e3b22ba Jelly: Fix some lint warnings
 
  ▪ project packages/apps/Settings/
 
