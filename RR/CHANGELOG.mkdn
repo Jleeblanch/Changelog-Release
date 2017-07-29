@@ -2,687 +2,240 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/19/2017
+ ▼ 07/29/2017
 
 
  ▪ project device/motorola/athene/
- ▪ 003d735 prebuilt: Update Kernel Adiutor (v0.9.71.1)
- ▪ 6c55f09 athene: set proper dtbTool custom args
- ▪ d857381 athene: switch to oss dtbTool
- ▪ b4cc2b2 athene: Abandon TARGET_UNIFIED_DEVICE flag
- ▪ 1682f0b athene: Allow vendor init to override props
- ▪ b497897 Revert "Revert "athene: drop custom dtbTool""
+ ▪ 9ebe423 Add f2fs support for cache
+ ▪ 9eb2498 Lockscreen charging info: real time values
 
- ▪ project vendor/cm/
- ▪ ac577f3b Update prebuilts to latest versions (#95)
+ ▪ project packages/apps/SetupWizard/
+ ▪ d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
+ ▪ 6971663 SetupWizard: Fix crash when sims are absent
+ ▪ b1dd429 SetupWizard: Fix a few possible NPEs
 
- ▼ 07/18/2017
+ ▼ 07/28/2017
 
 
- ▪ project frameworks/base/
- ▪ 8320284fcfc SEEMP: Adding auth framework for outgoing SMS messages.
+ ▪ project external/chromium-webview/
+ ▪ e205b2a Update webview
 
- ▼ 07/17/2017
+ ▪ project packages/apps/Calendar/
 
+ ▪ project packages/apps/Camera2/
 
- ▪ project frameworks/base/
- ▪ bdfc59e31b1 ScreenCap : Add jpeg support
- ▪ df6580a28f7 Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
- ▪ 33fb4ddfcd7 RecentsView: Hiding membar, memtext and fab on drag start.
- ▪ b66c326d2d0 Connectivity: Fix format arguments
- ▪ 9fcae18c687 SystemUI: Fix Notification Background Color Issue
- ▪ 73d5dc445cb Fix keyguard prompt reason showing with fingerprint reboot enabled
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Exchange/
 
  ▪ project packages/apps/Gallery2/
- ▪ d9f145130 Gallery: Fix potential crash
- ▪ 8af515dc6 Gallery2: Switch to navigationbar from support libs
+ ▪ f60b01e0e Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card."
 
- ▪ project packages/apps/Settings/
- ▪ 2fdd40f47d MiscSettings: Remove SElinux Switch & System App remover if no Magisk
- ▪ 61a20bc452 Fix up Suspend actions fragment summary string value
- ▪ 09611a0c14 Settings:Configurable Keyguard & bouncer alpha [2/2]
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Snap/
+ ▪ bbb6ee12f Revert "SnapdragonCamera: Adding PRIVILEGED true"
+
+ ▪ project packages/apps/TvSettings/
 
  ▪ project vendor/cm/
- ▪ e4a1100e Add Proper Magisk 13.2 zip
- ▪ a860ae39 Delete this corrupt zip
+ ▪ cfcd5e29 Fix build scripts color format
 
- ▼ 07/16/2017
+ ▼ 07/27/2017
 
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 41241c1af Gallery2: Fix various issues and glitches
+
+ ▪ project packages/apps/Settings/
+ ▪ 48eecf4199 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
+
+ ▪ project system/netd/
+ ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
+
+ ▼ 07/26/2017
+
+
+ ▪ project frameworks/native/
+ ▪ a3768a911 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 906a508ec Gallery2: Fix potential crash
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Messaging/
+ ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
+
+ ▪ project packages/apps/Settings/
+ ▪ 213c4d974e Settings: Allow our root options to work with LineageSu as well
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▼ 07/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 84545104c11 Fix and cleanup dui protected broadcasts [2/2]
+ ▪ 242cf2c120b base: SystemUI: add OmniSwitch hide on home
+ ▪ 12fb6d61063 Base: Fix global actions menu emergency button position
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 89e029a Fix potential FC in the async task
+ ▪ 083543e OmniSwitch: bring back hide broadcast
+ ▪ 0f4b052 OmniSwitch: add unchanged recent task list
+ ▪ a58f458 OmniSwitch: round corners are sexy
+ ▪ 89e9691 OmniSwitch: transparents also wants to see locked apps :)
+ ▪ 92f3ac7 OmniSwitch: locked apps support
+ ▪ 006ea5a OmniSwitch: add force stop in context menu
+ ▪ b51a26c OmniSwitch: icon pack loading needs an early start
+ ▪ 423639f OmniSwitch: fix terrible wrong resizing on compose icons
+ ▪ 908e593 OmniSwitch: better safe then sorry
+
+ ▪ project packages/apps/Settings/
+ ▪ 2bdc971ca8 Fix and cleanup dui protected broadcasts [1/2]
+ ▪ c3e7f21a2e Utils: Fix onboot crash until magisk is found
+ ▪ 4856b02a45 Update LG G3 (D855) Maintainer. (#829)
+ ▪ 51a82c806d Add Maintainer for ZTE BLADE A610 (a610) (#826)
+ ▪ b7e811c905 Add Co-Maintainer for Lettuce (#827)
+
+ ▼ 07/24/2017
+
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project vendor/cm/
+ ▪ d235a41c Update Changelog
+
+ ▼ 07/23/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Jelly/
 
  ▪ project packages/apps/PackageInstaller/
 
+ ▪ project packages/apps/Recorder/
+
  ▪ project packages/apps/Settings/
- ▪ 3dec93138f Bring back some physical keyboard settings
- ▪ 582837be67 Add maintainer for samsung galaxy s5(k3gxx) (#823)
- ▪ 9d7e6ca8b9 Add maintainer Yu Yreka Black(garlic) (#820)
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
 
  ▪ project packages/services/OmniJaws/
 
  ▪ project vendor/cm/
- ▪ fb83d97e Fix magisk 13.2 Location
+ ▪ 982208ba DeskClock: switch to version 5.0.1 (3745617)
 
- ▼ 07/15/2017
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ f8fcd590 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 3005091d8 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 0273a6407 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project kernel/motorola/msm8952/
- ▪ b30807476fd drivers: fix merge derp
- ▪ 21609c9a304 Linux 3.10.107
- ▪ ae13c48c849 Allow stack to grow up to address space limit
- ▪ 7a8c1e197fc mm: larger stack guard gap, between vmas
- ▪ 6c7bddd4b89 ipv6: check raw payload size correctly in ioctl
- ▪ 3aedfe5715e printk: use rcuidle console tracepoint
- ▪ 928e94c52d0 tun: read vnet_hdr_sz once
- ▪ 7cea7caafbf kvm: nVMX: Allow L1 to intercept software exceptions (#BP and #OF)
- ▪ f0553f8348f ftrace/x86: Fix triple fault with graph tracing and suspend-to-ram
- ▪ 0d120725077 nfsd: check for oversized NFSv2/v3 arguments
- ▪ c5f5d72a201 p9_client_readdir() fix
- ▪ 9984ce73ba9 xen/x86: don't lose event interrupts
- ▪ 34144ad9952 RDS: Fix the atomicity for congestion map update
- ▪ 38708adf9c8 MIPS: Fix crash registers on non-crashing CPUs
- ▪ db2b9db5c47 ip6mr: fix notification device destruction
- ▪ b0cc8c5b71c sctp: listen on the sock only when it's state is listening or closed
- ▪ dcd0d444e04 net: neigh: guard against NULL solicit() method
- ▪ 659f278eda8 gfs2: avoid uninitialized variable warning
- ▪ fce65233d89 hostap: avoid uninitialized variable use in hfa384x_get_rid
- ▪ 5018cff3a3e tty: nozomi: avoid a harmless gcc warning
- ▪ 58915d63ae8 powerpc: Reject binutils 2.24 when building little endian
- ▪ 3f4ea3a8712 x86/mce/AMD: Give a name to MCA bank 3 when accessed with legacy MSRs
- ▪ 4f5b7cd6dfd ubi/upd: Always flush after prepared for an update
- ▪ 08231d5ccad Drivers: hv: get rid of timeout in vmbus_open()
- ▪ 2fd77c9c9cb Drivers: hv: don't leak memory in vmbus_establish_gpadl()
- ▪ 2a3dda49efc net: ipv6: check route protocol when deleting routes
- ▪ ad082436946 catc: Use heap buffer for memory size test
- ▪ 9526ddf78a0 catc: Combine failure cleanup code in catc_probe()
- ▪ a34a5c3b962 virtio-console: avoid DMA from stack
- ▪ c85a42da0ff mm: Tighten x86 /dev/mem with zeroing reads
- ▪ 8c4ebf8ac0a platform/x86: acer-wmi: setup accelerometer when ACPI device was found
- ▪ 80c1a5f9c2e platform/x86: acer-wmi: setup accelerometer when machine has appropriate notify event
- ▪ 004b6e089b4 xen, fbfront: fix connecting to backend
- ▪ bd4037737ee iscsi-target: Drop work-around for legacy GlobalSAN initiator
- ▪ d662cf49133 iscsi-target: Fix TMR reference leak during session shutdown
- ▪ d849f97cbda x86/vdso: Plug race between mapping and ELF header setup
- ▪ 459be1fc039 mtd: bcm47xxpart: fix parsing first block after aligned TRX
- ▪ c7df9e5a511 powerpc: Don't try to fix up misaligned load-with-reservation instructions
- ▪ d775bdd146a metag/usercopy: Zero rest of buffer from copy_from_user
- ▪ 99974bfa975 metag/usercopy: Drop unused macros
- ▪ be7d4d2ac41 Reset TreeId to zero on SMB2 TREE_CONNECT
- ▪ f639fb7603a drm/vmwgfx: fix integer overflow in vmw_surface_define_ioctl()
- ▪ f2b9088c8d1 drm/vmwgfx: Remove getparam error message
- ▪ 52a55187cb8 drm/vmwgfx: avoid calling vzalloc with a 0 size in vmw_get_cap_3d_ioctl()
- ▪ c1e29aefa9c drm/vmwgfx: NULL pointer dereference in vmw_surface_define_ioctl()
- ▪ ec67933fbd5 HID: i2c-hid: Add sleep between POWER ON and RESET
- ▪ 23c66231d89 HID: hid-lg: Fix immediate disconnection of Logitech Rumblepad 2
- ▪ 64a62e0aa11 padata: avoid race in reordering
- ▪ f735e44a0d0 rtc: s35390a: improve irq handling
- ▪ 337d4093be6 rtc: s35390a: implement reset routine as suggested by the reference
- ▪ e61c7326ae3 rtc: s35390a: make sure all members in the output are set
- ▪ dca8c6ff3db ACPI / power: Avoid maybe-uninitialized warning
- ▪ 5e1ffd0164f ACPI: Fix incompatibility with mcount-based function graph tracing
- ▪ cf9e89f39c4 libceph: force GFP_NOIO for socket allocations
- ▪ 52bd0b4f854 metag/ptrace: Reject partial NT_METAG_RPIPE writes
- ▪ 2a022d3a627 metag/ptrace: Provide default TXSTATUS for short NT_PRSTATUS
- ▪ cfe5bf77a92 metag/ptrace: Preserve previous registers for short regset write
- ▪ c0234730022 sparc/ptrace: Preserve previous registers for short regset write
- ▪ e954982c29a c6x/ptrace: Remove useless PTRACE_SETREGSET implementation
- ▪ 9ce4c3152a6 virtio_balloon: init 1st buffer in stats vq
- ▪ 7e64ef10ca4 crypto: algif_hash - avoid zero-sized array
- ▪ 42541aeeb03 fbcon: Fix vc attr at deinit
- ▪ 923f8a8836d uvcvideo: uvc_scan_fallback() for webcams with broken chain
- ▪ 327b7dc18e0 ACM gadget: fix endianness in notifications
- ▪ a8417f92b2a tcp: initialize icsk_ack.lrcvtime at session start time
- ▪ 3e3e56ef3a9 ipv4: provide stronger user input validation in nl_fib_input()
- ▪ 4768f30f10b igb: add i211 to i210 PHY workaround
- ▪ 95fef6e8ba5 igb: Workaround for igb i210 firmware issue
- ▪ 0fb543511d1 cpufreq: Fix and clean up show_cpuinfo_cur_freq()
- ▪ c92374eee83 s390/pci: fix use after free in dma_init
- ▪ a5a02d53928 Drivers: hv: balloon: don't crash when memory is added in non-sorted order
- ▪ 2f714400759 ACPI / video: skip evaluating _DOD when it does not exist
- ▪ b9a92af8eb6 crypto: cryptd - Assign statesize properly
- ▪ 53e5412188f crypto: ghash-clmulni - Fix load failure
- ▪ 0ecbc6a4e06 cancel the setfilesize transation when io error happen
- ▪ e05857bd301 give up on gcc ilog2() constant optimizations
- ▪ 5122977de0d futex: Add missing error handling to FUTEX_REQUEUE_PI
- ▪ ca5c5179415 futex: Fix potential use-after-free in FUTEX_REQUEUE_PI
- ▪ 08dfb88e395 dccp: fix memory leak during tear-down of unsuccessful connection request
- ▪ 063ec552e08 ipv6: avoid write to a possibly cloned skb
- ▪ 3cb6412aae4 uapi: fix linux/packet_diag.h userspace compilation error
- ▪ 5c8b46159fb tcp: fix various issues for sockets morphing to listen state
- ▪ 2b6efed9bcc dccp: Unlock sock before calling sk_free()
- ▪ ecb8595d22e net: don't call strlen() on the user buffer in packet_bind_spkt()
- ▪ 385a7f6c641 l2tp: avoid use-after-free caused by l2tp_ip_backlog_recv
- ▪ 8e86003fd0b mvsas: fix misleading indentation
- ▪ 70e17c5a3f9 cpmac: remove hopeless #warning
- ▪ bcf514e0ed0 mtd: pmcmsp: use kstrndup instead of kmalloc+strncpy
- ▪ e3065f17cac crypto: improve gcc optimization flags for serpent and wp512
- ▪ 262a1596b07 xhci: fix 10 second timeout on removal of PCI hotpluggable xhci controllers
- ▪ 1fb14242ae5 drivers: hv: Turn off write permission on the hypercall page
- ▪ 7bf1bc86562 fat: fix using uninitialized fields of fat_inode/fsinfo_inode
- ▪ e9507403608 drm/ttm: Make sure BOs being swapped out are cacheable
- ▪ adc519caf5e drm/ast: Fix test for VGA enabled
- ▪ e81d1654a91 mac80211: flush delayed work when entering suspend
- ▪ 8c725a41aa7 xtensa: move parse_tag_fdt out of #ifdef CONFIG_BLK_DEV_INITRD
- ▪ e9e42422bc1 s390: TASK_SIZE for kernel threads
- ▪ 319a856cf18 KVM: s390: fix task size check
- ▪ c6e6019eff1 KVM: PPC: Book3S PR: Fix illegal opcode emulation
- ▪ f637e8dafde KVM: VMX: use correct vmcs_read/write for guest segment selector/base
- ▪ e7fa785a296 powerpc/xmon: Fix data-breakpoint
- ▪ c76c3e50abf bcma: use (get|put)_device when probing/removing device driver
- ▪ b62d0572440 NFSv4: fix getacl ERANGE for some ACL buffer sizes
- ▪ a153d73948e rdma_cm: fail iwarp accepts w/o connection params
- ▪ 5acf7250c51 ath5k: drop bogus warning on drv_set_key with unsupported cipher
- ▪ a7e1ae58190 samples/seccomp: fix 64-bit comparison macros
- ▪ 9f825a7c0b0 sd: get disk reference in sd_check_events()
- ▪ d596ceb1d92 ipc/shm: Fix shmat mmap nil-page protection
- ▪ 3c2f0798d6a mm: vmpressure: fix sending wrong events on underflow
- ▪ 93b57904420 MIPS: Fix special case in 64 bit IP checksumming.
- ▪ 56c6e76668b af_packet: remove a stray tab in packet_set_ring()
- ▪ 260a2bb8f30 rtlwifi: rtl_usb: Fix for URB leaking when doing ifconfig up/down
- ▪ db2384aef32 tty: serial: msm: Fix module autoload
- ▪ b845232d857 irda: Fix lockdep annotations in hashbin_delete().
- ▪ c3867778b67 rtc: interface: ignore expired timers when enqueuing new timers
- ▪ 695364eed45 futex: Move futex_init() to core_initcall
- ▪ c2ff9efae3e siano: make it work again with CONFIG_VMAP_STACK
- ▪ 73680ff9088 vfs: fix uninitialized flags in splice_to_pipe()
- ▪ 9381600fbb4 packet: round up linear to header len
- ▪ a3161eef4ed macvtap: read vnet_hdr_size once
- ▪ d2516c747ce tcp: fix 0 divide in __tcp_select_window()
- ▪ 4d9ea9cda33 ARC: [arcompact] brown paper bag bug in unaligned access delay slot fixup
- ▪ 9389d0c2ff4 mm, fs: check for fatal signals in do_generic_file_read()
- ▪ 42b3a17fe7d mm/memory_hotplug.c: check start_pfn in test_pages_in_a_zone()
- ▪ af207cf718c ata: sata_mv:- Handle return value of devm_ioremap.
- ▪ 45c4f289a3d crypto: api - Clear CRYPTO_ALG_DEAD bit before registering an alg
- ▪ adf58320571 drm/nouveau/nv1a,nv1f/disp: fix memory clock rate retrieval
- ▪ 8b162fce1d6 af_unix: move unix_mknod() out of bindlock
- ▪ d35849af4ef ipv6: addrconf: Avoid addrconf_disable_change() using RCU read-side lock
- ▪ 8b5775972a4 nfs: Don't increment lock sequence ID after NFS4ERR_MOVED
- ▪ 75c861c4153 parisc: Don't use BITS_PER_LONG in userspace-exported swab.h header
- ▪ d7018684fea ARC: [arcompact] handle unaligned access delay slot corner case
- ▪ b075f459654 ISDN: eicon: silence misleading array-bounds warning
- ▪ e51e30dcf16 sysctl: fix proc_doulongvec_ms_jiffies_minmax()
- ▪ 3a7bc9ac3a2 tile/ptrace: Preserve previous registers for short regset write
- ▪ 538637804eb bnx2x: Correct ringparam estimate when DOWN
- ▪ 79f5071f553 serial: 8250_pci: Detach low-level driver during PCI error recovery
- ▪ a2d6dd23f92 move the call of __d_drop(anon) into __d_materialise_unique(dentry, anon)
- ▪ b8f23478d92 sg: Fix double-free when drives detach during SG_IO
- ▪ d8a91d768af bna: Add synchronization for tx ring.
- ▪ b4a2b9a9115 vfio/pci: Fix integer overflows, bitmask check
- ▪ 70cb9167a6a apparmor: do not expose kernel stack
- ▪ 4d6c9c4acf8 apparmor: fix module parameters can be changed after policy is locked
- ▪ 6aac8b801f9 apparmor: fix oops in profile_unpack() when policy_db is not present
- ▪ c1c0e7f2b62 apparmor: don't check for vmalloc_addr if kvzalloc() failed
- ▪ 59aee9d397a apparmor: add missing id bounds check on dfa verification
- ▪ 319ec84f17c apparmor: check that xindex is in trans_table bounds
- ▪ 034020086c3 apparmor: internal paths should be treated as disconnected
- ▪ ccd0b49c11f apparmor: fix disconnected bind mnts reconnection
- ▪ 880845ee2f8 apparmor: exec should not be returning ENOENT when it denies
- ▪ 69f2fc52eca apparmor: fix uninitialized lsm_audit member
- ▪ 56b8737fcfc Fix regression which breaks DFS mounting
- ▪ b4b03443972 Move check for prefix path to within cifs_get_root()
- ▪ 0ecd311cb02 Compare prepaths when comparing superblocks
- ▪ 6c2cbca5c11 Fix memory leaks in cifs_do_mount()
- ▪ 146ef01c535 vmxnet3: Wake queue from reset work
- ▪ c5e9604248e NFSv4: Ensure nfs_atomic_open set the dentry verifier on ENOENT
- ▪ 7d6902082e4 ARM: dts: da850-evm: fix read access to SPI flash
- ▪ 5a2919c1a45 ARM: 8634/1: hw_breakpoint: blacklist Scorpion CPUs
- ▪ a13a3d2921f qla2xxx: Fix crash due to null pointer access
- ▪ bfd582c4b15 x86/PCI: Ignore _CRS on Supermicro X8DTH-i/6/iF/6F
- ▪ 10a5463700e pinctrl: sh-pfc: Do not unconditionally support PIN_CONFIG_BIAS_DISABLE
- ▪ 5b9738213f9 sysrq: attach sysrq handler correctly for 32-bit kernel
- ▪ 02fc777101f vme: Fix wrong pointer utilization in ca91cx42_slave_get
- ▪ cce2e599067 i2c: fix kernel memory disclosure in dev interface
- ▪ b57a1dd0da1 Input: i8042 - add Clevo P650RS to the i8042 reset list
- ▪ 9f00cde43f7 Input: mpr121 - set missing event capability
- ▪ a21e6e49cb6 Input: mpr121 - handle multiple bits change of status register
- ▪ 8a6b748331d Input: tca8418 - use the interrupt trigger from the device tree
- ▪ d56861f2005 Input: joydev - do not report stale values on first open
- ▪ 9a887307a4e Input: kbtab - validate number of endpoints before using them
- ▪ 51cb426dfdc Input: iforce - validate number of endpoints before using them
- ▪ fa7410ff3e8 Input: i8042 - add noloop quirk for Dell Embedded Box PC 3000
- ▪ 11389e92f40 HID: hid-cypress: validate length of report
- ▪ 4852c6d126f igmp: Make igmp group member RFC 3376 compliant
- ▪ 5d0ff0d2c93 drop_monitor: consider inserted data in genlmsg_end
- ▪ 5d89ae4631c drop_monitor: add missing call to genlmsg_end
- ▪ 2e23c18bb37 netvsc: reduce maximum GSO size
- ▪ 8b0f74b30c7 tick/broadcast: Prevent NULL pointer dereference
- ▪ 3644ec4f81c net: ti: cpmac: Fix compiler warning due to type confusion
- ▪ b3d1614901d cred/userns: define current_user_ns() as a function
- ▪ 70236dc0557 ftrace/x86: Set ftrace_stub to weak to prevent gcc from using short jumps to it
- ▪ b342628cd5f powerpc/ps3: Fix system hang with GCC 5 builds
- ▪ 8d848d61c08 nfs_write_end(): fix handling of short copies
- ▪ 15226828122 libceph: verify authorize reply on connect
- ▪ e73070521e1 s390/vmlogrdr: fix IUCV buffer allocation
- ▪ f506f0cc350 scsi: sd: Fix capacity calculation with 32-bit sector_t
- ▪ e681e089f6a scsi: sr: Sanity check returned mode data
- ▪ 303f35cacab scsi: lpfc: Add shutdown method for kexec
- ▪ a6a91b5c9f5 target/pscsi: Fix TYPE_TAPE + TYPE_MEDIMUM_CHANGER export
- ▪ 7a2cf5b91d3 scsi: storvsc: properly set residual data length on errors
- ▪ 20cc9b44d09 scsi: storvsc: properly handle SRB_ERROR when sense message is present
- ▪ 6ec678d1898 scsi: don't BUG_ON() empty DMA transfers
- ▪ 3b6528759d4 scsi: move the nr_phys_segments assert into scsi_init_io
- ▪ 8e2d0be95d1 scsi: avoid a permanent stop of the scsi device's request queue
- ▪ 5a990d3aedd drivers/gpu/drm/ast: Fix infinite loop if read fails
- ▪ bd93430e823 ssb: Fix error routine when fallback SPROM fails
- ▪ 18951fc7975 xfs: clear _XBF_PAGES from buffers when readahead page
- ▪ b63dd7e68f5 xfs: set AGI buffer type in xlog_recover_clear_agi_bucket
- ▪ 9ebd475f964 arm/xen: Use alloc_percpu rather than __alloc_percpu
- ▪ b56c1230f3e USB: UHCI: report non-PME wakeup signalling for Intel hardware
- ▪ d87aec8ec4c usb: gadget: composite: correctly initialize ep->maxpacket
- ▪ 92f3213600d usb: hub: Wait for connection to be reestablished after port reset
- ▪ 379ca9e90dc usb: dwc3: gadget: delay unmap of bounced requests
- ▪ acb32a84dd7 usb: dwc3: gadget: make Set Endpoint Configuration macros safe
- ▪ f4825ae3437 USB: cdc-acm: fix failed open not being detected
- ▪ d3abc1024fb USB: cdc-acm: fix open and suspend race
- ▪ 6b65e94e6d1 USB: cdc-acm: fix double usb_autopm_put_interface() in acm_port_activate()
- ▪ 65a0d28b0d8 usb: gadget: composite: always set ep->mult to a sensible value
- ▪ 4cdbf082768 USB: serial: io_ti: bind to interface after fw download
- ▪ 00b942b8654 xhci: free xhci virtual devices with leaf nodes first
- ▪ 196f5d64074 USB: gadgetfs: fix checks of wTotalLength in config descriptors
- ▪ cab52a626c6 USB: gadgetfs: fix use-after-free bug
- ▪ e1cb07b4f60 USB: gadgetfs: fix unbounded memory allocation bug
- ▪ 3276adbcc89 usb: gadgetfs: restrict upper bound on device configuration size
- ▪ 1e1be380b86 ALSA: usb-audio: Add QuickCam Communicate Deluxe/S7500 to volume_control_quirks
- ▪ ecf33921c4c ALSA: seq: Don't break snd_use_lock_sync() loop by timeout
- ▪ 09adfc0fade ALSA: seq: Fix race during FIFO resize
- ▪ 0f3d525640c ALSA: seq: Fix racy cell insertions during snd_seq_pool_done()
- ▪ 7e828b79b5c ALSA: seq: Fix link corruption by event error handling
- ▪ 750d644b3a6 ALSA: timer: Reject user params with too small ticks
- ▪ 38373e2d54c ALSA: seq: Don't handle loop timeout at snd_seq_pool_done()
- ▪ 337012296de ALSA: seq: Fix race at creating a queue
- ▪ 0bbde314b12 ALSA: hda - Fix up GPIO for ASUS ROG Ranger
- ▪ efcc943366a can: usb_8dev: Fix memory leak of priv->cmd_msg_buffer
- ▪ 73c749664e7 can: bcm: fix hrtimer/tasklet termination in bcm op removal
- ▪ 4c43dd632a4 can: ti_hecc: add missing prepare and unprepare of the clock
- ▪ 40bb553e8d8 can: c_can_pci: fix null-pointer-deref in c_can_start() - set device pointer
- ▪ 0c22e459d97 can: peak: fix bad memory access and free sequence
- ▪ c073c8b7116 can: raw: raw_setsockopt: limit number of can_filter that can be set
- ▪ 941b44d31d1 ocfs2: fix BUG_ON() in ocfs2_ci_checkpointed()
- ▪ 596c078ac1f ocfs2: fix crash caused by stale lvb with fsdlm plugin
- ▪ 9143a865647 cifs: Do not send echoes before Negotiate is complete
- ▪ b6e3d72d148 fs/cifs: make share unaccessible at root level mountable
- ▪ 8df84a89422 CIFS: remove bad_network_name flag
- ▪ 95541929c55 CIFS: Fix a possible memory corruption in push locks
- ▪ b92a197d7a8 CIFS: Fix missing nls unload in smb2_reconnect()
- ▪ 5ef481704e8 CIFS: Fix a possible memory corruption during reconnect
- ▪ 0a5315c1bb2 md linear: fix a race between linear_add() and linear_congested()
- ▪ 808da505dae md:raid1: fix a dead loop when read from a WriteMostly disk
- ▪ 80430052cc4 md/raid5: limit request size according to implementation limits
- ▪ 59ade504334 dm space map metadata: fix 'struct sm_metadata' leak on failed create
- ▪ 2870bf07689 dm crypt: mark key as invalid until properly loaded
- ▪ 7a2d8b3ac5e block: fix del_gendisk() vs blkdev_ioctl crash
- ▪ 742eb478369 block: allow WRITE_SAME commands with the SG_IO ioctl
- ▪ 9a245b4a5e5 ext4: fix inode checksum calculation problem if i_extra_size is small
- ▪ cf5c6117718 ext4: return EROFS if device is r/o and journal replay is needed
- ▪ 80aee79fe8b ext4: preserve the needs_recovery flag when the journal is aborted
- ▪ 4a9d45a0317 ext4: trim allocation requests to group size
- ▪ 56b0f9c9aa9 jbd2: don't leak modified metadata buffers on an aborted journal
- ▪ cc6696de280 ext4: add sanity checking to count_overhead()
- ▪ 11663664f32 ext4: fix in-superblock mount options processing
- ▪ 40e753c5564 ext4: use more strict checks for inodes_per_block on mount
- ▪ cd377514785 Btrfs: fix memory leak in reading btree blocks
- ▪ f59750c66e7 Revert "Btrfs: don't delay inode ref updates during log, replay"
- ▪ ad5df4cebb1 Linux 3.10.106
- ▪ 17f5a74db9d char: lp: fix possible integer overflow in lp_setup()
- ▪ 580f2d62715 mm/huge_memory.c: respect FOLL_FORCE/FOLL_COW for thp
- ▪ 26f80d4fe40 fs: exec: apply CLOEXEC before changing dumpable task flags
- ▪ 4ddc0b83745 ipv6: handle -EFAULT from skb_copy_bits
- ▪ 09367538a54 KVM: kvm_io_bus_unregister_dev() should never fail
- ▪ 4ae64857787 kvm: exclude ioeventfd from counting kvm_io_range limit
- ▪ 111c13a9170 KVM: x86: clear bus pointer when destroyed
- ▪ c4782ea4702 sctp: deny peeloff operation on asocs with threads sleeping on it
- ▪ c608b9abe51 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
- ▪ eb3bcff7ac4 ipv6: fix the use of pcpu_tstats in ip6_tunnel
- ▪ b1b9a7f6128 ipv6: pointer math error in ip6_tnl_parse_tlv_enc_lim()
- ▪ 145cd13220a ipv6: fix ip6_tnl_parse_tlv_enc_lim()
- ▪ 59da8edfe00 xc2028: Fix use-after-free bug properly
- ▪ 013d9828ba9 Drivers: hv: avoid vfree() on crash
- ▪ b37c72aa91f can: Fix kernel panic at security_sock_rcv_skb
- ▪ 15caba141b6 mm/init: fix zone boundary creation
- ▪ d84dab9557e USB: dummy-hcd: fix bug in stop_activity (handle ep0)
- ▪ 25be1bc9dd6 USB: fix problems with duplicate endpoint addresses
- ▪ 354fdd6d4ce USB: usbtmc: add missing endpoint sanity check
- ▪ f43397fa383 perf trace: Use the syscall raw_syscalls:sys_enter timestamp
- ▪ c28f28fcff9 net: sctp: rework multihoming retransmission path selection to rfc4960
- ▪ 53550677155 Staging: vt6655-6: potential NULL dereference in hostap_disable_hostapd()
- ▪ cc4e126fad8 tun: Fix TUN_PKT_STRIP setting
- ▪ 457de784a8d ARM: dts: imx31: fix AVIC base address
- ▪ d9d0d362c2d ARM: dts: imx31: move CCM device node to AIPS2 bus devices
- ▪ 9fb466fa5dc MIPS: KGDB: Use kernel context for sleeping threads
- ▪ 0abc283c6a5 l2tp: take reference on sessions being dumped
- ▪ e44a3d9d0fa net: phy: handle state correctly in phy_stop_machine
- ▪ 939da0735b9 netfilter: arp_tables: fix invoking 32bit "iptable -P INPUT ACCEPT" failed in 64bit kernel
- ▪ 29e7fcf8717 ring-buffer: Have ring_buffer_iter_empty() return true when empty
- ▪ e35421cb23c tracing: Allocate the snapshot buffer before enabling probe
- ▪ f8d3f031390 rtl8150: Use heap buffers for all register access
- ▪ 9ff7ebbead4 pegasus: Use heap buffers for all register access
- ▪ 61251502627 powerpc: Disable HFSCR[TM] if TM is not supported
- ▪ 46dd0e23601 net/mlx4_core: Fix racy CQ (Completion Queue) free
- ▪ b78c7acdc8c net/mlx4_en: Fix bad WQE issue
- ▪ 7db1fdc5273 s390/decompressor: fix initrd corruption caused by bss clear
- ▪ 8e48a14b66b metag/usercopy: Add missing fixups
- ▪ 380f2418c7f metag/usercopy: Fix src fixup in from user rapf loops
- ▪ ee22a7d3da7 metag/usercopy: Set flags before ADDZ
- ▪ da2cf2cb476 metag/usercopy: Add early abort to copy_to_user
- ▪ 221eb30d59b metag/usercopy: Fix alignment error checking
- ▪ 6bea15416a6 ring-buffer: Fix return value check in test_ringbuffer()
- ▪ ce7070978b6 ptrace: fix PTRACE_LISTEN race corrupting task->state
- ▪ 94d397df90c ipv4: igmp: Allow removing groups from a removed interface
- ▪ 6395e8b7967 i2c: at91: manage unexpected RXRDY flag when starting a transfer
- ▪ 576262231ee USB: OHCI: Fix race between ED unlink and URB submission
- ▪ 2914430fda0 ACPI / PNP: Reserve ACPI resources at the fs_initcall_sync stage
- ▪ 48f4264714e ACPI / resources: free memory on error in add_region_before()
- ▪ 9e416654651 ACPI / PNP: Avoid conflicting resource reservations
- ▪ 5bdf50ee7cb ALSA: ctxfi: Fix the incorrect check of dma_set_mask() call
- ▪ e5407d4d250 ALSA: ctxfi: Fallback DMA mask to 32bit
- ▪ 8fb0f50c373 scsi: libsas: fix ata xfer length
- ▪ 355839a849e ext4: mark inode dirty after converting inline directory
- ▪ 2387811e156 mmc: ushc: fix NULL-deref at probe
- ▪ b87b5cbf947 uwb: hwa-rc: fix NULL-deref at probe
- ▪ b4e02ac6f22 uwb: i1480-dfu: fix NULL-deref at probe
- ▪ 3cafeaa9c32 USB: wusbcore: fix NULL-deref at probe
- ▪ 00c17ca7505 USB: idmouse: fix NULL-deref at probe
- ▪ ead82bf17a5 USB: uss720: fix NULL-deref at probe
- ▪ f4d33596560 Input: cm109 - validate number of endpoints before using them
- ▪ c78f803f022 Input: yealink - validate number of endpoints before using them
- ▪ 42c56165f44 Input: hanwang - validate number of endpoints before using them
- ▪ 45399e777ea Input: ims-pcu - validate number of endpoints before using them
- ▪ 60b477bdc4e net: unix: properly re-increment inflight counter of GC discarded candidates
- ▪ 8d055dd8023 net: properly release sk_frag.page
- ▪ 4b4d5196719 xen: do not re-use pirq number cached in pci device msi msg data
- ▪ 9f170122116 isdn/gigaset: fix NULL-deref at probe
- ▪ 75ad46e6508 perf/core: Fix event inheritance on fork()
- ▪ d13c5fd1c53 net sched actions: decrement module reference count after table flush.
- ▪ a477f70596f dccp/tcp: fix routing redirect race
- ▪ 9739c389348 net: net_enable_timestamp() can be called from irq contexts
- ▪ aff42cd69e4 locking/static_keys: Add static_key_{en,dis}able() helpers
- ▪ e2d429e7e26 ipv4: mask tos for input route
- ▪ 3ca8919bf75 vxlan: correctly validate VXLAN ID against VXLAN_N_VID
- ▪ 423717a6e54 USB: serial: io_ti: fix information leak in completion handler
- ▪ 6379e5818d7 USB: serial: io_ti: fix NULL-deref in interrupt callback
- ▪ 18907f94d1e USB: iowarrior: fix NULL-deref in write
- ▪ 010fb822e71 USB: iowarrior: fix NULL-deref at probe
- ▪ 801bfe5ba73 USB: serial: omninet: fix reference leaks at open
- ▪ 6250f862245 USB: serial: safe_serial: fix information leak in completion handler
- ▪ 66369913d55 tracing: Add #undef to fix compile error
- ▪ bd8f1e2a1b7 MIPS: ip27: Disable qlge driver in defconfig
- ▪ b0f3a65cda6 USB: serial: digi_acceleport: fix OOB-event processing
- ▪ b6c6689a8dc USB: serial: digi_acceleport: fix OOB data sanity check
- ▪ 681b3b96a1a dm: flush queued bios when process blocks to avoid deadlock
- ▪ e944b9a41c0 nlm: Ensure callback code also checks that the files match
- ▪ f610c68845c ktest: Fix child exit code processing
- ▪ edbcdd44496 IB/ipoib: Fix deadlock between rmmod and set_mode
- ▪ ce63e8076a0 s390/qdio: clear DSCI prior to scanning multiple input queues
- ▪ 13806891ef6 NFSv4: fix getacl head length estimation
- ▪ c2ed75cf561 RDMA/core: Fix incorrect structure packing for booleans
- ▪ f35a809fcbc fuse: add missing FR_FORCE
- ▪ 1b3ef8eadf6 ath9k: use correct OTP register offsets for the AR9340 and AR9550
- ▪ 55913d808a3 scsi: aacraid: Reorder Adapter status check
- ▪ b649fca8cc6 uvcvideo: Fix a wrong macro
- ▪ 055126d8e8f MIPS: Handle microMIPS jumps in the same way as MIPS32/MIPS64 jumps
- ▪ 1290389f76b MIPS: Calculate microMIPS ra properly when unwinding the stack
- ▪ 151214ff6d4 MIPS: Fix is_jump_ins() handling of 16b microMIPS instructions
- ▪ 936d9c1b587 MIPS: Fix get_frame_info() handling of microMIPS function size
- ▪ 5b44a80fa86 MIPS: Prevent unaligned accesses during stack unwinding
- ▪ b38218255a1 MIPS: Clear ISA bit correctly in get_frame_info()
- ▪ 441a6baf6b1 MIPS: OCTEON: Fix copy_from_user fault handling for large buffers
- ▪ a1b86077f95 net/sched: em_meta: Fix 'meta vlan' to correctly recognize zero VID frames
- ▪ 9620bbeb720 vti4: Don't count header length twice.
- ▪ 1c167d59ee1 net: 6lowpan: fix lowpan_header_create non-compression memcpy call
- ▪ 0bd69e153b4 drm/nv50/disp: min/max are reversed in nv50_crtc_gamma_set()
- ▪ e8dd730c452 ocfs2: do not write error flag to user structure we cannot copy from/to
- ▪ 30b8dd7e107 goldfish: Sanitize the broken interrupt handler
- ▪ 4d6144bb578 x86/platform/goldfish: Prevent unconditional loading
- ▪ 1f103a5cd22 USB: serial: ark3116: fix register-accessor error handling
- ▪ 393b37fbe5f USB: serial: opticon: fix CTS retrieval at open
- ▪ 3f3a1538519 USB: serial: spcp8x5: fix modem-status handling
- ▪ c98d8d8af8f USB: serial: ftdi_sio: fix line-status over-reporting
- ▪ 3c0c05432f4 USB: serial: ftdi_sio: fix extreme low-latency setting
- ▪ 27f63964bc2 USB: serial: ftdi_sio: fix modem-status error handling
- ▪ 4e4581d2f11 USB: serial: mos7840: fix another NULL-deref at open
- ▪ ae795b1d14e net: socket: fix recvmmsg not returning error from sock_error
- ▪ 1d6e37367df packet: Do not call fanout_release from atomic contexts
- ▪ abf1e8194bb l2tp: do not use udp_ioctl()
- ▪ fb505036aef ping: fix a null pointer dereference
- ▪ c8419c38e65 ip6_gre: fix ip6gre_err() invalid reads
- ▪ 20014f74fc0 netlabel: out of bound access in cipso_v4_validate()
- ▪ 9f3787a7282 net: use a work queue to defer net_disable_timestamp() work
- ▪ 8dcb34fc732 drm/i915: fix use-after-free in page_flip_completed()
- ▪ b40c2b62728 scsi: zfcp: fix use-after-free by not tracing WKA port open/close on failed send
- ▪ fc33934e063 mac80211: Fix adding of mesh vendor IEs
- ▪ 1be4a4b6231 ARM: 8643/3: arm/ptrace: Preserve previous registers for short regset write
- ▪ 3e61ebca69d svcrpc: fix oops in absence of krb5 module
- ▪ 06e799d50af tcp: initialize max window for a new fastopen socket
- ▪ ceb22a4d83d net: fix harmonize_features() vs NETIF_F_HIGHDMA
- ▪ bfc0674b531 platform/x86: intel_mid_powerbtn: Set IRQ_ONESHOT
- ▪ 4cd15a19301 s5k4ecgx: select CRC32 helper
- ▪ 5f750008a4b drm/i915: Don't leak edid in intel_crt_detect_ddc()
- ▪ 1715c23bd33 crypto: caam - fix non-hmac hashes
- ▪ a2f80e61ccc fuse: do not use iocb after it may have been freed
- ▪ 30d7deda121 ite-cir: initialize use_demodulator before using it
- ▪ 55cf4f40240 ARM: ux500: fix prcmu_is_cpu_in_wfi() calculation
- ▪ f21b25d71eb arm64/ptrace: Reject attempts to set incomplete hardware breakpoint fields
- ▪ 6abe0138e65 arm64/ptrace: Avoid uninitialised struct padding in fpr_set()
- ▪ 57588a59d5e arm64/ptrace: Preserve previous registers for short regset write
- ▪ 7929b226914 ubifs: Fix journal replay wrt. xattr nodes
- ▪ c7d0a81525b mtd: nand: xway: disable module support
- ▪ 8385999e9a1 mmc: mxs-mmc: Fix additional cycles after transmission stop
- ▪ a4a8abd53d3 svcrpc: don't leak contexts on PROC_DESTROY
- ▪ 73b7350a6ee ARM: dts: imx31: fix clock control module interrupts description
- ▪ 424414dcab2 perf scripting: Avoid leaking the scripting_context variable
- ▪ 1a99f2f7d63 IB/mlx4: Fix port query for 56Gb Ethernet links
- ▪ 9cfca4a8ab8 IB/mlx4: Set traffic class in AH
- ▪ cc56d740fce powerpc/ibmebus: Fix device reference leaks in sysfs interface
- ▪ 6c52a561184 powerpc/ibmebus: Fix further device reference leaks
- ▪ 0fb1f940376 NFSv4.1: nfs4_fl_prepare_ds must be careful about reporting success.
- ▪ 4281fa14426 x86/cpu: Fix bootup crashes by sanitizing the argument of the 'clearcpuid=' command-line option
- ▪ e77608f1058 USB: serial: ch341: fix modem-control and B0 handling
- ▪ 927d52e5da0 USB: serial: ch341: fix resume after reset
- ▪ 7322feb9360 USB: serial: ch341: fix open and resume after B0
- ▪ f6717fc1c25 USB: serial: ch341: fix control-message error handling
- ▪ 64c5f43c27b USB: serial: ch341: fix open error handling
- ▪ da9a49cf243 USB: serial: ch341: fix initial modem-control state
- ▪ c51c1e11d30 USB: serial: kl5kusb105: fix line-state error handling
- ▪ a0a65750882 mm/hugetlb.c: fix reservation race when freeing surplus pages
- ▪ c781fa7ac6f Input: i8042 - add Pegatron touchpad to noloop table
- ▪ 08985a08fa5 powerpc: Fix build warning on 32-bit PPC
- ▪ 992bb0d1c0f gro: Disable frag0 optimization on IPv6 ext headers
- ▪ c2f349206a2 gro: use min_t() in skb_gro_reset_offset()
- ▪ 41dd17e0eb3 gro: Enter slow-path if there is no tailroom
- ▪ 0ea92fdbe8d net: stmmac: Fix race between stmmac_drv_probe and stmmac_open
- ▪ 06660fc9041 net, sched: fix soft lockup in tc_classify
- ▪ ab5aeaa88e1 ser_gigaset: return -ENOMEM on error instead of success
- ▪ 6eb12e45aae powerpc/pci/rpadlpar: Fix device reference leaks
- ▪ 5ff11176ad4 mmc: mmc_test: Uninitialized return value
- ▪ 39deb134227 target/iscsi: Fix double free in lio_target_tiqn_addtpg()
- ▪ 5a0059a8c8e scsi: mvsas: fix command_active typo
- ▪ b7eb05b5d26 iommu/amd: Fix the left value check of cmd buffer
- ▪ 1dd42827581 clk: clk-wm831x: fix a logic error
- ▪ f2742c578aa hwmon: (ds620) Fix overflows seen when writing temperature limits
- ▪ 6f24b86930a cris: Only build flash rescue image if CONFIG_ETRAX_AXISFLASHMAP is selected
- ▪ 8da3d7a39bd usb: dwc3: gadget: always unmap EP0 requests
- ▪ 0bc9d24b818 staging: iio: ad7606: fix improper setting of oversampling pins
- ▪ 306c39e7cf5 USB: serial: kl5kusb105: abort on open exception path
- ▪ 4bce5f2b2d9 ALSA: usb-audio: Fix bogus error return in snd_usb_create_stream()
- ▪ e7f7955bd0a usb: musb: Fix trying to free already-free IRQ 4
- ▪ 5a1c72b98e3 usb: xhci-mem: use passed in GFP flags instead of GFP_KERNEL
- ▪ 641db56ddcb USB: serial: mos7720: fix parallel probe
- ▪ a9d16d9a2d6 USB: serial: mos7720: fix parport use-after-free on probe errors
- ▪ 24453317cba USB: serial: mos7720: fix use-after-free on probe errors
- ▪ d960929c853 USB: serial: mos7720: fix NULL-deref at open
- ▪ 6678d2411c6 USB: serial: mos7840: fix NULL-deref at open
- ▪ 01899e0d022 USB: serial: kobil_sct: fix NULL-deref in write
- ▪ 1db08fd47a1 USB: serial: cyberjack: fix NULL-deref at open
- ▪ 52fca741793 USB: serial: oti6858: fix NULL-deref at open
- ▪ 4036265a317 USB: serial: io_edgeport: fix NULL-deref at open
- ▪ 9be69046262 USB: serial: ti_usb_3410_5052: fix NULL-deref at open
- ▪ 0a33387bbd1 USB: serial: garmin_gps: fix memory leak on failed URB submit
- ▪ 81b9f9f0033 USB: serial: iuu_phoenix: fix NULL-deref at open
- ▪ 79235c571d7 USB: serial: io_ti: fix another NULL-deref at open
- ▪ 75d0b03339f USB: serial: io_ti: fix NULL-deref at open
- ▪ b4ae82cb614 USB: serial: spcp8x5: fix NULL-deref at open
- ▪ eb952df3b09 USB: serial: keyspan_pda: verify endpoints at probe
- ▪ 865e747ea4b USB: serial: pl2303: fix NULL-deref at open
- ▪ 5ce5812e6b1 USB: serial: quatech2: fix sleep-while-atomic in close
- ▪ ffcd206aa92 USB: serial: omninet: fix NULL-derefs at open and disconnect
- ▪ 2c691e7ba0f usb: gadget: composite: Test get_alt() presence instead of set_alt()
- ▪ ee96a91bcd1 powerpc: Convert cmp to cmpd in idle enter sequence
- ▪ 0121de36106 IB/multicast: Check ib_find_pkey() return value
- ▪ fc005b82072 IB/mad: Fix an array index check
- ▪ 985c2d7cf68 ftrace/x86_32: Set ftrace_stub to weak to prevent gcc from using short jumps to it
- ▪ e5424bec251 scsi: zfcp: fix rport unblock race with LUN recovery
- ▪ 392bb78c8ad scsi: zfcp: do not trace pure benign residual HBA responses at default level
- ▪ 8027c7130f2 scsi: zfcp: fix use-after-"free" in FC ingress path after TMF
- ▪ 52ae741f5ab block: protect iterate_bdevs() against concurrent close
- ▪ 28634d6c979 f2fs: set ->owner for debugfs status file's file_operations
- ▪ 854204de675 ext4: return -ENOMEM instead of success
- ▪ 3ab472c56de ext4: reject inodes with negative size
- ▪ 9c39f4773b1 ext4: fix stack memory corruption with 64k block size
- ▪ 0fb3e016e8c ext4: fix mballoc breakage with 64k block size
- ▪ 77edc39ae87 crypto: caam - fix AEAD givenc descriptors
- ▪ f348aa36764 block_dev: don't test bdev->bd_contains when it is not stable
- ▪ a7fce1ee192 USB: serial: kl5kusb105: fix open error path
- ▪ e5e6c64974d Btrfs: fix tree search logic when replaying directory entry deletes
- ▪ ed0066b4b62 m68k: Fix ndelay() macro
- ▪ 0d253066046 locking/rtmutex: Prevent dequeue vs. unlock race
- ▪ 771e07c42b4 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
- ▪ ee0029fc073 KEYS: Change the name of the dead type to ".dead" to prevent user access
- ▪ 226d05d73b8 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
- ▪ 2cc38a0bc87 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
- ▪ 91c256fc85d KVM: x86: Introduce segmented_write_std
- ▪ 40e6ce81ae3 KVM: x86: fix emulation of "MOV SS, null selector"
- ▪ d5bd82098ef libceph: don't set weight to IN when OSD is destroyed
- ▪ 90ef6e4d31f EVM: Use crypto_memneq() for digest comparisons
- ▪ fa8a9f78f54 crypto: crypto_memneq - add equality testing of memory regions w/o timing leaks
- ▪ 453f9d23d06 prima : update to LA.BR.1.3.6_rb1.20
- ▪ b2548be89da ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
- ▪ df12c1069a7 UPSTREAM: mm: fix new crash in unmapped_area_topdown()
- ▪ 3f7f9ef5546 UPSTREAM: mm: larger stack guard gap, between vmas
- ▪ 6234ae64bb8 UPSTREAM: packet: fix races in fanout_add()
- ▪ bf5b91c77d5 UPSTREAM: mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
- ▪ aaff5846f9d ANDROID: squashfs: Fix endianness issue
- ▪ db17cfcfc65 ANDROID: squashfs: Fix signed division issue
- ▪ e7237b40316 Make the VTI code compile.
- ▪ 5ef15349ada UPSTREAM: ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
- ▪ 7f34ccf576f BACKPORT: ALSA: timer: Fix race between read and ioctl
- ▪ b03b33bb30c BACKPORT: ext4: fix data exposure after a crash
- ▪ 43e304dc160 UPSTREAM: sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
- ▪ 10fdfc4ad6d BACKPORT: ipv6/dccp: do not inherit ipv6_mc_list from parent
- ▪ 9735f916ab5 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
- ▪ 61ba27ef9b6 UPSTREAM: ipx: call ipxitf_put() in ioctl error path
- ▪ c7dd735f0b0 BACKPORT: ip6_gre: fix ip6gre_err() invalid reads
- ▪ da4dcd07ee6 BACKPORT: dccp/tcp: do not inherit mc_list from parent
- ▪ 20f46da6dad UPSTREAM: dm ioctl: prevent stack leak in dm ioctl call
- ▪ 713420096eb UPSTREAM: tcp: avoid infinite loop in tcp_splice_read()
- ▪ fb3befea65e ANDROID: sdcardfs: d_splice_alias can return error values
- ▪ 6af1c3563ad android: base-cfg: disable CONFIG_NFSD and CONFIG_NFS_FS
- ▪ 65007fc4676 ANDROID: hid: uhid: implement refcount for open and close
- ▪ f2569533997 ANDROID: mnt: Fix next_descendent
- ▪ 0ed27dca99f UPSTREAM: arm64: perf: Fix callchain parse error with kernel tracepoint events
- ▪ bd01f2dec0f UPSTREAM: arm: perf: Fix callchain parse error with kernel tracepoint events
- ▪ 284d442130f UPSTREAM: arm64: LLVMLinux: Add current_stack_pointer() for arm64
- ▪ e8ded5ad0a3 UPSTREAM: ARM: 8170/1: Add global named register current_stack_pointer for ARM
- ▪ 85281749b0b ANDROID: uid_sys_stats: defer io stats calulation for dead tasks
- ▪ ee991c5242b ANDROID: uid_sys_stats: fix access of task_uid(task)
- ▪ 6caff7e32a2 ANDROID: uid_sys_stats: reduce update_io_stats overhead
- ▪ c1cc5c26f8e UPSTREAM: net/packet: fix overflow in check for tp_reserve
- ▪ db0e07f501a UPSTREAM: net/packet: fix overflow in check for tp_frame_nr
- ▪ 3892c6e04a1 ANDROID: sdcardfs: Add linux/kref.h include
- ▪ d91ba52b599 UPSTREAM: f2fs: sanity check segment count
- ▪ 9b4c9207bd1 UPSTREAM: net/packet: fix overflow in check for priv area size
- ▪ 39211dd0aaf drivers: soc: qcom: rpm_stats: Add mutex lock for shared data
- ▪ 848ff832dbc ASoC: msm: qdsp6v2: make audio debugfs read and release exclusive
- ▪ 26de834c69f msm: mdss: hdmi: check up-bound of CEC frame size
- ▪ 60d2483dfed msm: pcie: add bounds check for debugfs register write
- ▪ b188d495763 msm: mdss: validate the buffer size before allocating memory
- ▪ 478c4d860ee msm: mdss: validate page id before reading from edid buffer
- ▪ efbfe4163d8 diag: Synchronize command registration table access
- ▪ 45a8912d88b msm : mdss: fix unaligned access problem
- ▪ 4202ae2353a msm: camera: Use mutex lock to avoid race condition
- ▪ 782846c1768 msm: vidc: Allocate memory dynamically for debugfs info_reads
- ▪ 05c9c89f1ba msm: camera: validate num_streams in stream_cfg_cmd before using it
- ▪ d4f1ab74d24 msm: sps: Fix race condition in SPS debugfs APIs
- ▪ bbc83540b26 msm: vidc: Copy user buffers to kernel memory before access
- ▪ 9f019491385 usb : dwc3: Initialize kernel stack variables properly
- ▪ f5813559007 net: usb: rmnet_usb_ctrl:Make sure list_head operate atomically
- ▪ f42c2b4760b msm: mdss: Buffer overflow while processing gamut table data
- ▪ ccd689d605e drivers: soc: qcom: rpm_stats: Add mutex lock for shared data
- ▪ d03ab424f81 diag: dci: Add NULL pointer checks for dci buffers
- ▪ a3f0f6f39a1 ipv6: addrconf: validate new MTU before applying it
- ▪ f34161baf4e msm: camera: isp: Avoid information leak in ISPIF
- ▪ d44144dee49 msm: camera: fix untrusted pointer for power down setting
- ▪ b3d5ff1123b soc: qcom: rpm-smd-debug: initialize variables and check for return value
- ▪ e2e6b1b3e47 msm: isp: Avoid unaligned register access
- ▪ fb3c17a6e56 mmc: host: Shift pm qos unvoting to sofitrq
- ▪ 6e031e98d1e ASoC: msm: qdsp6v2: extend validation of virtual address
- ▪ f2f925fa2dc msm: camera: Prevent info leak in kernel driver.
- ▪ b9f76d1f0da diag: Add proper synchronization checks to msg mask table
- ▪ 746f8266df9 msm: msm_bus: Add mutex to protect node_list
- ▪ edf43ea5d59 input: synaptics: fix for buggy code poined by SIL tool
- ▪ 5de5957b6f8 msm: ipa: do not use delay in SSR
- ▪ 1acf8e94991 msm: camera2: cpp: Fix iommu_attach/detach compat_ioctl issue
- ▪ 83852685ae9 msm: camera2: cpp: Fix out-of-bounds frame or command buffer access
- ▪ 65de4071038 msm: mdss: remove client from device list if failed to register
- ▪ b820e497663 ASoC: msm: remove unused msm-compr-q6-v2
- ▪ d3b3effa2bd USB: f_qc_rndis: Prevent use-after-free for _rndis_qc
- ▪ 09d7c15383e ASoC: msm-cpe: Fix range checking in function fw_name_store
- ▪ 5699348d1bb ASoC: msm-lsm-client: use kzalloc instead of kmalloc
- ▪ fbbc3b53419 msm: camera: don't cut to 8bits for validating enum variable
- ▪ 0b86b9949ac Prevent heap overflow in uvc driver
- ▪ ed70b378a6d xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
- ▪ 44ab2a168b0 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
- ▪ b4dcde4c567 radio-iris: Use copy_from_user API to access userspace memory
- ▪ b1c6c7ba7db msm: camera: Allow driver file to be opend only once.
-
- ▪ project packages/apps/Jelly/
- ▪ 4d40bf7 Jelly: Remove unneeded parameter type in addResult
- ▪ 69f2dad Jelly: Remove redundant character escape
- ▪ 55f3a05 Jelly: Make suggestion provider "None" translatable
- ▪ c3794c5 Hide Sheet Menu after clicking on an entry
- ▪ 4e7e82e Jelly: Query an already ordered favorite list
-
- ▪ project vendor/cm/
- ▪ ac623bda Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
-
- ▼ 07/14/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 089a92820c Official support for Moto E3 Power(taido_row) (#818)
- ▪ 93a2c68d47 Official support for Moto E3 Power(taido_row) (#819)
-
- ▪ project packages/apps/Snap/
- ▪ 5c51d47c1 Revert some permissions related changes
-
- ▼ 07/13/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ 6934a68 Jelly: use Google as default all the things
-
- ▪ project packages/apps/Settings/
- ▪ 809857c5b5 Add maintainer for Xiaomi RedMi 3 (#817)
-
- ▪ project packages/apps/Snap/
- ▪ 0dbf891c5 Add overlay for restarting camera preview for additional cameras
-
- ▼ 07/12/2017
+ ▼ 07/22/2017
 
 
  ▪ project frameworks/base/
- ▪ b0a68f3e931 PowerManagerService:Allow Device to set default value for hw keys light up[1/2]
+ ▪ 963b2adfce7 Fix custom button icon making touch and animation area smaller [2/3]
+ ▪ 6f903906673 Merge pull request #204 from AndropaX/patch-4
+ ▪ 51cc1882152 DeviceInfoUtils: decentralize processor Regex
+
+ ▪ project packages/apps/DUI/
+ ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
+
+ ▪ project packages/apps/Jelly/
+ ▪ b8270d7 Jelly: Allow to display pages in full screen mode
 
  ▪ project packages/apps/Settings/
- ▪ e79d383c13 Settings:Allow Device to set default value for hw keys light up[2/2]
+ ▪ 2353503282 Fix custom button icon making touch and animation area smaller [3/3]
+ ▪ 4f8d736016 Merge pull request #825 from AndropaX/patch-2
+ ▪ 5cd394f895 Add processor model in device info screen (2/2)
+
+ ▼ 07/21/2017
+
+
+ ▪ project android/
+ ▪ eedb930 Remove ahbottomnavigation
+
+ ▪ project frameworks/base/
+ ▪ 021e65a4ba5 DeviceInfoUtils: Expand Processor string #3
+ ▪ a700be4a737 Fix new Processor regex in Nexus 4
+ ▪ 3aa1c51b3e1 BootReceiver: check console-ramoops-0
+ ▪ f27f73ea0c4 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 7e09920a4f5 PowerProfile: allow overriding default power profile
+ ▪ e5e8dad7f72 Revert "PowerProfile: allow reading from a file instead of resource"
+ ▪ 3008b48f2d3 Add processor info in device info screen (1/2)
+
+ ▪ project packages/apps/Jelly/
+ ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
+ ▪ 063d6a9 Jelly: Use proper popup background attr
+ ▪ ca27881 Jelly: Add "search in page" feature
+
+ ▪ project packages/apps/Settings/
+ ▪ 88342d39a9 Add maintainer for lenovo k6/power (#824)
+
+ ▪ project system/sepolicy/
+ ▪ 34cc176 interfacer: Allow interfacer to find content_service
+ ▪ 72d06e9 Add policy to fix interfacer derp on boot
+ ▪ 458839a sepolicy: Allow system_server to set theme_prop
+ ▪ 86e3f9d sepolicy: add file and domain trans to interfacer
+ ▪ caa8674 Welcome to Theme Interfacer! [2/2]
+ ▪ 3890c0e sepolicy: Redo masquerade rules
+ ▪ 1f43bf4 sepolicy: Fix application of bootanimation
+ ▪ d9cc632 sepolicy: allow masquerade to read and write theme assets
+ ▪ 0a3d0fc sepolicy: rename masquerade domain and allow JobService in system_server
+ ▪ 5ac375f initial policy edits for masquerade to operate rootless
+ ▪ 2965e98 sepolicy: fix themed sounds
+ ▪ 8edd6b3 sepolicy: fix themed boot animation
+ ▪ a03a002 Introduce sepolicy exceptions for theme assets
+ ▪ 13c7a73 OMS7-N: Add service 'overlay' to service_contexts
+ ▪ 39875f9 Add policy to SELinux to allow ViPER4Android in enforcing mode
+ ▪ 1820ef3 RR: 7.1 fix
+ ▪ 40ebd92 sepolicy: Allow platform_app to run su_exec() (1/2)
+ ▪ 6606f8c sepolicy: Allow system_server to run su_exec() (1/2)
+ ▪ 1f5ad77 sepolicy: Allow system_app to run su_exec()
+ ▪ f73b438 sepolicy: Allow remount /system
+
+ ▪ project vendor/cm/
+ ▪ 715986b0 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ bc96cada repopick: Add 'reset' option
+ ▪ 5a5e4396 kernel: Add savedefconfig target
+ ▪ 44385998 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
+ ▪ 5b716952 repopick: don't bail on drafts
+ ▪ 82a5e5a3 prebuilt: update Magisk Manager 5.1.1 (#96)
 
