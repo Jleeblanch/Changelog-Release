@@ -1,326 +1,226 @@
 ====================
-     06-28-2017
+     08-07-2017
 ====================
 
    * device/motorola/athene/
-dcaaae2  athene: add lunch_combo  [Joshua Blanchard]
-5fb91c4  prebuilts: Update Kernel Adiutor (v0.9.71 beta)  [Joshua Blanchard]
-   * frameworks/base/
-a26d07918c1  Merge pull request #74 from LineageOS/cm-14.1  [GitHub]
-   * lineage/updater/
-903f6ef  updater: changelog: Allow to show builds with no changes  [Gabriele M]
-28d5100  updater: changelog: Use the "update date" of the last change  [Gabriele M]
-f7a5d3d  updater: changelog: Hide build changelog links  [Gabriele M]
-85f7e71  updater: changelog: Always add the first build label  [Gabriele M]
-62cd86a  updater: changelog: Correctly place build labels  [Gabriele M]
-   * packages/apps/CMUpdater/
-f9fb746  CMUpdater: Strip 'signed' from UI Name  [Michael Bestas]
-   * packages/apps/Jelly/
-9a5fcdd  Jelly: Search on Enter key  [Luca Stefani]
-74c7e51  Jelly: Don't reload on keyboard changes  [Luca Stefani]
-   * packages/apps/Messaging/
-d1e7aec  Messaging: Don't crash on unsupported shared content type  [dianlujitao]
-53b0ba3  Messaging: Request external storage permission before handling shared files  [dianlujitao]
-   * packages/apps/OmniSwitch/
-e22d61c  Automatic translation import  [Akhil Narang]
-   * packages/apps/Settings/
-e32cfebc67  Merge pull request #28 from Dtrworld/patch-7  [GitHub]
-   * vendor/cm/
-b7c47696  Merge pull request #50 from LineageOS/cm-14.1  [GitHub]
-
-====================
-     06-27-2017
-====================
-
-   * frameworks/av/
-eb9cc2030  CameraService: Fix cameraId type of onDeviceStatusChanged  [Michael Bestas]
-   * frameworks/base/
-93ad558a659  Some Fixes  [moludo]
-219f8328f9f  ActivityStarter: Fix protected app intents  [Gabriele M]
-3a34827e1d0  SystemUI: Make play queue toggle more visible  [Sebastian Haderecker]
-b39e6589873  Add interpolators to qs tiles animation [1/2]  [moludo]
-a09f01a2ef1  Add animations to quick settings tiles [1/2]  [moludo]
-cea68eb13e4  Make QS columns count configurable  [moludo]
-1d782d58a67  fix  [moludo]
-c52e05a2056  Volume Panel: Fix Bluetooth music stream icon when muted  [Michael Bestas]
+dc62c8f  Add Spectrum support  [Joshua Blanchard]
+9dc5fdf  Use resurrected_defconfig & build with Linaro 6.3.1  [Joshua Blanchard]
+   * kernel/motorola/msm8952/
+e18db642a39  configs: Add resurrected_defconfig  [Joshua Blanchard]
    * lineage/wiki/
-31f4a10  wiki: Generalize TWRP version  [Bruno Martins]
-   * packages/apps/CMParts/
-46dc490  CMParts: Use vector drawables for most system icons  [Joey Rizzoli]
-   * packages/apps/Gallery2/
-e988d6ab7  Gallery2: Fix views overlap  [Michael Bestas]
-   * packages/apps/Settings/
-61849bb268  Update nuclear_strimgs.xml  [GitHub]
-f03bf710f2  Move qs_fancy to advanced  [moludo]
-a4c02c22aa  Reorganization the Nuclear Qs panel options  [moludo]
+da16b2a  Add a new way to migrate between signed builds  [Harry Youd]
    * vendor/cm/
-ee7a90ed  apns-conf: Add Japan Umobile APNs  [Harry Youd]
+ea73c2c6  Update NucleaROM Version 3.1.0  [Joshua Blanchard]
 
 ====================
-     06-26-2017
-====================
-
-   * frameworks/base/
-4e5ad7cdc07  Disable Quick Settings on secure lockscreen (1/2)  [moludo]
-13b3e2e2924  QS: BT easy toggle [2/2]  [moludo]
-594d4f10b5c  QS: WiFi easy toggle [2/2]  [moludo]
-b35daf5c898  QS: Custom rows/columns, (1/2): If needed, the integers: "config_qs_num_rows_landscape_default" "config_qs_num_columns_landscape_default" should be overlayed in the device tree  [moludo]
-a932e12b7e8  QS: Add toggle for fancy QS animation [1/2]  [moludo]
-1af28e48c49  Data tile: make it customizable by the user [1/2]  [moludo]
-33885f9eeec  Quick settings: Add Haptic Feedback to tiles [1/2]  [moludo]
-2baa408f993  Add support for the .opus file format  [Arne Coucheron]
-   * lineage/cve/
-4fd8cd0  cve_tracker: Fix progress-bar not scaling properly  [Michael W]
-   * packages/apps/Jelly/
-cc66a61  Jelly: Add WebChromeClientCompat  [Luca Stefani]
-e3b22ba  Jelly: Fix some lint warnings  [Luca Stefani]
-   * packages/apps/Settings/
-0ad97a962e  Disable Quick Settings on secure lockscreen [2/2]  [moludo]
-a4e4137403  QS: Bluetooth easy toggle [1/2]  [moludo]
-435d6ae2f0  QS: WiFi easy toggle [1/2]  [moludo]
-33add900cd  QS: Custom rows/columns, (2/2)  [moludo]
-230e268f8e  Move Qs Animations  [moludo]
-5392831321  QS: Add toggle for fancy QS animation [2/2]  [moludo]
-8c622d149d  Data tile: make it customizable by the user [2/2]  [moludo]
-ab2ba45caf  Data tile: make it customizable by the user [2/2]  [moludo]
-274bdffc9c  Quick settings: Add Haptic Feedback to tiles [2/2]  [moludo]
-e1ec6a8ded  {SQUASHED} Add Interpolators & Animations to Qs Tiles  [moludo]
-38a459941d  Settings: Add Qs Panel Fragment  [moludo]
-   * packages/providers/MediaProvider/
-0f47b6e  MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest  [Arne Coucheron]
-815436d  Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.  [Arne Coucheron]
-f3bd6a0  Music: Fix force closed when plug out the SD card while music is playing.  [Arne Coucheron]
-eb0378b  MediaProvider: Fix SQLiteDiskIOException.  [Arne Coucheron]
-b619475  Revert "Fix check for existence of parent"  [Arne Coucheron]
-
-====================
-     06-25-2017
+     08-06-2017
 ====================
 
    * frameworks/base/
-ab4d268390b  Binder: Be forceful about a forceful exit  [Caleb Xu]
-   * lineage/cve/
-bb2afe6  cve_tracker: Fix CVE info dialog  [Michael W]
-   * packages/apps/Eleven/
-38c5aea  Eleven: request record audio permission for visualizer  [Demon Singur]
-   * packages/apps/Jelly/
-2d1bdcd  Jelly: Add save form data setting  [Luca Stefani]
-d2926c7  Jelly: add Do Not Track setting  [Luca Stefani]
-42d6446  Jelly: Add incognito mode shortcut  [Luca Stefani]
-69c2401  Jelly: Update android tools build  [Luca Stefani]
+27e3aa4399b  Merge pull request #84 from LineageOS/cm-14.1  [GitHub]
    * packages/apps/OmniSwitch/
-63849c9  Automatic translation import  [Akhil Narang]
-   * packages/apps/Trebuchet/
-8b8de5f5b  Trebuchet: Rename settings provider  [Arne Coucheron]
-   * packages/providers/MediaProvider/
-21ce3cd  Revert "MediaProvider: Fix where condition of delete queries"  [Gabriele M]
-   * vendor/cm/
-bb634aaf  sensitive_pn: Add sensitive numbers for Greece  [Brinly Taylor]
-244370e5  sensitive_pn: fix Czech Republic MCC  [jumoog]
-9a4fe2b3  sensitive_pn: Add Taiwanese sensitive numbers  [Sean hoyt]
-
-====================
-     06-24-2017
-====================
-
-   * frameworks/base/
-b665c5906e2  Merge pull request #73 from LineageOS/cm-14.1  [GitHub]
-001f5f19dcc  Revert "GlobalActions: Confirm power off"  [acuicultor]
-   * lineage/cve/
-1797d97  cve_tracker: do not count unaffected as patched  [Michael W]
-382d8e2  cve_tracker: use links for buttons that change the location  [Michael W]
-   * lineage/updater/
-37a1d1c  Regenerate device dependency mappings  [Harry Youd]
-   * packages/apps/CMUpdater/
-0465cb6  CMUpdater: support A/B style OTA updates  [Dan Pasanen]
-   * packages/apps/Contacts/
-1c5967369  Merge pull request #9 from LineageOS/cm-14.1  [GitHub]
-   * packages/apps/ContactsCommon/
-52d925f9  Merge pull request #8 from LineageOS/cm-14.1  [GitHub]
-   * packages/apps/Dialer/
-45c983573  Merge pull request #17 from LineageOS/cm-14.1  [GitHub]
-   * packages/apps/ExactCalculator/
-ff2e82e  Merge pull request #2 from LineageOS/cm-14.1  [GitHub]
-   * packages/apps/Jelly/
-eff2fd2  Open link in Incognito tab automatically when in Incognito mode  [Tim Schumacher]
-f7338cf  Jelly: Enable safe browsing  [Luca Stefani]
-   * packages/apps/PhoneCommon/
-319357c  Merge pull request #8 from LineageOS/cm-14.1  [GitHub]
+fe26127  Automatic translation import  [Akhil Narang]
    * packages/apps/Settings/
-a1fa81c154  Merge pull request #27 from LineageOS/cm-14.1  [GitHub]
-   * packages/apps/SetupWizard/
-dfee53c  Merge pull request #5 from LineageOS/cm-14.1  [GitHub]
+671a561752  Merge pull request #38 from LineageOS/cm-14.1  [GitHub]
    * vendor/cm/
-f9900262  Merge pull request #49 from LineageOS/cm-14.1  [GitHub]
+a85277cc  Merge pull request #60 from LineageOS/cm-14.1  [GitHub]
    * vendor/cmsdk/
-4188d92  Merge pull request #30 from LineageOS/cm-14.1  [GitHub]
+eb5d67c  Merge pull request #35 from LineageOS/cm-14.1  [GitHub]
 
 ====================
-     06-23-2017
+     08-05-2017
 ====================
 
    * frameworks/base/
-260e7f3f0ac  Automatic translation import  [Abhisek Devkota]
+40d132c23b7  Automatic translation import  [Abhisek Devkota]
+c729010d4b6  AppOps: Fix yet another deadlock  [Gabriele M]
    * hardware/qcom/fm/
-4c2e39e  Automatic translation import  [Abhisek Devkota]
-   * lineage/cve/
-3762fa0  cve_tracker: make status descriptions smaller to alleviate space issues  [Michael W]
-90b0552  classes: fix spacing on hashbang  [Michael W]
-1f2cb4f  cve_tracker: close Dialogs on [Esc]  [Demon000]
-   * lineage/mirror/
-6ccc3bc  Updated to 22-Jun-2017 21:18:33 UTC  [Harry Youd]
-   * lineage/updater/
-b4caf24  Fix typo from afd0835  [Harry Youd]
+dcad703  Automatic translation import  [Abhisek Devkota]
    * lineage/wiki/
-35138c4  Add gmrt to Committers  [Harry Youd]
+ba9ccf5  Revamp contributing pages  [Bruno Martins]
+769c80a  Rewrite docker support  [Harry Youd]
+8a6ab01  Use new wiki path in repo  [Harry Youd]
+69571e3  Use HTML entities for ellipses  [Harry Youd]
+fafc578  Update gems  [Harry Youd]
+a6b58ea  Remove dependency on github-pages  [Harry Youd]
+   * packages/apps/AudioFX/
+4081d14  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Bluetooth/
-7f2b5c8c  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/CMBugReport/
-2a50a65  Automatic translation import  [Abhisek Devkota]
+37790769  Automatic translation import  [Abhisek Devkota]
    * packages/apps/CMParts/
-403ac8d  Automatic translation import  [Abhisek Devkota]
+f8ed153  Automatic translation import  [Abhisek Devkota]
    * packages/apps/CMUpdater/
-5c5d3c7  Automatic translation import  [Abhisek Devkota]
+fe415d9  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Calendar/
-ca094f37  Automatic translation import  [Abhisek Devkota]
+3feea520  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Camera2/
+b918d597c  Automatic translation import  [Abhisek Devkota]
    * packages/apps/CellBroadcastReceiver/
-ebf9e97  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/Contacts/
-e4db886ec  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/ContactsCommon/
-136471a1  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/CustomTiles/
-9c8fcd2  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/Dialer/
-49d45fd2d  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/FMRadio/
-900759c  Automatic translation import  [Abhisek Devkota]
+073c499  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/DeskClock/
+33a443d5  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Eleven/
+153a2a1  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Email/
+c44eaf097  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/EmergencyInfo/
+de00e09  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Gallery2/
-06d5e5580  Automatic translation import  [Abhisek Devkota]
+ddd234194  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/HTMLViewer/
+ed791de  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Jelly/
-dd23317  Automatic translation import  [Abhisek Devkota]
-818e92d  Jelly: Guess filename from URL  [Luca Stefani]
-1a4f237  Jelly: Allow media scan on download  [Luca Stefani]
-a8fe6fa  Jelly: Show download notification on completed  [Luca Stefani]
+03d8d55  Automatic translation import  [Abhisek Devkota]
    * packages/apps/LockClock/
-b41c0d7  Automatic translation import  [Abhisek Devkota]
+c6d8d03  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ManagedProvisioning/
+886e7cea  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Messaging/
-c8e61e5  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/OmniSwitch/
-94907af  Automatic translation import  [Akhil Narang]
-   * packages/apps/PhoneCommon/
-433f6c8  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/Recorder/
-67d5b07  Automatic translation import  [Abhisek Devkota]
+76d63b3  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Settings/
-6f6e045a20  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/SetupWizard/
-33b4491  Automatic translation import  [Abhisek Devkota]
+5067a1cbcc  Automatic translation import  [Abhisek Devkota]
    * packages/apps/Snap/
-7e76c83a4  Automatic translation import  [Abhisek Devkota]
-   * packages/apps/Terminal/
-a2a05d2  Automatic translation import  [Abhisek Devkota]
+e59578782  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Tag/
+25ee4c5  Automatic translation import  [Abhisek Devkota]
    * packages/apps/TvSettings/
-6f074067  Automatic translation import  [Abhisek Devkota]
+213a2caa  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/UnifiedEmail/
+a3b49c589  Automatic translation import  [Abhisek Devkota]
    * packages/inputmethods/LatinIME/
-3e047b887  Automatic translation import  [Abhisek Devkota]
+cd62db3f9  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/CalendarProvider/
+0bfe0b6  Automatic translation import  [Abhisek Devkota]
    * packages/providers/DownloadProvider/
-30cc23d  Automatic translation import  [Abhisek Devkota]
+581eab3  Automatic translation import  [Abhisek Devkota]
    * packages/resources/devicesettings/
-75498f7  Automatic translation import  [Abhisek Devkota]
+0f88d74  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telecomm/
+5f8e16d7  Automatic translation import  [Abhisek Devkota]
    * packages/services/Telephony/
-23b6f586  Automatic translation import  [Abhisek Devkota]
+074391ee  Automatic translation import  [Abhisek Devkota]
    * vendor/cm/
-f0086184  Add sensitive numbers for Ukraine.  [Brinly Taylor]
-b9b2e57c  Add Virgin Media Ireland to APN's  [Harry Youd]
+36dcbd41  Add WOM Internet/MMS (CL) apn  [Abhisek Devkota]
    * vendor/cmsdk/
-df15137  Automatic translation import  [Abhisek Devkota]
-   * vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-dd1766a  Automatic translation import  [Abhisek Devkota]
+05c689d  Automatic translation import  [Abhisek Devkota]
 
 ====================
-     06-22-2017
+     08-04-2017
 ====================
 
+   * frameworks/opt/telephony/
+b1a8579f  Telephony: Keep preferred SMS Sim  [Michael W]
+   * hardware/qcom/media-caf/msm8916/
+ec789248f  Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916  [Michael Bestas]
+   * hardware/qcom/media-caf/msm8994/
+1afe59f2c  Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994  [Michael Bestas]
+   * packages/apps/CMParts/
+ca467d9  Regenerate contributors cloud  [Harry Youd]
+
+====================
+     08-03-2017
+====================
+
+   * device/qcom/sepolicy/
+415717e  sepolicy: Add qpnp-smbcharger battery supply contexts  [Rashed Abdel-Tawab]
+6ff8a5f  sepolicy: Add new dc_supply sysfs  [Rashed Abdel-Tawab]
    * frameworks/base/
-32183ee1b96  Revert "Only send usb disconnect intents after boot."  [acuicultor]
-b59272ed217  Revert "Check and send usb state broadcast when devices boots"  [acuicultor]
-ceb94d357bd  Merge pull request #72 from OneRomOne-N/backup  [GitHub]
-8f77ee69691  Merge pull request #71 from LineageOS/cm-14.1  [GitHub]
-70b5ce1f1e4  Fix SystemUI FC due to Google Assistant  [acuicultor]
-adf5ee3fc78  Reduce MTU Size  [acuicultor]
-81cf9057736  CaptivePortal: login activity UI improvements  [acuicultor]
-e56cfe286ce  Fix the Wi-Fi wrong status when turning Wi-Fi on  [acuicultor]
-d66ea51b96b  hwui: skip draw empty frame  [acuicultor]
-342fac8b0a6  Fix system server crash caused by CME in usage stats  [acuicultor]
-be18147c1c5  Fix NPE while attempting to get length of null array in FileRotator  [acuicultor]
-49b553d1e8f  Fix NPE in SettingsLib  [acuicultor]
-885c5f19fa1  Fix race condition when writing UidState of appops.  [acuicultor]
-56248e97469  ActivityStack index OOB cause device restart  [acuicultor]
-119a522ba13  Redundant waiting time of keyguard unlocking after reboot  [acuicultor]
-9c41982f505  The network event should be an asynchronous callback.  [acuicultor]
-5b03c43a2ca  wifi: catch UnsupportedOperationException for getMatchingWifiConfig  [acuicultor]
-29a9dab7b94  SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks  [acuicultor]
-4b1b8de9d6f  Destroy Allocation with ScriptIntrinsicLut  [acuicultor]
-0578daa8184  Keyguard: disable logspilling debug  [acuicultor]
-954ee6fa20a  sensors: fix native crash when dynamic sensor is removed  [acuicultor]
-6b8982315bc  sensors: intern jstrings for memory savings  [acuicultor]
-88964915b07  frameworks/base: reduce the setTransactions  [acuicultor]
-5ab2b59a806  Check and send usb state broadcast when devices boots  [acuicultor]
-fde7d6387ae  Only send usb disconnect intents after boot.  [acuicultor]
-a9222707e45  Fix memory leak in WifP2pManager  [acuicultor]
-b4a7efc89bf  Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK  [acuicultor]
-5a295a0d9ae  Fix a use-of-uninitialized-value warning  [acuicultor]
-dee01bcc70d  Fix force idle issue  [acuicultor]
-4476983d6b1  KernelCpuSpeedReader: Account for missing sysfs nodes  [acuicultor]
-b23542f47ae  bless python versions newer than 2.6  [acuicultor]
-9267b764bfa  When updating a split app, copy compiled files from base.apk only.  [acuicultor]
-fa54e4e68ae  QS Tile: increase DEFAULT_MAX_BOUND to 6  [acuicultor]
-c2295182ae3  SystemUI: force a clock update if the screen is turned back on  [acuicultor]
-910738dd9a4  SystemUI: disable statusbar time refresh when screen off  [acuicultor]
-835dcdad3f7  GlobalActions: Confirm power off  [acuicultor]
-59620bb99c6  Recents Clear All Button Tweaks and Add FAB to Recents Panel[1/2]  [acuicultor]
+35aea9596ae  Merge pull request #83 from LineageOS/cm-14.1  [GitHub]
    * lineage/cve/
-a30997e  cve_tracker: Check adding/editing CVEs for sane formatting  [Michael W]
-b2d8402  Revert "cve_tracker: Check adding/editing CVEs for sane formatting"  [Michael W]
-9462e22  cve_tracker: Check adding/editing CVEs for sane formatting  [Michael W]
-9ff7672  cve_tracker: Various fixes & improvements  [Demon000]
-   * lineage/jenkins/
-a8e0b24  hudson: Ship weeklies for ham again  [Harry Youd]
+1a493b8  Regenerate kernel->device mappings  [Harry Youd]
    * lineage/updater/
-9c2c043  updater: remove extraneous brs  [Tom Powell]
-9cfb053  updater: update su zips  [Tom Powell]
-afd0835  updater: stop showing md5s, link to sha1/sha256 in mirrorbits  [Tom Powell]
-   * packages/apps/Settings/
-1c6eda9f39  Recents Clear All Button Tweaks and Add FAB to Recents Panel[2/2]  [acuicultor]
-   * vendor/cm/
-58ac0e31  Merge pull request #48 from LineageOS/cm-14.1  [GitHub]
-42ded062  sensitive_pn: Add additional FR number  [Julien Humbert]
-7f8d61c3  Merge pull request #47 from LineageOS/cm-14.1  [GitHub]
-
-====================
-     06-21-2017
-====================
-
-   * build/
-8920be895  Merge pull request #17 from LineageOS/cm-14.1  [GitHub]
-   * frameworks/base/
-d2478f985a0  Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_base into nuclear-n  [acuicultor]
-   * lineage/jenkins/
-765b1a6  jenkins: Re-enable h830, h850, h918, us996, v521  [Rashed Abdel-Tawab]
-   * lineage/updater/
-52c60a7  Regenerate device dependency mappings  [Harry Youd]
-   * lineage/wiki/
-53ea4c7  wiki: Fix v521 install method  [Rashed Abdel-Tawab]
+0753c19  Regenerate device dependency mappings  [Harry Youd]
    * packages/apps/OmniSwitch/
-cfde0e5  Automatic translation import  [Akhil Narang]
-   * packages/providers/MediaProvider/
-fadf365  MediaProvider: Fix where condition of delete queries  [Gabriele M]
-   * system/core/
-3dc7f3073  Merge pull request #9 from LineageOS/cm-14.1  [GitHub]
+31d0a4a  Fixing a NullPointerException (#8)  [Varun Date]
    * vendor/cm/
-f3972a9a  sensitive_pn: Add additional GB numbers  [Rashed Abdel-Tawab]
-f2e9a83e  sensitive_pn: Add additional PT numbers  [Bruno Martins]
-   * vendor/cmsdk/
-7a48839  Merge pull request #29 from LineageOS/cm-14.1  [GitHub]
+96556ae8  Merge pull request #59 from LineageOS/cm-14.1  [GitHub]
+
+====================
+     08-02-2017
+====================
+
+   * lineage/mirror/
+fb20480  Updated to 01-Aug-2017 20:31:03 UTC  [Harry Youd]
+   * lineage/wiki/
+35a3852  wiki: Add Xiaomi Redmi Note 4 (mido)  [Dan Pasanen]
+   * vendor/cm/
+deed26fd  qcom: Allow setting custom audio, display, and media HALs  [Rashed Abdel-Tawab]
+
+====================
+     08-01-2017
+====================
+
+   * lineage/cve/
+ec37cea  cve_tracker: Make kernel selection easier  [Michael W]
+d33c299  cve_tracker: add import statuses functionality  [Michael W]
+   * lineage/jenkins/
+be7998c  hudson: Add mido to weekly builds  [Harry Youd]
+   * packages/apps/Eleven/
+1cc8b9e  Eleven: Add WRITE_MEDIA_STORAGE permission  [Arne Coucheron]
+083e7f9  Eleven: Promote to privileged app  [Arne Coucheron]
+5301693  Eleven: allow artwork to scale down  [Arne Coucheron]
+   * packages/apps/Gallery2/
+3b11d2a58  Automatic translation import  [Arne Coucheron]
+c88c5726b  Gallery2: Fix various issues and glitches  [Arne Coucheron]
+d74ca5a9d  Gallery2: Fix potential crash  [Arne Coucheron]
+7e1b2d258  Gallery2: Switch to navigationbar from support libs  [Arne Coucheron]
+82b6848ef  Gallery2: Fix can't parse documents uri  [Arne Coucheron]
+   * packages/apps/Snap/
+a206d7565  Snap: fix low resolution front camera switch icon  [Arne Coucheron]
+
+====================
+     07-31-2017
+====================
+
+   * device/qcom/sepolicy/
+08a5a42  sepolicy: Allow untrusted_apps to read usb power supply stats  [Rashed Abdel-Tawab]
+   * packages/apps/Gallery2/
+eceb1edb1  Gallery2: Fix views overlap  [Arne Coucheron]
+8c7fe642b  Gallery2: Support GIF animation  [Arne Coucheron]
+b923c258f  Gallery2: Increase the size of the tiles when decoding images  [Arne Coucheron]
+ccaf2e443  Gallery2: Support the newly added media file types in MTP mode  [Arne Coucheron]
+ebce1308f  Gallery2: Fix use of uninitialized stack variables  [Arne Coucheron]
+1fbe34291  Gallery2: Remove unused renderscript class  [Arne Coucheron]
+40fe6d233  Gallery2: Fix spelling error  [Arne Coucheron]
+5a0501d1d  Gallery2: Properly declare the own permissions  [Arne Coucheron]
+9c69a829b  Gallery2: Remove more possible NPEs  [Arne Coucheron]
+4288cf9e0  Gallery2: Enable frames in the editor  [Arne Coucheron]
+09a950e43  Gallery2: Remove slideshow option if there are only videos  [Arne Coucheron]
+75e883a9f  Gallery2: Remove 3D overscroll effect  [Arne Coucheron]
+4cbaf64e2  Gallery2: Disable dummy starting window  [Arne Coucheron]
+7aeaefcfc  Gallery2: Fix up audio effects dialog  [Arne Coucheron]
+cc80b1b5e  Gallery2: Everyone or no one  [Arne Coucheron]
+a0dc1b87d  Gallery2: Replace hamburger menu with bottom bar  [Arne Coucheron]
+ae2d5c13c  Gallery2: Change all share intents to chooser style  [Arne Coucheron]
+1b893a41e  Gallery2: Update menu  [Arne Coucheron]
+b09126420  Gallery2: Update theme  [Arne Coucheron]
+7eb847c94  Gallery2: Move & improve CAF strings  [Arne Coucheron]
+81e24fe0e  Gallery2: Make sure no NPE happens  [Arne Coucheron]
+9c735aedd  Gallery2: Remove invalid comment from manifest  [Arne Coucheron]
+5b0141c65  Gallery2: Cleanup renderscript flags in Android.mk  [Arne Coucheron]
+108756ab1  Gallery2: Reduce logspam in video player  [Arne Coucheron]
+e0c0ac0be  Gallery2: Store DATE_TAKEN as milliseconds  [Arne Coucheron]
+bb1631470  Gallery2: Modify AOSP EL translations  [Arne Coucheron]
+3861e9751  Gallery2: Remove CAF translations  [Arne Coucheron]
+3bf31b249  Gallery2: Add record time to details view  [Arne Coucheron]
+c1cf32450  Gallery2: Fix crash of gallery on showing details  [Arne Coucheron]
+880d50792  Gallery2: Fix crash when Bluetooth service is disabled  [Arne Coucheron]
+2c75f4004  Gallery2: Try to open existing camera  [Arne Coucheron]
+db84f5bb3  Gallery2: New icon  [Arne Coucheron]
+5f5c89261  Gallery2: Bump minsdk and targetsdk version  [Arne Coucheron]
+658721317  Gallery: FilterShowActivity: Fix loading spinner being show forever  [Arne Coucheron]
+55bf17f33  Gallery: TileImageView: fix NPE  [Arne Coucheron]
+be9357b06  FaceDetect: Catch more linker errors during initialization  [Arne Coucheron]
+8beb6f9c5  FaceDetect: Catch linker errors during initialization  [Arne Coucheron]
+ea5a3097f  Bump API to match dependencies.  [Arne Coucheron]
+1a3f2927d  Add missing includes.  [Arne Coucheron]
+5c7461235  Cleanup warnings in jni.  [Arne Coucheron]
+b7d08f97a  Fix misc-macro-parentheses warnings in Gallery2.  [Arne Coucheron]
+9110325ab  Float.NaN != ... always evaluates to true, use Float.isNaN.  [Arne Coucheron]
+69f87c408  Rename app back to Gallery  [Arne Coucheron]
+   * vendor/cm/
+58ce825b  templates: Update to show usage for new extract_files features  [Rashed Abdel-Tawab]
+8b87b09e  extract_files: Add support for paths without system/  [Rashed Abdel-Tawab]
+855fbdd4  extract_files: Add support for specifying blob sections  [Rashed Abdel-Tawab]
+675d9595  build: Update smali and baksmali to 2.2.1  [Rashed Abdel-Tawab]
 
