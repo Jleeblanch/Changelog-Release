@@ -2,11 +2,95 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/06/2017
+ ▼ 08/08/2017
+
+
+ ▪ project android/
+ ▪ ed7d67a cm.xml: sync caf 8998 hals
+ ▪ 59201a1 manifest: android-7.1.2_r24 -> android-7.1.2_r29
+
+ ▪ project build/
+ ▪ 401a4a14d Merge 7.1.2_r29 into nougat
+
+ ▪ project external/skia/
+ ▪ 08bdeaf8e Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/av/
+ ▪ 3a63a174d Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/base/
+ ▪ e56d6464a46 FWB: Sensor block per-package switch (1/2)
+ ▪ a8e139f3170 SystemSensorManager: sensor block per-package
+ ▪ 59666009fef base: Update flags for edge gesture service from AOSPA
+ ▪ 5029476e9c0 Silence a memory leak warning from the static analyzer
+ ▪ 88fd564b800 GC in heapDumpFinished to cleanup hprof fd
+ ▪ 9b11fe26954 Add null check for Wi-Fi command
+ ▪ 9b8df668cd7 Fix static analyzer complaints
+ ▪ 3a939a667db Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/native/
+ ▪ f298a32a5 Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/opt/net/wifi/
+ ▪ 1f8fc743 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 7fcca3ecd Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 9dbd0629b Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 34f4914d6 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ e24866674 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ 0d8579c53 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 9dcddd7c2 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 5b1254761 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ c519e1ad0 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ a4f1bc583 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project packages/apps/Jelly/
+ ▪ f20c0a4 Jelly: Add Yandex search engine
+
+ ▪ project packages/apps/Settings/
+ ▪ 9f245e7e65 Settings:Sensor block per-package switch[2/2]
+
+ ▪ project system/bt/
+ ▪ 80cca318 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
+
+ ▼ 08/07/2017
 
 
  ▪ project device/motorola/athene/
  ▪ 1af754c BoardConfig: Compile the kernel with Linaro 6.3.1
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ e18db642a39 configs: Add resurrected_defconfig
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 6b6f3b3 Stats: RR v5.8.4
+
+ ▪ project packages/services/OmniJaws/
+ ▪ 271b581 Update config.xml
+ ▪ 3f47dbd Use our key
+
+ ▪ project vendor/cm/
+ ▪ e74670c3 Update changelog to 5.8.4
+
+ ▼ 08/06/2017
+
 
  ▪ project frameworks/base/
  ▪ 509aaf96787 AppOps: Fix yet another deadlock
@@ -18,6 +102,12 @@
  ▪ 5a0945c43cc frameworks: PIE 3.0 (nougat)
  ▪ 4df79251675 Revert "Forward Port: PIE 3.0 (1/2)"
 
+ ▪ project hardware/qcom/display-caf/apq8084/
+ ▪ e2f4340ea cec: Fix breakage due to API change
+
+ ▪ project hardware/qcom/media-caf/apq8084/
+ ▪ 02e57500c videopp: fix include paths for lineage
+
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
@@ -25,9 +115,6 @@
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 6b6f3b3 Stats: RR v5.8.4
 
  ▪ project packages/apps/Settings/
  ▪ 3701c92125 Dslv: Fix FC when adding duplicate shortcuts
@@ -37,17 +124,32 @@
  ▪ 5fd64bebc0 Update PIE settings to 3.0
 
  ▪ project vendor/cm/
- ▪ e74670c3 Update changelog to 5.8.4
  ▪ f8692056 Bump version to 5.8.4
  ▪ 8272685d vendor: Fix a user profile data denial
  ▪ be1cf971 vendor: Add selinux policy for pocket bridge
  ▪ 5ea6f1ce vendor:Add sysfs permissions for pocket bridge
  ▪ 27711887 pa: Add pocket judge selinux policy
 
+ ▼ 08/05/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 6c960c2f11 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 40bdde5bbc Fix settings FC and freezes after reboot on enforcing mode
+
  ▼ 08/04/2017
 
 
+ ▪ project frameworks/opt/telephony/
+ ▪ b1a8579f Telephony: Keep preferred SMS Sim
+
  ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ ec789248f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1afe59f2c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
 
  ▪ project packages/apps/AudioFX/
 
@@ -74,8 +176,6 @@
  ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/Settings/
- ▪ 6c960c2f11 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 40bdde5bbc Fix settings FC and freezes after reboot on enforcing mode
  ▪ 1bed82a055 Add Maintainer For Android One 1st gen. (sprout) (#832)
 
  ▪ project packages/apps/SetupWizard/
@@ -101,40 +201,10 @@
  ▼ 08/03/2017
 
 
- ▪ project frameworks/opt/telephony/
- ▪ b1a8579f Telephony: Keep preferred SMS Sim
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ ec789248f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1afe59f2c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
-
- ▼ 08/02/2017
-
+ ▪ project device/qcom/sepolicy/
+ ▪ 415717e sepolicy: Add qpnp-smbcharger battery supply contexts
+ ▪ 6ff8a5f sepolicy: Add new dc_supply sysfs
 
  ▪ project packages/apps/OmniSwitch/
  ▪ 31d0a4a Fixing a NullPointerException (#8)
-
- ▼ 08/01/2017
-
-
- ▪ project packages/apps/Gallery2/
- ▪ c88c5726b Gallery2: Fix various issues and glitches
-
- ▼ 07/31/2017
-
-
- ▪ project packages/apps/Eleven/
- ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
- ▪ 083e7f9 Eleven: Promote to privileged app
- ▪ 5301693 Eleven: allow artwork to scale down
-
- ▪ project packages/apps/Gallery2/
- ▪ d74ca5a9d Gallery2: Fix potential crash
- ▪ 7e1b2d258 Gallery2: Switch to navigationbar from support libs
- ▪ 82b6848ef Gallery2: Fix can't parse documents uri
-
- ▪ project packages/apps/Snap/
- ▪ a206d7565 Snap: fix low resolution front camera switch icon
 
