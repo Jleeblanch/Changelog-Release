@@ -2,515 +2,58 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
+ ▼ 01/12/2018
+
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ e4d3a47 configs: Regenerate resurrected_defconfig
+
+ ▪ project vendor/cm/
+ ▪ 395c6b8 prebuilt: Update Magisk
+
+ ▼ 01/10/2018
+
+
+ ▪ project packages/apps/Calendar/
+ ▪ bf88827 calendar: fix first notification after boot
+
+ ▼ 01/08/2018
+
+
+ ▪ project packages/apps/Snap/
+ ▪ 383470a Snap: Rip out hdr-need-1x option
+
+ ▼ 01/06/2018
+
+
+ ▪ project hardware/ti/omap4/
+ ▪ c04881d omap4: Fix kernel module build
+
+ ▼ 01/02/2018
+
+
+ ▪ project frameworks/opt/telephony/
+ ▪ cc70a31 ImsPhoneCallTrackerTest: add missing imports
+
+ ▼ 12/31/2017
+
+
+ ▪ project android/
+ ▪ bf7d741 Merge pull request #108 from christopherkardas/nougat
+ ▪ 2ef0a78 The future is now
+
+ ▪ project vendor/cm/
+ ▪ 6a135a9 The future is now
+
  ▼ 12/30/2017
 
 
- ▪ project device/motorola/athene/
- ▪ 0357c75 BoardConfig: Build the Kernel with Linaro 7.2.1 toolchain
-
  ▪ project kernel/motorola/msm8952/
- ▪ 342d6128f4b9 net/wireguard: add wireguard importer
+ ▪ 342d612 net/wireguard: add wireguard importer
 
  ▼ 12/29/2017
 
 
- ▪ project vendor/cm/
- ▪ 73cbea64 Update Magisk to latest stable version (v15.1)
-
- ▼ 12/24/2017
-
-
- ▪ project external/chromium-webview/
- ▪ ea18916 Update webviews to Chromium 63.0.3239.111
-
- ▼ 12/23/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 08f938880 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 4be649f1c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ d92d0487f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1633dd56a Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
- ▪ project packages/apps/Snap/
- ▪ c89f3ae74 Snap: add QReader to module switch
- ▪ f0e61e5b9 QuickReader: initial commit
-
- ▼ 12/22/2017
-
-
- ▪ project system/vold/
- ▪ f902c08 vold: Fix cryptfs changepw parsing
-
- ▼ 12/21/2017
-
-
- ▪ project hardware/cyanogen/
- ▪ f66b300 cmhw: Remove duplicate class
-
- ▼ 12/18/2017
-
-
- ▪ project hardware/cyanogen/
- ▪ f05c023 cmhw: Update picture adjustment class with proper comments
-
- ▪ project packages/apps/AudioFX/
- ▪ 8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
-
- ▪ project packages/apps/ResurrectionOTA/
- ▪ a3a78cb Update ota_conf for athene :P
-
- ▪ project packages/apps/SetupWizard/
- ▪ e0605c0 Disable SetupWraith, if GMS not present
-
- ▼ 12/17/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 1454b19dc Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.041 on remote branch
-
- ▪ project packages/apps/SetupWizard/
-
- ▼ 12/16/2017
-
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/15/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▼ 12/14/2017
-
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ 5b9de9ad0 mm-video-v4l2: venc: Squash security fixes
-
- ▼ 12/13/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ f57b980e9 audiohal: Add support for HANDSET_GENERIC_QMIC
- ▪ 421990b8b Merge "audio: configs: Correct copy rights for XML Parsing"
- ▪ 0d492470b Merge "audio: Add support for 4 channels recording"
- ▪ aba9478ce Merge "configs: msm8909: Add support for multiple record sessions and fluence SVA"
-
- ▪ project packages/apps/SetupWizard/
-
- ▼ 12/12/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 81eec1f35 audio: configs: Correct copy rights for XML Parsing
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ f4597489f mm-video-v4l2: Avoid buffer access after free buffer call
- ▪ a503b9100 mm-video-v4l2: venc: Use client allocated memory if available
- ▪ cc1594ed4 mm-video-v4l2: venc: Avoid buffer access after free
-
- ▪ project hardware/ti/omap4/
- ▪ f5a98d3 Revert "omap4: add local libjhead"
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMParts/
- ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
- ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/11/2017
-
-
- ▪ project android/
- ▪ 2c020ba android-7.1.2_r29 -> android-7.1.2_r36
-
- ▪ project build/
- ▪ c2b760425 Bump security string to 2017-12-05
-
- ▪ project external/skia/
- ▪ cc36cbe26 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_external_skia into nougat
- ▪ bf8a04d00 Merge tag 'android-7.1.2_r36' into nougat
-
- ▪ project frameworks/av/
- ▪ b917d0b7e Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ 4d1bd2d54ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
- ▪ 1a126b1bc24 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
- ▪ e5c75f2bc48 Stop explicitly using kCallerPasses_Ownership
- ▪ a146c62c483 Fix ClipboardService device lock check for cross profile
- ▪ 233958f8ccd Prevent getting data from Clipboard if device is locked
- ▪ 1a9fac1bf4c Clearing up invalid entries when SyncStorageEngine starts
- ▪ a86c005c652 SystemUI: Fix title text clipping when task lock button is visible
- ▪ 355e6694104 ZenModeHelper: Allow lights by default
- ▪ 35faa934598 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 0a00f615d configs: msm8909: Support fluence for ADSP SVA
-
- ▪ project hardware/ti/omap4/
- ▪ 0f456ee omap4: add local libjhead
-
- ▪ project packages/apps/PackageInstaller/
- ▪ c4735a26 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
- ▪ 81ba4151 DO NOT MERGE Fixing Install button not enabled on resume
- ▪ d65c53a6 Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
-
- ▪ project packages/apps/Settings/
- ▪ 16519cc213 DO NOT MERGE. ActivityPicker shouldn't grant permissions.
- ▪ 13e6a2eb8d BugFix:Correct fullBearer in APNSettings
- ▪ 2f5b6c9af9 Telephony: Fix Crash in SimStatus Fragment
- ▪ 73ee6a27c9 Settings: fix vibrate for calls in Setting app displayed incorrect issue
- ▪ c2ccc72d68 Settings: back icon doesn't work in format SD as portable page.
- ▪ 8bea2b71c6 Settings: Fix settings force close
- ▪ 184c68f844 Settings: Fix crash when disconnect wifi
- ▪ 67dd9f7c42 Settings: Strings: Modify a few german summaries
-
- ▪ project system/core/
- ▪ 9ed022649 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
-
- ▼ 12/10/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ c4a6bf8 Jelly: Use try-with-resources in downloadSuggestionsForQuery
-
- ▼ 12/09/2017
-
-
- ▪ project external/skia/
- ▪ e0a4c4794 Fix SkFILEStream.
- ▪ 680eaf05e Fix truncated webp images DO NOT MERGE
-
- ▪ project frameworks/av/
- ▪ 3e16c556f Block allocateBufferWithBackup in secure native handle mode
- ▪ 66c9362f1 Fix memory leaks
- ▪ 2102b4d2b media: Fix a typo in parsing nclc atom.
- ▪ acbbfff8d Soundtrigger service: fix cross deadlock with audio policy service
- ▪ 787001779 IMediaExtractor: ensure users to check returned value by getTrack.
- ▪ cb0c13867 Fix issues with extractor dumpsys
-
- ▪ project frameworks/minikin/
- ▪ 369826a Drop codepoints that are outside the Unicode range - DO NOT MERGE
-
- ▪ project hardware/broadcom/wlan/
- ▪ 7d31a89 net: wireless: bcmdhd: update bcm4358 FW (7.112.201.6) [DO NOT MERGE]
-
- ▪ project hardware/qcom/media/
- ▪ 92e736a0b mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
- ▪ project packages/apps/Jelly/
- ▪ 6904728 Jelly: Allow to dismiss HTTP auth dialog
- ▪ c42034e Jelly: Implementing favorite management through a ContentProvider.
-
- ▪ project system/core/
- ▪ 0d3d72fb7 zip_archive: reject files that don't start with an LFH signature.
-
- ▼ 12/08/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 0aecd3d53 audio: Add support for 4 channels recording
- ▪ 48131046e audiohal_test: Multiple Record Test Application
- ▪ e21eb88c0 configs: msm8909: Add support for multiple record sessions and fluence SVA
- ▪ a7012ef06 Merge "audio: Add support for multiple audio record sessions"
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 4264494f3 Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.02.258.034 on remote branch
-
- ▼ 12/07/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ d5d4ed930 audio: Add support for multiple audio record sessions
-
- ▼ 12/06/2017
-
-
- ▪ project external/libavc/
- ▪ 8f141f1 Decoder: Fixed hang in the case of dangling field
-
- ▪ project external/libhevc/
- ▪ 3254798 Alloc extra bytes for bits buf for parse optimzation
-
- ▪ project external/libmpeg2/
- ▪ 382741b Update num_mbs_left When mb_x is Reset.
- ▪ 70d2de5 Fix Error When Input Buffer is Full
- ▪ 813a0af Reject Multiple seq_hdr With Different Dimensions
- ▪ 0e297f2 DoS error - Bitstream Overflow
-
- ▪ project frameworks/av/
- ▪ bc1e3691c OMXNodeInstance: use a lock around OMX::freeNode
- ▪ d61d33f52 Fix information disclosure in mediadrmserver
- ▪ bd3bfec51 m4v_h263: fix global buffer overflow
- ▪ 7bf6a4234 AudioPolicyService: Acquire mutex for SoundTriggerSession
-
- ▪ project frameworks/base/
- ▪ ae1ad8cdb89 Fix systemUI FC when using the Language QS tile (#212)
-
- ▪ project system/bt/
- ▪ 9844cd64 Read the correct amount of attributes
-
- ▼ 12/04/2017
-
-
- ▪ project vendor/cm/
- ▪ ac4262be prebuilt: Update included apk's to latest versions
- ▪ 46aadf25 Update include method for prebuilt apks
- ▪ bb1146a7 Update Magisk to v14.5
- ▪ 8640fc10 Update Changelog to v5.8.5
-
- ▼ 11/29/2017
-
-
  ▪ project bootable/recovery/
- ▪ 3ec7dc7 update_verifier: Set the success flag if dm-verity is not enabled.
-
- ▼ 11/28/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 7f1c6e8b6 Fix security vulnerability: Equalizer setParameter memory overflow
-
- ▼ 11/27/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ f1814542f policy_hal: handle incall sonification without checking output refCount
- ▪ bd77e4ff6 Merge "policy_hal: handle incall sonification without checking output refCount"
-
- ▼ 11/26/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ cc7fea6c3 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.039 on remote branch
-
- ▼ 11/25/2017
-
-
- ▪ project frameworks/av/
- ▪ ebe9edd89 Revert "libstagefright: Use proper ctts offset"
-
- ▪ project packages/apps/Trebuchet/
- ▪ 3d8069053 Trebuchet: Use ICU4J public APIs
-
- ▼ 11/24/2017
-
-
- ▪ project frameworks/base/
- ▪ c4526f1a869 SystemUI: LiveDisplay tile
-
- ▼ 11/22/2017
-
-
- ▪ project device/motorola/athene/
- ▪ 061e5c2 prebuilt: Update include method for prebuilt apks
-
- ▪ project kernel/motorola/msm8952/
- ▪ fffc1214b1c6 configs: Update Resurrected config (linux version 3.10.108)
-
- ▪ project vendor/motorola/athene/
- ▪ 628139af athene : Remove debugging tools
+ ▪ 3062c1a BACKPORT: Fix a rare failure for imgdiff when random data equals gzip header
 
