@@ -2,58 +2,174 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
+ ▼ 01/14/2018
+
+
+ ▪ project android/
+ ▪ a11cac4 manifest: Track our frameworks/ex fork
+
+ ▪ project build/
+ ▪ bf2f50f Bump security patch level to 2018-01-05
+
+ ▪ project device/motorola/athene/
+ ▪ 18e580f athene: Deny installation of Moto Camera from Play Store
+
+ ▪ project external/aac/
+ ▪ a466191 Fix out of bound memory access in lppTransposer
+ ▪ 1b0c6d7 DO NOT MERGE Prevent out of bound memory access in GetInvInt
+
+ ▪ project external/libavc/
+ ▪ 31187ab Decoder: Handle dec_hdl memory allocation failure gracefully
+ ▪ 1b8539a Decoder: Fixed incorrect use of mmco parameters.
+ ▪ d360342 Decoder: Detect change of mbaff flag in SPS
+ ▪ 08b2082 Decoder: Increased allocation and added checks in sei parsing.
+
+ ▪ project external/libhevc/
+ ▪ fd72e83 Add PUSH-POP of D registers in Arm Neon 32 bit functions
+ ▪ 593276d Fixed few issues in SAO arm assemblies
+ ▪ 13cda8d Decoder: Handle ps_codec_obj memory allocation failure gracefully
+ ▪ 25659ae Fix prev slice incomplete check
+ ▪ 7e9f6a6 Set error skip ctbs as multiple 8x8 pus
+ ▪ 7a6f851 Fix first frame error return
+ ▪ da32a33 Return error for negative crop parameters
+ ▪ 682e058 Consume bytes for sps with unsupported resolution
+ ▪ a6a34a3 Fix slice address zero for not first slice in pic
+ ▪ 074d3cf Fix incomplete frame error
+
+ ▪ project external/libmpeg2/
+ ▪ 031d063 Adding Error Check for f_code Parameters
+
+ ▪ project external/libvpx/
+ ▪ d3bacdd DO NOT MERGE | libvpx: Fix OOB caused by odd frame width.
+
+ ▪ project frameworks/av/
+ ▪ e04ace5 Fix the UAF bug caused by a dead stack variable
+ ▪ b8f4adf Fix edge case when applying id3 unsynchronization
+ ▪ e5c2ad6 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
+ ▪ fed8ac2 Validate decryption key length to decrypt function.
+ ▪ 451212e stagefright: MP4Extractor: allow 10% overhead on default sample size
+ ▪ 019930d Access AVCDEC context after create fail check
+ ▪ 86e0bb3 SoftAVCDec: Handle zero length input without EOS
+ ▪ e15abe6 Access HEVC context after create fail check
+
+ ▪ project frameworks/base/
+ ▪ 527eaa4 DO NOT MERGE Backporting potential usb tapjacking precaution.
+ ▪ b6c6416 mtp: fix double free of thumbnail data
+ ▪ 2831ade Throw OOME if Bitmap.nativeCreate fails
+ ▪ d5da8f4 Adjust Uri host parsing to use last instead of first @.
+
+ ▪ project frameworks/ex/
+ ▪ e52f9cd Skip composition of frames lacking a color map
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ 4b49596 prima: Update to LA.BR.1.3.6_rb1.24
+ ▪ 5009fa8 configs: Enable some new features
+ ▪ 7157122 block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
+ ▪ cfd7ff8 block: zen: crashing on selection fixup
+ ▪ 652d1af block: scheduler: add ZEN
+ ▪ 11f01f3 Add SIO and FIOPS i/o schedulers
+ ▪ 7f3f8ef lib: lz4: cleanup unaligned access efficiency detection
+ ▪ 47a4454 lib: lz4: fixed zram with lz4 on big endian machines
+ ▪ e4397bc lz4: fix system halt at boot kernel on x86_64
+ ▪ 61c7bd4 lib/lz4: Pull out constant tables
+ ▪ 55585e2 LZ4 : fix the data abort issue
+ ▪ e501d5e lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+ ▪ 57a1ece lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+ ▪ 2f81ea4 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+ ▪ cf2b8e1 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+ ▪ ea08116 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+ ▪ 9811f87 Revert "power: wakeup: prevent IPA_WS wakelock from being acquired by default"
+ ▪ a75b580 Revert "drivers: wakeup: bypass two WiFi wakelocks"
+ ▪ e569180 cpufreq/zzmoove: updated to bLE develop version as of 11.07.17
+ ▪ 4de92e1 cpufreq/governor: avoid a possible crash in msm thermal driver when freq limits are changed due to thermal events
+ ▪ 2b9c1ee cpufreq: add ZZMoove big.LITTLE Edition (bLE) development version as of 09.01.2016
+
+ ▪ project system/core/
+ ▪ c94e87a libnetutil: Check dhcp respose packet length
+
+ ▪ project system/media/
+ ▪ 9a8ef24 Camera metadata: Check source metadata size
+
+ ▪ project vendor/codeaurora/telephony/
+ ▪ 530e691 IMS-VT: Send static image in a Video Call
+
+ ▼ 01/13/2018
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/HTMLViewer/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/KeyChain/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Nfc/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SafetyRegulatoryInfo/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/apps/WallpaperPicker/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project vendor/cm/
+ ▪ 395c6b8 prebuilt: Update Magisk
+
  ▼ 01/12/2018
 
 
  ▪ project kernel/motorola/msm8952/
  ▪ e4d3a47 configs: Regenerate resurrected_defconfig
 
- ▪ project vendor/cm/
- ▪ 395c6b8 prebuilt: Update Magisk
-
- ▼ 01/10/2018
+ ▼ 01/11/2018
 
 
  ▪ project packages/apps/Calendar/
  ▪ bf88827 calendar: fix first notification after boot
 
- ▼ 01/08/2018
+ ▼ 01/09/2018
 
 
  ▪ project packages/apps/Snap/
  ▪ 383470a Snap: Rip out hdr-need-1x option
-
- ▼ 01/06/2018
-
-
- ▪ project hardware/ti/omap4/
- ▪ c04881d omap4: Fix kernel module build
-
- ▼ 01/02/2018
-
-
- ▪ project frameworks/opt/telephony/
- ▪ cc70a31 ImsPhoneCallTrackerTest: add missing imports
-
- ▼ 12/31/2017
-
-
- ▪ project android/
- ▪ bf7d741 Merge pull request #108 from christopherkardas/nougat
- ▪ 2ef0a78 The future is now
-
- ▪ project vendor/cm/
- ▪ 6a135a9 The future is now
-
- ▼ 12/30/2017
-
-
- ▪ project kernel/motorola/msm8952/
- ▪ 342d612 net/wireguard: add wireguard importer
-
- ▼ 12/29/2017
-
-
- ▪ project bootable/recovery/
- ▪ 3062c1a BACKPORT: Fix a rare failure for imgdiff when random data equals gzip header
 
