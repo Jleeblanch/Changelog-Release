@@ -2,6 +2,24 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
+ ▼ 01/15/2018
+
+
+ ▪ project frameworks/base/
+ ▪ 482c21f DO NOT MERGE Backporting potential usb tapjacking precaution.
+ ▪ eb050ea mtp: fix double free of thumbnail data
+ ▪ 4728c51 Throw OOME if Bitmap.nativeCreate fails
+ ▪ 61b247d Adjust Uri host parsing to use last instead of first @.
+
+ ▪ project kernel/motorola/msm8952/
+ ▪ cc6783e Add a Bunch Of Governors
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 01/14/2018
 
 
@@ -10,9 +28,6 @@
 
  ▪ project build/
  ▪ bf2f50f Bump security patch level to 2018-01-05
-
- ▪ project device/motorola/athene/
- ▪ 18e580f athene: Deny installation of Moto Camera from Play Store
 
  ▪ project external/aac/
  ▪ a466191 Fix out of bound memory access in lppTransposer
@@ -51,12 +66,6 @@
  ▪ 019930d Access AVCDEC context after create fail check
  ▪ 86e0bb3 SoftAVCDec: Handle zero length input without EOS
  ▪ e15abe6 Access HEVC context after create fail check
-
- ▪ project frameworks/base/
- ▪ 527eaa4 DO NOT MERGE Backporting potential usb tapjacking precaution.
- ▪ b6c6416 mtp: fix double free of thumbnail data
- ▪ 2831ade Throw OOME if Bitmap.nativeCreate fails
- ▪ d5da8f4 Adjust Uri host parsing to use last instead of first @.
 
  ▪ project frameworks/ex/
  ▪ e52f9cd Skip composition of frames lacking a color map
@@ -152,24 +161,12 @@
 
  ▪ project packages/wallpapers/LivePicker/
 
- ▪ project vendor/cm/
- ▪ 395c6b8 prebuilt: Update Magisk
-
  ▼ 01/12/2018
 
 
  ▪ project kernel/motorola/msm8952/
  ▪ e4d3a47 configs: Regenerate resurrected_defconfig
 
- ▼ 01/11/2018
-
-
- ▪ project packages/apps/Calendar/
- ▪ bf88827 calendar: fix first notification after boot
-
- ▼ 01/09/2018
-
-
- ▪ project packages/apps/Snap/
- ▪ 383470a Snap: Rip out hdr-need-1x option
+ ▪ project vendor/cm/
+ ▪ 395c6b8 prebuilt: Update Magisk
 
