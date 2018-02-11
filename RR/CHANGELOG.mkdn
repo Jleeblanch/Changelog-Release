@@ -1,172 +1,390 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
 
 
- ▼ 01/15/2018
+====================
+     02-10-2018
+====================
 
 
- ▪ project frameworks/base/
- ▪ 482c21f DO NOT MERGE Backporting potential usb tapjacking precaution.
- ▪ eb050ea mtp: fix double free of thumbnail data
- ▪ 4728c51 Throw OOME if Bitmap.nativeCreate fails
- ▪ 61b247d Adjust Uri host parsing to use last instead of first @.
+   * device/motorola/athene/
+19020dc athene: remove AID_QCOM_DIAG from device tree
+1b01c9a athene: Build Resurrection Remix
+3eef96f athene: Compile with Resurrected Kernel
+58ec6c9 LineageActions: Switch to Fingerprint Sleep
+addd585 athene: RRify for Oreo
+e483964 Revert "athene: Fix audio in call"
+e1967eb athene: Disable sched boost after boot completed
+d315a59 Revert "athene: Disable sched boost"
+dc64839 athene: Use lzma to compress recovery ramdisk
+3123ed9 athene: Change min frequency for both clusters
+d2bc239 athene: Disable sched boost * This forces cores to remain at max freq, which sucks battery.
+a9c2b46 athene: Update LD_SHIM_LIBS
 
- ▪ project kernel/motorola/msm8952/
- ▪ cc6783e Add a Bunch Of Governors
+   * device/rr/sepolicy/
+65e9776 Merge pull request #1 from jhenrique09/oreo
+c23cfe5 Add pocket judge selinux policy
+3eb3b2d sepolicy: Add policy for edgegestureservice
 
- ▪ project packages/apps/Dialer/
+   * frameworks/base/
+0bb4ac12203 Revert "Forward-port support for chained input filters"
+15644996342 Revert "Edgegestureservice:Fix bootloop caused by un intialization of mImputfiler"
+e39d2dae949 Revert "Fix derp"
+d0bd925aa25 Fix derp
+f481f1f2bdd Edgegestureservice:Fix bootloop caused by un intialization of mImputfiler
+8613b7fb109 MediaScanner: Detect folders
+ca5f9cd0d97 core: Import some PG string improvements from CM 13.0
 
- ▪ project packages/apps/OmniSwitch/
+   * kernel/motorola/msm8952/
+3f75d6751c9 athene: Import resurrected 64bit config
+028d5321843 disable crc check
+4ec1130e2cf drivers: input: fpc1020: Allow enabling KeyEvents dynamically
+9bfc9f73454 drivers: fpc: fix race for clk state during suspend
+b79e4993a70 input: misc: fpc clk_enable counting interface
+ee0aba2d518 drivers: input: Drop homebutton/wakeup code
 
- ▪ project packages/apps/Settings/
+   * packages/apps/CarrierConfig/
+85e2bcb CarrierConfig: Load ERI configuration for U.S. Cellular
 
- ▼ 01/14/2018
+   * packages/apps/Nfc/
+d0f2684d nxp: NativeNfcManager: Implement missing inherited abstract methods
+
+   * packages/apps/Settings/
+f4af3d49eb Update Galaxy Note III Qcom maintainer
+4fbee5ec66 mido: Update maintainer (#891)
+90158aa270 Update a6000 maintainer (#889)
+71a312c087 Update lettuce maintainer (#888)
+
+   * system/core/
+cabf9774b Merge remote-tracking branch 'LineageOS/staging/lineage-15.1' into oreo
+ab0aca97a Added missing AID which is causing setgroups to fail
+3aecbd732 healthd: Reinitialize mChargerNames for every battery update
+
+   * vendor/rr/
+887d1774 prebuilt: Fix all bootanimations (#106)
+
+====================
+     02-09-2018
+====================
+
+   * android/
+03fd743 rr: track own qcom/sepolicy
+f275300 Merge branch 'oreo' of ssh://github.com/ResurrectionRemix/platform_manifest into default
+715b303 rr: track own sepolicy
+0195f1f Update README.mkdn
+8a519ba Update README.mkdn
+d9d41ad crowdin: fix sync
+68a0cb6 rr: add crowdin manifest
+db8e17a Update README.mkdn
+5c4edf7 Update README.mkdn
+9d0da29 Update repos
+96ed203 add SnapdragonCamera2 omni
+
+   * bootable/recovery/
+245b34d3 add sload.f2fs for recovery format
+58337225 root: Fix an issue when volume length from fs_mgr is negative.
+741118c4 recovery: format f2fs with encrypt/quota
+2998e00a Integer overflow observed while formatting volume
+715ba0c2 roots.cpp: Clean up format_volume().
+c6ae3469 recovery: handle security footer before passing size to mke2fs
+b3632423 roots.cpp: Reformatting the file.
+46dd1290 Revert "recovery: handle security footer before passing size to mke2fs"
+
+   * device/motorola/athene/
+f399fb6 athene: Add override props for VoLTE
+c86ffa7 athene: Update dalvik heap configurations
+50162d2 athene: Fix audio in call
+4067939 athene: Build a 32bit version of sensorservice
+fe0e9ce Revert "athene: Set IMS to use CodeAurora extension" * Not using O IMS blobs, so revert it. This reverts commit 8e57d95d737a9a2745d06c75004b34df8244e8c1.
+5d0da3d Revert "athene: manually start sensorservice" * This partially reverts commit 9736591bad6efee1a7d7507c72a621cf3e2595cc This reverts commit 9736591bad6efee1a7d7507c72a621cf3e2595cc.
+15cb1d5 athene: Build a 32 bit version of rild and fp service
+36c3993 athene: Disable Vulkan for 8952
+c6f7c30 athene: Add Gnss HAL and ILocHidlGnss interface
+668c59f athene: Update IMS shim
+
+   * device/qcom/sepolicy/
+b7a1939 qcom/sepolicy: fix path
+
+   * device/rr/sepolicy/
+51524a9 sepolicy: update for rr
+
+   * packages/apps/LineageParts/
+0282134 LineageParts:Make Button Settings and Hardware Key Settings Non Searchable
+
+   * system/sepolicy/
+9570abd3 add sload_f2fs permission
+49f52f31 make_f2fs: grant rw to vold
+7ce6c51b Allow e2fs to format cache
+78e311be Allow e2fs to rw devpts
+
+   * system/vold/
+61a3249 cryptfs: support make_f2fs with quota
+
+   * vendor/rr/
+6ed0ab65 Add SnapdragonCamera2
+
+====================
+     02-08-2018
+====================
+
+   * android/
+f39fe5e Add back snap
+64f45b9 Revert "Remove camera2"
+
+   * build/make/
+3ec741c81 [1/2] build: add OTA script do delete package cache
+
+   * device/motorola/sanders/
+3451b63 fix for lineage-15.1
+
+   * device/qcom/sepolicy/
+856dcf4 legacy: Allow qcom power HAL to interact with perfd
+
+   * device/rr/sepolicy/
+a6a0370 sepolicy: Add policy for vendor.lineage.power HAL
+
+   * frameworks/av/
+170dbe350 soundtrigger: fill in default extras from dsp
+
+   * frameworks/base/
+7a4396a92c6 Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_frameworks_base into oreo
+b9bf5d7fc64 Projekt->rr
+f599c4abd82 Projekt->rr
+5599a88a703 Themes: SystemUI: expose screen pinning colors
+8b34e14f18c Themes: Expose power save mode color
+e2ade4e153b Themes: SystemUI: Expose QS background opacity
+7acedeb9630 Themes: SystemUI: Expose QS edit item decoration background color
+a2df2f48b05 Themes: Allow Permission Icons to be fully themed
+87fa19ba2cc Themes: Allow Immersive cling colors to be fully themed
+4f2316455fb Themes: Expose resolver hardcoded colors
+b6b10f58d83 Themes: base: expose toast colors for themes
+23dc2b87a04 Themes: Expose Keyguard affordance circle background
+8044c76a4c2 Themes: Allow volume slider and thumb to work with custom images.
+a68be156477 Themes: Expose Screenshot flash and background colors
+9d550134b37 Themes:  Expose Keyboard Shortcuts Dialog
+9bcd5c4c5ad Themes: graphics: ADB "N" icon compatible with OMS7
+98516f6bcd6 Themes: SystemUI: Expose switch bar title
+92b57c5becf Themes: Allow Navbar ripple color to be themed
+023d3d7f3f5 Themes: SystemUI: Use own drawables for QS expand icon
+9482eed9ba0 Themes: Notifications: extend dynamic notification bool for ambient notifications
+5634ab523da Themes: Notification dynamic colors bool compatible with OMS7
+e2a76638c07 Themes: Notifications: Expose a bool to disable dynamic colors
+ae3c24ce658 Screenshot: append app name to filename
+850b2bbe3c3 perf: Adapt for HIDL Lineage power hal
+5d4c2b7d2af perf: Add plumbing for PerformanceManager
+
+   * hardware/lineage/interfaces/
+4255ced vibrator: Set perms before hal is started
+
+   * hardware/qcom/power/
+c1a9261 power: msm8974: Add support for power profile
+5584ebb power: Use monotonic time for interaction boost
+d8022f6 power: msm8998: Fix perf mode switch
+fed6fde power: msm8996: Support VR + Sustained performance mode
+281c136 power: msm8996: Using PerfHAL API
+5ec3773 power: Prepare for power profile support
+8baf47d power: Add known perf hint IDs
+c9f97d7 power: msm8996: Add support for power profiles
+2f0ce46 power: msm8998: Support power profiles
+
+   * lineage-sdk/
+387d587 lineage-sdk: Reenable performance profiles
+
+   * packages/apps/Dialer/
+fa4ae989a Re-add dialer lookup.
+56aa9e55b Allow using private framework API.
+
+   * packages/apps/LineageParts/
+ea30b2f LineageParts: Remove per app profiles pref
+6e4a036 LineageParts: Add padding to SeekBarPreference title and summary
+8413b25 LineageParts: enable perf profiles
+
+   * system/core/
+8a626b463 adbd: Disable "adb root" by system property (2/3)
+28bebe0bd Update permissions to the superuser binary
+
+   * vendor/motorola/
+5c4d6810 athene: Drop prebuilt FP service and rild
+
+   * vendor/rr/
+61c9c365 [2/2] omni: add OTA script do delete package cache
+6cc54aca Remove google cam
+
+====================
+     02-07-2018
+====================
+
+   * android/
+4fe3227 Revert "manifest: track RR Stats"
+388cd8f Merge remote-tracking branch 'origin/oreo' into default
+8979a39 manifest: android-8.1.0_r4 -> android-8.1.0_r11
+
+   * build/make/
+a954c9f50 Disable dataroaming by default
+1c2f3fd14 Merge tag 'android-8.1.0_r11' into oreo
+
+   * frameworks/base/
+c4cbce127e1 [DNM][TEMP]Revert "Swap the order of synthetic password wrapping"
+021f148a2d0 Merge tag 'android-8.1.0_r11' into oreo
+
+   * hardware/lineage/interfaces/
+c169bd0 lineage/interfaces: power: Add HIDL HAL interface
+
+   * kernel/motorola/msm8952/
+485600ae5a0 clocksource: Fix abs() usage w/ 64bit values
+ec2b6910b36 arm64: topology: fix cpu power calculation
+e118739b6a4 crypto: lz4,lz4hc - fix decompression
+a1b5eb917a6 lib/decompress: set the compressor name to NULL on error
+ae1d11cd8ef lib/decompress.c: consistency of compress formats for kernel image
+003996ffb7e lib/decompressors: use real out buf size for gunzip with kernel
+2152b723b8a initramfs: support initramfs that is bigger than 2GiB
+4e64bda14b7 initrd: fix lz4 decompress with initrd
+f7f345c7c26 lib/decompress_unlz4.c: always set an error return code on failures
+33e27f3dada lib: add support for LZ4-compressed kernel
+8828e8a1f90 .gitignore: ignore *.lz4 files
+8f575f074d2 arm: add support for LZ4-compressed kernel
+7e62def94d5 Apply CFLAGS, -Os to decompress.o to improve decompress performance during boot-up process
+525af77c188 crypto: add lz4 Cryptographic API
+4b8ef6c5c0c sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire
+873541504b3 kthread: Backport queuing_blocked()
+6dac13ff20e arm64: strcmp: Align to cache and preload
+1abd52ea97e arm64: Import optimized strrchr from newlib
+f2b6bbb76d0 arm64: Use optimized memcmp
+ed1f7e4148d lib: Don't enable DEBUG_BUGVERBOSE by default
+14a45a012c3 athene: Enable FiiO HID Quirk
+a80bd84250d athene: Disable CONFIG_NF_CONNTRACK_SIP.
+32525c231c4 athene: set CONFIG_HZ to 300
+8f70015b761 athene: Disable CONFIG_SYSRQ_SCHED_DEBUG.
+49725b02a7d athene: Disable CONFIG_PANIC_ON_RT_THROTTLING
+e244e26ed21 net: ipc_router: Fix memory leaks when releasing a remote port
+117f498d650 cpufreq: stats: Fix memory leaks when updating stats table
+899991483eb mm/slub: don't wait for high-order page allocation
+ed2c978f9ae drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+fa0678ffc1b mmc: core: Fix possbile memory leak
+
+   * packages/apps/DUI/
+a9a7752 Update dark icon color
+
+====================
+     02-06-2018
+====================
 
 
- ▪ project android/
- ▪ a11cac4 manifest: Track our frameworks/ex fork
+   * frameworks/av/
+217dc5eb5 Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
 
- ▪ project build/
- ▪ bf2f50f Bump security patch level to 2018-01-05
+   * frameworks/base/
+030fc4f4630 Revert "base: Add Dynamic Navbar capability [1/2]"
+a36c4120aa7 Use torch drawable instead of flashlight
 
- ▪ project external/aac/
- ▪ a466191 Fix out of bound memory access in lppTransposer
- ▪ 1b0c6d7 DO NOT MERGE Prevent out of bound memory access in GetInvInt
+   * hardware/interfaces/
+c84fa887 Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
 
- ▪ project external/libavc/
- ▪ 31187ab Decoder: Handle dec_hdl memory allocation failure gracefully
- ▪ 1b8539a Decoder: Fixed incorrect use of mmco parameters.
- ▪ d360342 Decoder: Detect change of mbaff flag in SPS
- ▪ 08b2082 Decoder: Increased allocation and added checks in sei parsing.
+   * hardware/qcom/camera/
+594e257 Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
 
- ▪ project external/libhevc/
- ▪ fd72e83 Add PUSH-POP of D registers in Arm Neon 32 bit functions
- ▪ 593276d Fixed few issues in SAO arm assemblies
- ▪ 13cda8d Decoder: Handle ps_codec_obj memory allocation failure gracefully
- ▪ 25659ae Fix prev slice incomplete check
- ▪ 7e9f6a6 Set error skip ctbs as multiple 8x8 pus
- ▪ 7a6f851 Fix first frame error return
- ▪ da32a33 Return error for negative crop parameters
- ▪ 682e058 Consume bytes for sps with unsupported resolution
- ▪ a6a34a3 Fix slice address zero for not first slice in pic
- ▪ 074d3cf Fix incomplete frame error
+   * packages/apps/Trebuchet/
+b75e8175e Dark mode and theme improvements
 
- ▪ project external/libmpeg2/
- ▪ 031d063 Adding Error Check for f_code Parameters
+====================
+     02-05-2018
+====================
 
- ▪ project external/libvpx/
- ▪ d3bacdd DO NOT MERGE | libvpx: Fix OOB caused by odd frame width.
+   * android/
+e639f0e Switch trebuchet repo
+f28c3ae remove LOS trebuchet
+727444a Track our trebuchet
+897a6d9 Remove WallpaperPicker
 
- ▪ project frameworks/av/
- ▪ e04ace5 Fix the UAF bug caused by a dead stack variable
- ▪ b8f4adf Fix edge case when applying id3 unsynchronization
- ▪ e5c2ad6 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
- ▪ fed8ac2 Validate decryption key length to decrypt function.
- ▪ 451212e stagefright: MP4Extractor: allow 10% overhead on default sample size
- ▪ 019930d Access AVCDEC context after create fail check
- ▪ 86e0bb3 SoftAVCDec: Handle zero length input without EOS
- ▪ e15abe6 Access HEVC context after create fail check
+   * build/make/
+09f12735d Merge remote-tracking branches 'upstream/staging/lineage-15.1' and 'rr/oreo' into oreo
 
- ▪ project frameworks/ex/
- ▪ e52f9cd Skip composition of frames lacking a color map
+   * external/bash/
+5cab584 readline: Don't attempt to optimize strange function
+107d925 Revert "bash: Disable clang"
 
- ▪ project kernel/motorola/msm8952/
- ▪ 4b49596 prima: Update to LA.BR.1.3.6_rb1.24
- ▪ 5009fa8 configs: Enable some new features
- ▪ 7157122 block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
- ▪ cfd7ff8 block: zen: crashing on selection fixup
- ▪ 652d1af block: scheduler: add ZEN
- ▪ 11f01f3 Add SIO and FIOPS i/o schedulers
- ▪ 7f3f8ef lib: lz4: cleanup unaligned access efficiency detection
- ▪ 47a4454 lib: lz4: fixed zram with lz4 on big endian machines
- ▪ e4397bc lz4: fix system halt at boot kernel on x86_64
- ▪ 61c7bd4 lib/lz4: Pull out constant tables
- ▪ 55585e2 LZ4 : fix the data abort issue
- ▪ e501d5e lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
- ▪ 57a1ece lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
- ▪ 2f81ea4 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
- ▪ cf2b8e1 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
- ▪ ea08116 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
- ▪ 9811f87 Revert "power: wakeup: prevent IPA_WS wakelock from being acquired by default"
- ▪ a75b580 Revert "drivers: wakeup: bypass two WiFi wakelocks"
- ▪ e569180 cpufreq/zzmoove: updated to bLE develop version as of 11.07.17
- ▪ 4de92e1 cpufreq/governor: avoid a possible crash in msm thermal driver when freq limits are changed due to thermal events
- ▪ 2b9c1ee cpufreq: add ZZMoove big.LITTLE Edition (bLE) development version as of 09.01.2016
+   * frameworks/base/
+3ca0f174605 SoundTile: Update listening state to O API
+c9b7647c07e Edit theme name
+618a30c70a1 Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_frameworks_base into oreo
+e7bc16b80fc Dark mode : Switch dark to black theme for systemUI
+b8f179acdc3 Change color blue gray to dark gray
+b8594bcafa0 base: SystemUI: add back dark qs styles
 
- ▪ project system/core/
- ▪ c94e87a libnetutil: Check dhcp respose packet length
+   * packages/apps/ResurrectionOTA/
+8613b36 ResurrectionOTA: OTAUtils: fixup getBuildProp()
 
- ▪ project system/media/
- ▪ 9a8ef24 Camera metadata: Check source metadata size
+   * packages/services/OmniJaws/
+71be898 Use own OWM key
 
- ▪ project vendor/codeaurora/telephony/
- ▪ 530e691 IMS-VT: Send static image in a Video Call
+   * vendor/rr/
+568616ce Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_vendor_rr into HEAD
+fab47279 overlay: Indentation fix
+2013af5b vendor: update vzw apns
+defd3cad Always add manufacturer and model to MP4 files
+f97660f5 bfqio: Add missing include header
+027869c4 extract_utils: Fix regressions from 3f9b94cb67a88999f7747af8335c5e576939360b
+558194ee sensitive_pn: Fix typo in sensitive phone number
+e3a47950 sensitive_pn: Add some more numbers for Canada
+1901ea4a sensitive_pn: Sort file
+732b3ef5 Added more USA sensitive phone numbers
+e3e3d31c Add APN for iD Mobile UK MVNO
+11df5ffb envsetup: Clean up for install[boot|recovery]
+28669217 rr: build ResurrectionStats
+b28bffcb Update settings changelog layout [2/2]
 
- ▼ 01/13/2018
+====================
+     02-04-2018
+====================
 
+   * android/
+e004348 manifest: track RR Stats
 
- ▪ project hardware/qcom/fm/
+   * build/make/
+7fba339a7 remove root status from the script
+64e6a6ef2 Remove LCD density prop
+dbf3dc8ad fs_config: Allow targets to override OEM AID restrictions
 
- ▪ project packages/apps/Bluetooth/
+   * frameworks/base/
+3cea02d241e WeatherTile: Update API for listening state and get it to work
+91d970f067a Screenshot delay [1/2]
+715f485a531 SystemUI: Add data saver icon to blacklist
+a426012f28a Optional screenshot type [1/2]
+2ed4f4383c2 Ticker: Clear ticker regardless of setting
+3171765833b PowerMenu: Make more items optional on lockscreen [1/2] -screenrecord -flashlight -onthego
+3723688714f Power Menu Flashlight option [1/2]
+b0c82bf9dea Update default dialer and sim color 2/2
+4ff4dcd8e4b Update ic_dismiss_all.xml
+5732dff3f8d Statubar:dont update on observing
+efe4553fe64 base: SystemUI: call qs tile layout on rotate
+b29098813e6 Fix Build
+888ffe923fd Forward port CM Screen Security settings (1/2)
+355433dd0a6 appops: Privacy Guard for O
+4d8e5c7327a SystemUI: LiveDisplay tile
+cdb960664fb QSCustomizer: use custom column count
+53248574f67 Allow to set QS panel columns and rows [1/2]
+a576e57aa1a Revert "Forward port 'Make QS columns count configurable'"
+c0c8dd4a4b5 Revert "base: SystemUI: call qs tile layout on rotate"
+a1b5d98503e Less notification sounds [1/2]
+d768ce333c2 Make powermenu lockscreen visibility configurable [1/2]
 
- ▪ project packages/apps/Calendar/
+   * hardware/lineage/livedisplay/
+3c78b9e livedisplay: Support sysfs only display modes
 
- ▪ project packages/apps/Camera2/
+   * packages/apps/Gallery2/
+bd1b4597e Gallery: Fix translatability of CAF additions to filtershow
+502d23fc9 Gallery2: Remove more CAF Chinese translation modifications
 
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▼ 01/12/2018
-
-
- ▪ project kernel/motorola/msm8952/
- ▪ e4d3a47 configs: Regenerate resurrected_defconfig
-
- ▪ project vendor/cm/
- ▪ 395c6b8 prebuilt: Update Magisk
+   * system/core/
+8dea7092d fastboot: support make_f2fs and sload_f2fs for win32
+63198822a fastboot/fs_mgr/init: add sload_f2fs
+390fa2462 fastboot: fix build break
+e1da23311 fastboot: pass environment variables to exec_e2fs_cmd
+0b129fe6e Mark more win32 parameters as unused
+e6e9e6a88 Fix / suppress new unused warnings for mingw+clang
+d989c8d0b fastboot: make_f2fs call by linux/darwin
+a20f485e4 fastboot: support f2fs format
+c3aae9201 fastboot: remove reference of deprecated make_ext4 code
+ef47039f7 fs_mgr: support quota format for f2fs
+57b785c79 fs_mgr: format f2fs with length=xx fstab
 

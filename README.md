@@ -5,10 +5,10 @@ Current ROM changelogs for the Moto G4 & Moto G4 Plus (athene)
 
 ## Current ROM(s) 
 
-# Resurrection Remix 5.8.5
+# Resurrection Remix 6.0.0
 > Official Builds for the Moto G4/G4 Plus (athene)
 
-* Latest Changelog (raw view) (https://raw.githubusercontent.com/Jleeblanch/athene-changelog/blob/master/RR/CHANGELOG.mkdn)
+* Latest Changelog (raw view) (https://raw.githubusercontent.com/Jleeblanch/Changelog-Release/blob/oreo/RR/CHANGELOG.mkdn)
 
 * All builds (AFH) (https://goo.gl/CzsN49)
 * All builds (G-Drive) (https://goo.gl/kXNJud)
