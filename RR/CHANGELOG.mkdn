@@ -1,434 +1,60 @@
 
- ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+ ▼ Resurrection Remix Oreo Ver 6.2.0 Changelog
 
 
 ====================
-     04-23-2018
+     09-15-2018
 ====================
 
-   * android/
-b82fc71 manifest: Remove LiveDisplay repo
-
-   * build/make/
-7615a5909 Add build.prop to incrementals too
-825cdc4bb build: allow forcing build of otatools
 
    * device/motorola/athene/
-c10cca8a athene: Fix torch LED permissions
-55cf76ff athene: LineageActions: Add sysfs-based torch device
-c907974a athene: Enable f2fs support for /cache
-f8a2181a athene: Build LiveDisplay HAL
-
-   * device/qcom/sepolicy/
-d9c24de Merge branch 'lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-fb968d7 Merge branch 'lineage-15.1' into oreo
-
-   * frameworks/base/
-
-   * hardware/lineage/lineagehw/
-ed11fda lineagehw: Link livedisplay library statically
+3e7d1772 athene: Update call recording overlay.
+f355950c athene: Move Dialer config out of overlay-lineage
 
    * kernel/motorola/msm8952/
-98f22ca0def msm8952: Overclock Big cluster and add back lower frequencies"
-74341c71c46 ARM: dts: msm: Early mount of system partition for msm8952
-
-   * lineage-sdk/
-a395cc3 lineage-sdk: Allow adjusting brightness of non-RGB LEDs
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-d2ff5e5 LineageParts: Allow adjusting brightness of non-RGB LEDs
-d7a5830 LineageParts: Fix loading default colors for non-RGB lights
-f10570a LineageParts: Fix removing LED brightness settings
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-ecdb6e713a Add Samsung S9 (starlte)
-11067f4db6 Add S6 Edge (zeroltexx)
-
-   * system/core/
-695642238 Merge branch 'lineage-15.1' into oreo
-
-   * vendor/rr/
-3eae19cc envsetup: Fix lineageremote for caf    *s
-261cb47c lineage-radio: disable ims services on ro.radio.noril
-33c8d934 build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
-58dd6f94 lineage: enable building otatools with generic targets
+53ee9d488cbb athene: set CONFIG_HZ to 300
+00c950865b1b RK: defconfig: Disable Coresight
 
 ====================
-     04-22-2018
+     09-14-2018
 ====================
 
 
-   * device/rr/sepolicy/
-bc582cd Allow recovery write to sysfs_graphics
-590946d Remove adb.secure recovery property context
-20b9d1c sepolicy: Add rules for LiveDisplay HIDL HAL
-98c7f8d Allow recovery write to sysfs_graphics
-541bcf2 Remove adb.secure recovery property context
-
-   * packages/apps/Snap/
-a0f6bf7b8 Fix snapshot failed with logical camera
-a83f85c30 Add ui toast for bokeh
-
-   * vendor/nxp/opensource/external/libnfc-nci/
-f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
-
 ====================
-     04-21-2018
+     09-13-2018
 ====================
 
 
-   * bootable/recovery/
-0c08e7ce recovery: Fix loading time from /persist
-c7ec3a79 recovery: Don't try to set ro.adb.secure
-36dd1397 Revert "updater: Fix and improve allowing devices to suppress BLKDISCARD"
-
-   * device/qcom/sepolicy/
-be44088 legacy: Consistent indentation
-fe8868a legacy: Address mm-pp-daemon denials
-4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
-4dd1cb2 legacy: Add debugfs rules for rmt_storage
-75573bd legacy: Allow hal_graphics_allocator_default access sysfs_graphics
-e8e4723 legacy: Allow hal_graphics_composer_default read firmware
-103e1dc legacy: Allow bluetooth_loader read persist
-443c0d8 legacy: Address perfd denials
-c51e127 legacy: Allow perfd write to sysfs_kgsl
-d233d17 legacy: Allow qcom power HAL to interact with perfd
-6bf41a0 hal_gnss_default: Do not log udp socket failures
-4b4dd9c sepolicy: Ignore more hal_memtrack denials
-9110cac sepolicy : add secontext for eMMC blocks
-d7045fa sepolicy: rules to allow camera daemon access to app buffer
-00dc45f sepolicy: Fix warnings related to set_prop
-
-   * vendor/nxp/opensource/packages/apps/Nfc/
-ffaea6aa Look for libnqp61-jcop-kit.so in the vendor
-
 ====================
-     04-20-2018
+     09-12-2018
 ====================
 
 
-   * external/openssh/
-1ad2147 Don't crash when pw_passwd is not set
+====================
+     09-11-2018
+====================
 
-   * hardware/qcom/display-caf/msm8974/
-060e6fe28 libvirtual should depend on libmedia
-b9109c1b8 Revert "libvirtual: Add libbase static library dependency"
-
-   * packages/apps/Dialer/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/Snap/
 
 ====================
-     04-19-2018
+     09-10-2018
 ====================
 
 
    * device/motorola/athene/
-818e75bf athene: time_daemon: use /persist to store offset to RTC
-ef4c6151 athene: Enforce RRO on framework-res
-5f8f9a28 athene: Set voice call volume steps to 7
-dd23de86 athene: Increase media volume steps 15 -> 25
-e5f84ce8 athene: Update time_daemon support
-81bc978b athene: Move keylayout files to vendor
-d22e573e athene: Trigger enable-low-power when boot is completed
-a30644e3 athene: Move bool config_intrusiveNotificationLed out of Lineage-specific
-845d6b67 athene: remove cpuset foreground boost
-19a52d19 athene: Remove ENABLE_CPUSETS flag * No longer used.
-583df9a8 Pin .vdex files as well
-3b25f89e athene: Specifies the default files to pin via Pinner Service
-170d39d1 athene: Update for moved hardware key overlays
-d0e78df7 athene: Disable SUPL for Canadian carriers
-145e1c11 athene: Import AOSP carrier specific GPS params
-0a20958c overlay: Disable SystemUI anti-falsing on lockscreen
-4a7ade57 athene: overlay: Update for new LED capabilities
-f2fe8634 athene: Update for early-mounted system partition
-
-   * hardware/lineage/interfaces/
-5f8e56a lineage/interfaces: Add IColor SDM backend implementation
-
-   * vendor/motorola/
-060ef1e5 athene: Move time_daemon to vendor
-
-====================
-     04-18-2018
-====================
-
-
-   * device/motorola/athene/
-74332759 athene: libinit: Also override certain vendor build properties
-eff3e213 athene: init: Handle overriding system and vendor props
-7eeb5c63 [DNM] athene: Use OnePlus 3T build fingerprint
-51696eb5 athene: Remove LineageHW features from device tree
-
-   * hardware/lineage/lineagehw/
-046a670 lineagehw: Use HIDL for livedisplay vendor impl
-
-   * hardware/qcom/display-caf/apq8084/
-c59714ba7 Add -Wno-error to compile with global -Werror.
-ed267b8d3 Fix -Wmacro-redefined werror issues.
-39eb2094e hwc: Start with ROI set to destination
-04487f72a libgralloc: Align secure video and rotator buffers to 2M
-dcabbfca9 libvirtual should depend on libmedia
-bee7c812b gralloc: Handle RAW_OPAQUE formats similar to blob
-5cd994c69 Fix duplicate copy file rules
-a79fb6377 qservice: Allow camera server to call into HWC
-
-   * hardware/qcom/media-caf/apq8084/
-29e06f3f9 mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
-a42a7cda3 mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
-
-   * system/core/
-73c15af2d Revert "Don't enable ADB by default when ro.adb.secure is 1"
-
-   * vendor/motorola/
-5f61a22c athene: Update to KPTI patched time blobs
-
-====================
-     04-17-2018
-====================
-
-   * android/
-8f46c5e lineage: Track our own openssh repo
-
-   * frameworks/base/
-6fb5a705e8a settings: Allow accessing LineageSettings via settings command
-4dad570b6a4 frameworks/base: Support for third party NFC features and extensions
-2de1bbac502 Keyguard: Allow disabling fingerprint wake-and-unlock
-de95f241316 fingerprint: notify client when cancelling succeeded
-7522061652a SettingsProvider: explicitly include android support libs
-
-   * hardware/qcom/media-caf/apq8084/
-bda60bfca mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh
-f24ca0204 mm-video-v4l2: vdec: Add range check before native_buffer usage
-a7047b28a mm-video-v4l2: vidc: fix matching of extension strings
-eb2d7c886 mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
-f2501151c fix circular dependency libnativewindow <-> libui
-
-   * hardware/qcom/power/
-8ff509e power: Consistent skipping of non perf profile hints
-593b9d0 power: Compile with -Wall -Wextra -Werror
-11016fa power: msm8994: Add support for power profile & boost
-e555395 power: msm8992: Add support for power profile & boost
-ce25d84 power: msm8610: Add support for power profile & boost
-dbc6781 power: msm8226: Add support for power profile & boost
-32ae7b0 power: apq8084: Add support for power profile & boost
-46ac4af power: msm8916: Add support for power profile & boost
-ed3426d power: fix sysfs_read/sysfs_write usage
-158576f power: add back check for ro.vendor.extension_library
-abe7e65 power: msm8952: Minor code cleanup
-6204c67 power: msm8996: Remove dead code
-8c55d3c power: msm8974: POWER_HINT_INTERACTION improvements
-
-   * lineage-sdk/
-35cfcf8 sdk: Remove low power restrictions on color control
-c6efd51 LineageSettingsProvider: explicitly include android support libs
-7b03987 README: Point to the new wiki
-df88839 lineage-sdk: Update validators for button settings
-aa63b85 sdk: ilama API (9)
-c46556e Merge branch 'oreo' of https://github.com/ResurrectionRemix/lineage-sdk into oreo
-
-   * packages/apps/Contacts/
-d1c544e4b Hide help and feedback in AOSP contacts
-
-   * packages/apps/Gallery2/
-9c18367fd Fix Time bar don't update replay after trim
-db965e565 Fix can't enable speaker with bluetooth headset
-6aeaf8ad0 Fix null pointer when copy representantion
-
-   * packages/apps/LineageParts/
-5f15b5a Revert "LineageParts: Build with AAPT2"
-d61bd6b LineageParts: Build with AAPT2
-1f3af6f ButtonSettings: Add a toggle for button backlight only when pressed
-
-   * packages/apps/Settings/
-e5ad8ca59e Settings: use LineageHW serial number
+5cd7d1f4 Revert "athene: Enforce RRO on framework-res"
 
    * vendor/rr/
-bee95bc8 Fix Android "Work Profiles" also known as AfW 'Android for Work'
-dcc15fc5 apn: Add protocol for fido and rogers
-c7e26309 build: dt_image: support prebuilt DT images
-b620ca7a lineage: enable building otatools with generic targets
+60e0fa68 kernel: Set CROSS_COMPILE_ARM32 if using aarch64
 
 ====================
-     04-16-2018
-====================
-
-
-   * device/rr/sepolicy/
-5ebc0dc sepolicy: Add rules for LiveDisplay HIDL HAL
-
-   * frameworks/base/
-32663db20c0 Quick settings panel : Set transparency [1/2]
-de3f4687981 Fw_base - custom Toast color options (1/2)
-
-   * hardware/qcom/media-caf/apq8084/
-50725790e libc2dcolorconvert: Fix address in unmap call
-ddf4a35e5 hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries
-
-   * packages/apps/Settings/
-1e80584e33 minor typo in strings
-1c0e8980b7 QS panel: Set transparency [2/2]
-d5945c3b5c Settings - custom Toast color options (2/2)
-
-   * vendor/rr/
-dc91a376 bootanimation: Use 1080.zip version on lower sizes (#112)
-
-====================
-     04-15-2018
+     09-09-2018
 ====================
 
 
    * frameworks/base/
-c95f3f7b073 OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
 
-   * hardware/qcom/media-caf/msm8974/
-adc438b8f mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
-2c2ca636c mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
-
-   * packages/apps/Settings/
-8dc1abc45e Update resurrection_device_maintainers_strings.xml
-
-====================
-     04-14-2018
-====================
-
-
-   * frameworks/native/
-87e2b4280 Merge pull request #3 from Adriannemerenco/oreo
-
-   * vendor/rr/
-247c7bf5 Update Features.mkdn
-
-====================
-     04-13-2018
-====================
-
-   * android/
-edf7966 manifest: Sync HVX neuralnetworks HAL
-6e7b438 lineage: Sync NXP NFC stack
-
-   * build/make/
-92459a622 core: include vendor_buildinfo.sh when TARGET_COPY_OUT_VENDOR=system
-f300b30f0 core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system
-0e77d271d Install (vendor|system/vendor)/build.prop always
-3b65b173e dumpvar: Dump TARGET_USE_SDCLANG
-d54e7653c binary: Append cc/cxx wrapper to sdclang
-cacf04289 build: Require devices to opt-in for SDCLANG
-11f1cfc91 Turn off sdclang for cfi sanitizer
-49e041dfc Add support for using the secondary SDLLVM toolchain
-d45f9cceb Control building shared libs, static libs and executables with SDLLVM LTO
-39f42fba8 Add support for building with proprietary compiler
-43557b318 build: build generic lineage targets from vendor/lineage
-06d2f9dad Revert "products: make targets used for addonsu inherit from lineage"
-
-   * external/openssh/
-836dcfa Revert SSHDIR to /data/ssh
-bcbc739 _PATH_SSH_PROGRAM should point to ssh not sftp - this fixes scp
-
-   * frameworks/native/
-c7735b636 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * hardware/qcom/audio-caf/msm8998/
-03a9477b6 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
-e043b4664 audio: Fixes for VNDK_VERSION=current
-1a5c4cb65 Make libqcomvoiceprocessing build with the VNDK.
-17fcdfed7 Make libqcomvisualizer build with the VNDK.
-1e3c7598c Make libqcompostprocbundle build with the VNDK.
-384873799 Build audio.primary.* with BOARD_VNDK_VERSION
-35a5ab523 Add libhardware_headers and libsystem_headers to modules
-
-   * hardware/qcom/bt-caf/
-2c5d2c5 Add missing headers to libbt-vendor
-
-   * hardware/qcom/display-caf/msm8998/
-6ecb2ed62 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
-e533c7910 Add GLESv3 as a dependency.
-a00dbd8e3 Fix libcutils private headers
-ce4ce8932 Build libqdMetaData with BOARD_VNDK_VERSION
-01b92deb2 Build lights.msm8998 with the VNDK.
-9008131a3 Use header lib instead of using global include path
-7dfb3a7d8 Mark msm8998 modules LOCAL_VENDOR_MODULE
-
-   * hardware/qcom/media-caf/msm8998/
-3159153cd Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
-91db4db97 fix circular dependency libnativewindow <-> libui
-
-   * system/core/
-75790f6e0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * system/sepolicy/
-02863ef5 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * vendor/rr/
-7bda2d85 rr: fix path for some stuff
-9a34260e write_makefiles: fix paths in BUILD_PREBUILT with destination
-d034b95e repopick: Allow to pick changes by URL
-fbbc8c8b repopick: Actually print the patchset number
-aa960277 repopick: Ignore the trailing slash in change numbers
-1223973f repopick: Try to keep the changes sorted
-b61f5f48 lineage: Camera2 priv-app permissions whitelist
-6ec04d19 vendor: More priv-app whitelist updates
-
-====================
-     04-12-2018
-====================
-
-
-   * packages/apps/Settings/
-ee06de5638 Add Twitter and pitchblack links into about section
-
-====================
-     04-11-2018
-====================
-
-
-====================
-     04-10-2018
-====================
-
-
-   * frameworks/base/
-d855f821fff SystemUI: Fix QS auto brightness icon switch
-a459dbf4fab Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-
-====================
-     04-09-2018
-====================
-
-
-   * frameworks/base/
-0b57e0f70f8 fwb: Ambient Display battery toggle [1/2]
-
-   * packages/apps/Settings/
-fe4b9c00b9 Fix the reset icon tint & Dont use the alpha image. Thanx @pimpmaneaton for finding this
-0400ac94f0 Ambient Display battery toggle [2/2]
-
-====================
-     04-08-2018
-====================
-
-
-   * device/qcom/sepolicy/
-4eb59c7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-d1e4ea4 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-
-   * lineage-sdk/
-
-   * packages/apps/DUI/
+   * packages/apps/Jelly/
+2b5d20a Jelly: allow disabling clear text traffic at runtime
 
    * packages/apps/LineageParts/
 
@@ -438,203 +64,1521 @@ d1e4ea4 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
    * packages/services/OmniJaws/
 
-====================
-     04-07-2018
-====================
-
-
-   * bootable/recovery/
-c1cb695e install: mkfs.f2fs: specify sector size for target image size
-19bf4a51 mkfs.f2fs: specify sector size for target image size
-
-   * external/f2fs-tools/
-58b90c3 Merge remote-tracking branch 'aosp/master' into HEAD
-
-   * hardware/qcom/media-caf/msm8998/
-9b410a8f2 Build libOmxVdec and libOmxVenc with BOARD_VNDK_VERSION
-525c642d3 Build libstagefrighthw with BOARD_VNDK_VERSION
-fdd636c0e Add libutils to msm8998 modules
-
-   * system/core/
-ed802c528 make_f2fs: specify sector size for target image size
-
-   * system/qcom/
-0dae032 softap: Fix for VNDK_VERSION=current
+   * vendor/rr/
+15f2a71d RR: bump version to 6.2.0
 
 ====================
-     04-06-2018
-====================
-
-
-   * device/qcom/sepolicy/
-0191dee Merge tag 'LA.UM.6.6.r1-07200-89xx.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD
-0a4b927 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD
-
-   * frameworks/native/
-46acff908 Fix resampling for multiple pointers
-59933ed8f Fix broken input tests
-27615d420 Use -Werror in frameworks/native/libs
-
-   * packages/apps/Gallery2/
-85a785190 Gallery2: explicitly include android-support-v7-recyclerview
-08dd2c9b8 Merge tag 'android-8.1.0_r15' of https://android.googlesource.com/platform/packages/apps/Gallery2 into HEAD
-
-   * packages/apps/Settings/
-26a14837c4 Update Note 4 (trltexx) maintainer (#940)
-
-   * packages/inputmethods/LatinIME/
-d71d8e357 LatinIME: support for incognito mode
-
-====================
-     04-05-2018
+     09-08-2018
 ====================
 
    * android/
-4bd9275 manifest: android-8.1.0_r15 -> android-8.1.0_r20
+6d2f4fa manifest: android-8.1.0_r43 -> android-8.1.0_r46
 
    * build/make/
-a70677542 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/build into oreo
+054cae01b Merge tag 'android-8.1.0_r46' into oreo
 
-   * external/f2fs-tools/
-20aec61 check_f2fs: fix build error in abfarm474
-85fe5ff f2fs-tools: use pointer and memory alloaction instead of defining "structure stat" in function stack
+   * device/rr/sepolicy/
+af04e5e Add pocket judge selinux policy
+6bcb84e sepolicy: Add policy for edgegestureservice
+b3d3da7 sepolicy: update for rr
 
    * frameworks/base/
-9a2e490b303 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/frameworks/base into oreo
+ee44dbf4934 Merge tag 'android-8.1.0_r46' into oreo
 
    * packages/apps/Settings/
-53a5677fd4 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/packages/apps/Settings into oreo
+1d1062af6c Merge tag 'android-8.1.0_r46' into oreo
 
-   * packages/services/Telecomm/
-1826c950 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_services_Telecomm into HEAD
-
-   * packages/services/Telephony/
-62f37d819 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_services_Telephony into HEAD
-
-   * vendor/rr/
-6c15a7fc extract_utils: Use vdexExtractor for extracting oreo classes.dex
-2a00102a apn: Add APN for spusu MVNO
-645b44d1 Make Cyan[...] great again!
-ad4b69a1 envsetup: Update default path for SDCLANG 4.0
-77a61643 Always use my_installed_module_stem instead of my_built_module_stem
-cb0ff3ee Add support for using the secondary SDLLVM toolchain
-f663903a Rules to enable LTO for Adreno GFX driver.
+   * system/sepolicy/
+688b82ac Merge tag 'android-8.1.0_r46' into oreo
 
 ====================
-     04-04-2018
+     09-07-2018
 ====================
 
 
-   * external/f2fs-tools/
-e53184d libf2fs,mkfs.f2fs: add wanted_sector_size for wanted_total_sectors
+====================
+     09-06-2018
+====================
 
-   * frameworks/av/
-833f38811 Merge tag 'android-8.1.0_r20' into lineage-15.1
-abef5ce69 Revert "libmedia: Fix null pointer crash in secure buffer allocation.."
+
+   * frameworks/base/
+6d46a1e9638 [1/3] base: make outline the default weather icon pack
+
+   * hardware/qcom/media-caf/apq8084/
+330d85272 mm-video-v4l2: Protect buffer access and increase input buffer size
+
+   * packages/apps/OmniStyle/
+985d154 [2/3] OmniStyle: make outline the default icon package
+
+   * packages/apps/Settings/
+065c541571 Add enchilada maintainer
+
+====================
+     09-05-2018
+====================
+
+
+   * frameworks/base/
+63100fb8a74 fix color in the volume dialog for the inactive element
 
    * frameworks/opt/telephony/
-45f3a2d88 Merge tag 'android-8.1.0_r20' into lineage-15.1
-
-   * hardware/qcom/audio-caf/msm8996/
-14d7df089 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/qcom/camera/
-b7eb232 Merge tag 'android-8.1.0_r20' into lineage-15.1
+8dc51c0a1 TelephonyComponentFactory: Fix SubscriptionInfoUpdater overloading
 
    * hardware/qcom/display-caf/msm8996/
-80f2baf0e Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
+56d639dfa Fix Buffer Overflow in Vendor Service display.qservice
 
-   * hardware/qcom/media-caf/msm8996/
-020e52b50 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
+   * hardware/qcom/display-caf/msm8998/
+7a01a094b Fix Buffer Overflow in Vendor Service display.qservice
 
-   * packages/apps/CarrierConfig/
-57882fb Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * hardware/qcom/display-caf/sdm845/
+1e16c6d9b Fix Buffer Overflow in Vendor Service display.qservice
 
-   * packages/apps/CellBroadcastReceiver/
-b79b565 Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * hardware/qcom/media-caf/msm8974/
+0acdb944c mm-video-v4l2: Protect buffer access and increase input buffer size
 
-   * packages/apps/Email/
-65d474d0e Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * prebuilts/clang/host/linux-x86/
+88d4aa3 Merge tag 'android-8.1.0_r46' into oreo-mr1
 
-   * packages/apps/Settings/
-d3d610f440 Settings: fix crash when settings QS sliders to 0
+====================
+     09-04-2018
+====================
 
-   * packages/apps/UnifiedEmail/
-30e0ea470 Merge tag 'android-8.1.0_r20' into lineage-15.1
 
-   * packages/providers/TelephonyProvider/
-39b2041 Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * frameworks/av/
+a7e6e1d1a Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
-   * packages/services/Telecomm/
-15cd9473 Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * hardware/broadcom/wlan/
+8c96d23 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
-   * packages/services/Telephony/
-bab26216c Merge tag 'android-8.1.0_r20' into lineage-15.1
+   * hardware/qcom/display/
+27b78f208 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/media/
+85d5d95bf Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * packages/apps/Jelly/
+e532ae8 Jelly: update assets to use outline style
+47b3722 Jelly: update deps
+
+   * packages/providers/DownloadProvider/
+aced9e9 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
    * system/bt/
-4d314af0 Merge tag 'android-8.1.0_r20' into lineage-15.1
+b0a7c138 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * system/libhidl/
+dcab148 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
 ====================
-     04-03-2018
+     09-03-2018
 ====================
 
 
-   * external/f2fs-tools/
-2853ca0 check_f2fs: test wrong write(2) call
-
-   * packages/apps/Eleven/
-07b3e5c Eleven: fix card styles... 2 years later
-4859181 Eleven: update accent color to match new icon
-ade2849 Eleven: build with AAPT2
-181d4ed Eleven: default android animations for activities and fragments
-68476c5 Eleven: fix genres not updating for subsequent albums
-
-   * vendor/nxp/interfaces/opensource/nfc/
-113daf4 Do not link to android.hidl.base@1.0
+   * packages/services/OmniJaws/
+360a582 OmniJaws: fix theme for widget configure acitvity
+53eadec OmniJaws: reduce minimal size of widget
+b3a3225 OmniJawas: add current weather condition widget
 
 ====================
-     04-02-2018
+     09-02-2018
+====================
+
+
+====================
+     09-01-2018
+====================
+
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     08-31-2018
 ====================
 
 
    * build/make/
-45c1e22b7 core: remove duplicated boot jars
-af84f2426 Introduce non-preopt boot jars
-42fbef05c build: Introduce SubstratumService
-4dab61594 Only warn on LOCAL_CLANG set to false
+586592d4f Also check if BOARD_KERNEL_SEPARATED_DTBO is set
 
-   * device/motorola/athene/
-06f82ff7 athene: Use kernel-based exfat driver
-3703678c athene: Remove display mode configs
+   * packages/apps/Messaging/
 
-   * device/qcom/common/
-6e48da0 Remove QC releasetools and recovery extensions
+   * packages/services/Telecomm/
+b6fe13a8 Telecom: Properly depend on Lineage SDK
 
-   * device/rr/sepolicy/
-b95e366 common: Remove stale ntfs genfscon policy
+   * packages/services/Telephony/
+
+   * vendor/rr/
+ac23becd lineage: enable roundIcons by default
+37ff5c12 lineage: Disable IPv4 for T-Mobile (and MetroPCS) domestically
+
+====================
+     08-30-2018
+====================
+
+
+   * packages/providers/DownloadProvider/
+7a51050 Fix plural translatability for download speed
+
+====================
+     08-29-2018
+====================
+
+
+   * hardware/qcom/power/
+1be7662 power-8916: fix using wrong array size in perform_hint_action
+
+   * packages/apps/Email/
+fd45e565b Don't request battery optimization exemption if not needed.
+
+====================
+     08-28-2018
+====================
+
+
+====================
+     08-27-2018
+====================
+
+   * android/
+7c0d8ed rr: manifest: track updated clang repository from AOSiP GitHub
 
    * frameworks/base/
-e935e051512 Themes: Fix theming Qs expand/collapse drawable
-a4a9a68be92 SystemUI: Reload more assets on overlay change
-50477a8a55b base: Introduce SubstratumService
-6e0b09f91d0 OMS: Add back overlay modified callback implementation
-a3a3b916e0c OMS: StrictMode and files under /data/system/theme/
-7c586a99105 Hold "volume up" during boot to disable all overlays
-0ce8d7c1b55 ThemeSafety: Introduce App Crash Intent
-080c025f394 ApplicationsState: add filter for Substratum overlays [2/2]
-e0c145bc256 Extras: Add dynamic theme fonts support for O
-8a2ba065861 Extras: Add dynamic theme sound effects support
-ed076c3f0e9 Extras: Add dynamic theme shutdown and boot animation support
-6e6cd56f26b OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
-cf917b0e76a Revert "Revert "OMS: Only allow trusted overlays to be registered.""
 
-   * hardware/qcom/media-caf/msm8952/
-63c9787cc Revert "media: Adjust for new header Android.bp requirements"
+   * packages/apps/Settings/
+
+====================
+     08-26-2018
+====================
+
+
+   * external/openssh/
+7e0e3db2 Disable StrictModes
+825d447b Add Android support
+bcbd12e5 Revert "upstream: Ensure that D mod (P-1) and D mod (Q-1) are calculated in"
+
+   * packages/apps/Profiles/
+4958985 Profiles: Properly depend on Lineage SDK
+
+====================
+     08-25-2018
+====================
+
+
+   * packages/apps/AudioFX/
+c71c96c AudioFX: Properly depend on Lineage SDK
+
+====================
+     08-24-2018
+====================
+
+
+   * device/rr/sepolicy/
+52da0cb selinux: add domain for Gallery
+e61f6cd selinux: add domain for snap
+
+====================
+     08-23-2018
+====================
+
+
+   * external/openssh/
+71508e06 shorten temporary SSH_REGRESS_TMP path
+26739cf5 rebuild dependencies
+ff729025 fix path in distclean target
+7fef173c upstream: memleak introduced in r1.83; from Colin Watson
+
+   * packages/apps/Gallery2/
+8ccbc4f78 Gallery: use platform cert
+
+====================
+     08-22-2018
+====================
+
+
+   * device/qcom/sepolicy/
+c673533 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * external/p7zip/
+6d3db82 Actual working support for building on Android
+1aa1dce Use a sane naming convention for the shared library
+6619bec Fix CVE-2018-10115
+6d75c8f Fix CVE-2018-5996
+0a45d87 Fix CVE-2017-17969
+9d1f86e Fix CVE-2016-9296
+591bf76 Import p7zip 16.02
+
+   * frameworks/av/
+01ccfc12f mediascanner: Accept .opus file extension.
+
+   * frameworks/base/
+
+   * frameworks/native/
+ed8976d95 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_frameworks_native into HEAD
 
    * lineage-sdk/
-9d663a3 Revert "Revert "lineage-sdk: Update the way OMS records details about overlays""
+bfea90d sdk: Add migration for /missing/ custom button actions
+e14deb8 Regen lineage_current
+
+   * packages/apps/LineageParts/
+4d4583c Fix Trust strings again
+f0bfea5 LineageParts: Fix unescaped quote in trust_feature_security_patches_explain
+2ad4688 Trust: String changes for accuracy of language
+2030f81 LineageParts: Add missing recycle() calls
+27ae53d LineageParts: Add missing cursor close
+0cbd274 LineageParts: add one finger swipe up from home gesture string
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+ae27a9f2c Snap: use platform cert
+
+   * vendor/rr/
+88bb767c build: Add dtbo task
+feb76961 config/common: Clean up debug packages
+
+====================
+     08-21-2018
+====================
+
+
+   * external/openssh/
+b8ae02a2 upstream: AIX reports the CODESET as "ISO8859-1" in the POSIX locale.
+bc44ee08 	modified:   openbsd-compat/port-uw.c 	remove obsolete and un-needed include
+
+====================
+     08-20-2018
+====================
+
+
+   * external/openssh/
+829fc28a Missing unistd.h for regress/mkdtemp.c
+
+====================
+     08-19-2018
+====================
+
+
+   * packages/apps/Settings/
+09d0b0c1b0 Update herolte maintainer
+
+   * packages/apps/Snap/
+
+====================
+     08-18-2018
+====================
+
+
+   * packages/apps/Eleven/
+fd34342 Eleven: bump to api26
+
+   * packages/apps/Snap/
+159d79bdc CameraSettings: Do not crash if zoom ratios are not exposed
+
+====================
+     08-17-2018
+====================
+
+
+====================
+     08-16-2018
+====================
+
+
+   * external/openssh/
+c8313e49 update version numbers in anticipation of release
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Email/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+====================
+     08-15-2018
+====================
+
+
+   * vendor/rr/
+d020f6ac soong_config: Add TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE
+
+====================
+     08-14-2018
+====================
+
+
+   * frameworks/av/
+691c91706 OMXNodeInstance: Allow dynamic native handle for shared mem buffer
+
+   * packages/apps/Settings/
+a096f26e22 Update ZenFone 3 maintainer
+
+====================
+     08-13-2018
+====================
+
+
+   * external/openssh/
+477b49a3 configure: work around GCC shortcoming on Cygwin
+b0917945 cygwin: add missing stdarg.h include
+c3903c38 upstream: revert compat.[ch] section of the following change. It
+1b9dd4aa upstream: better diagnosics on alg list assembly errors; ok
+
+   * packages/apps/Snap/
+516483bf0 Snap: Allow quickreader to work with secure device
+
+   * vendor/rr/
+cf57f312 backuptool: fix restoring after commit 87bdbc138b6d27b4bd67b964eda24df4d8dbe2c8
+
+====================
+     08-12-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+593853c biometrics: fingerprint: add locking to default impl
+
+====================
+     08-11-2018
+====================
+
+   * android/
+1a21a25 lineage: Remove no longer used commented repositories
+8baa7f9 manifest: android-8.1.0_r36 -> android-8.1.0_r43
+
+   * build/make/
+f32d99e2d Merge tag 'android-8.1.0_r43' into HEAD
+
+   * external/openssh/
+e36a5f61 Some AIX fixes; report from Michael Felt
+
+   * frameworks/base/
+688663e7f85 fw/b lights: Allow black notification color
+78c72dd2d60 Merge tag 'android-8.1.0_r43' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * hardware/lineage/interfaces/
+9bcc1bd Update makefiles from anywhere.
+
+   * lineage-sdk/
+b486978 sdk: Add minimal LineageSettingsService
+3c3ad38 Import preference class for custom hostname feature
+301cccb sdk: Allow controllable brightness for non-RGB segmented battery LEDs
+9e71784 sdk: Rework reading mode API
+
+   * packages/apps/LineageParts/
+1abdf44 LineageParts: Remove PrivacySettings
+17fc3ad LineageParts: Allow brightness control for segmented LEDs
+7ac9fc8 LineageParts: Update reading mode toggle for new API
+
+   * packages/apps/Messaging/
+fc5f2d9 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_apps_Messaging into HEAD
+
+   * packages/apps/Settings/
+daffc062ff Merge tag 'android-8.1.0_r43' into HEAD
+477967d697 Expose option to change the device hostname.
+
+   * packages/services/Telephony/
+71793c3c3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * vendor/rr/
+87bdbc13 backuptool: Resolve incompatible version grep syntax
+67af1024 lineage: Set perms on reading_mode sysfs
+b57d9f16 lineage: Allow background broadcast for CAMERA_BUTTON
+06483cd9 Revert "ota: Validate any installed data's signature against our own"
+1b85634f vendor: Copy org.lineageos.settings permission
+
+====================
+     08-10-2018
+====================
+
+
+   * build/make/
+6f135c944 Make change and version bump to OPM6.171019.030.K1
+d0cfefdbc Updating Platform Security String to 2018-09-05 Bug: 111501777 (cherry picked from commit 6bc223c9af044ad06e2f1abc0c4570a7371f9a3a)
+a11786f34 [DO NOT MERGE] Update Platform Security String to 2018-08-05 for August Bug:109889880 (cherry picked from commit f6bee62b8eb5819f23e31d1dfb1622d48f5ab554)
+1a77cbb34 DO NOT MERGE: Update Platform Security String to 2018-07-05 for oc-mr1-dev Bug:79883349 (cherry picked from commit cfbe84b8a0ac6ad680edad1c21b08672ed96127d)
+1301ca70d DO NOT MERGE: Updating security string for oc-mr1-dev to 2018-06-05
+
+   * external/bouncycastle/
+c832035 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+6a9ae22 Fix probable prime confidence calculations.
+
+   * external/curl/
+2bb295a Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+7b4e4a3 Disable unused protocols.
+
+   * external/libavc/
+1601af5 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+e91955f Encoder: Return error for odd resolution
+cbd7d1e Decoder: Modify setting short term reference field flag
+
+   * external/libhevc/
+161bb0f Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+592c883 Return error for invalid st/lt sps parameters
+452716d Return error for invalid sps sub layers parameters
+84c25f1 Add limits check for depth hierarchy sps parameters
+35daaf7 Return error for invalid reorder parameter
+
+   * external/libmpeg2/
+69214ee Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+9079f4a Adding Check For Number of Skip MBs
+
+   * external/libvpx/
+f79ebcb Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+2cab8d8 DO NOT MERGE | libvpx: cherry pick fix to OOB of mv_cost index.
+
+   * external/libxml2/
+15da5a6e Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+b730f8d3 RESTRICT AUTOMERGE: Update libxml2 to 2.9.8
+
+   * external/neven/
+a7dcc73 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+5a625a0 Make bound check proper in bbf_Scanner_addOutPos
+
+   * external/sonivox/
+1fe65f4 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+1e377e3 sonivox: prevent infinite loop in OTA ringtones
+a3709c0 sonivox: fix hang caused by bad meta-event
+
+   * frameworks/av/
+e9f5b4732 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+6f7dd45fe M3UParser: handle missing EXT-X-MEDIA URIs
+9a3c5983e Allow kPortModeDynamicANWBuffer for kBufferTypeANWBuffer in useBuffer
+a6ecaf647 MediaExtractor: stop rendering when an error occurs
+15f6bd638 Fix possible out of bounds read
+11523c83a OMXNodeInstance: Allow dynamic native handle mode for input buffers
+eac143364 M3UParser: make url on demand
+27822479e Speed up id3v2 unsynchronization
+c13af8a67 Fix security vulnerability in CryptoHal
+8aacd3487 omx: restrict useBuffer according to buffer type and port mode
+4aa87135c aaudio: use weak pointer to prevent UAF
+6e5aaf44b Add minimum size check for ImageGrid atom
+fbaede668 Sanitize effect descriptors for AudioPolicyService binder calls.
+01cc85e47 Add check preventing div0 issue
+5395c8327 Init gain config to prevent uninit leak.
+
+   * frameworks/base/
+3c2c834a93d Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+f28568c95f0 Fix TrackInfo parcel write
+7d8ce934a98 vpn: allow IPSec traffic through Always-on VPN
+eabaff1c7f0 Resolve inconsistent parcel read in NanoAppFilter
+faf2dc95bf2 Backport Prevent shortcut info package name spoofing
+906afb4f364 Fix DynamicRefTable::load security bug
+92aed32dda0 ResStringPool: Prevenet boot loop from se fix
+d0c09ae7260 Make safe label more safe
+03af9f28193 WM: Prevent secondary display focus while keyguard is up
+eef265cf5e5 DO NOT MERGE: Add unit tests to ensure VPN meteredness
+007288b7a91 DO NOT MERGE: Fix ConnectivityController meteredness checks
+13343c13591 clearCallingIdentity before calling into getPackageUidAsUser
+275d49fd349 Nullcheck to fix Autofill CTS
+1112a8b6484 Osu: fixed Mismatch between createFromParcel and writeToParcel
+9214edb61c5 DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name
+2c8e19daa39 Fix broken check for TelephonyManager#getForbiddenPlmns
+fcd576788c6 DO NOT MERGE (O) Revoke permision when group changed
+4ab6bce2d96 ResStringPool: Fix security vulnerability
+0da68f30a92 RESTRICT AUTOMERGE: Prevent reporting fake package name - framework (backport to oc-mr1-dev)
+c1db43a6440 Use concrete CREATOR instance for parceling lists
+4f2587a2872 Rework thumbnail cleanup
+fbbc3fb97bd DO NOT MERGE - fix AFM.getComponentNameFromContext()
+bdfe972294d Proper autofill fix to let phone process autofill Settings activity.
+9e403fa05ae Make sure apps cannot forge package name on AssistStructure used for Autofill.
+
+   * frameworks/minikin/
+0a3ca40 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+d8566a2 Fix fvar table size validation logic - DO NOT MERGE
+
+   * hardware/broadcom/wlan/
+c502e8b Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+5a48e40 net: wireless: bcmdhd: update bcm4358 FW (7.112.300.15)
+
+   * hardware/lineage/lineagehw/
+a027dee lineagehw: Check if files are readable when we read them
+
+   * hardware/qcom/display/
+e8e2cedd9 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+5bb66aea5 Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/media/
+d1f02ecaa Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+d0ed957c0 mm-video-v4l2: Protect buffer access and increase input buffer size
+5c9a58a5a mm-video-v4l2: Squash below changes
+7679a22c2 mm-video-v4l2: Protect buffer access and increase input buffer size
+
+   * libcore/
+d5d4c9a93 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+603f60216 Fix hostname parsing in java.net.URLStreamHandler.
+
+   * packages/apps/Settings/
+0873eb7bc0 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+718eec5424 Import translations. DO NOT MERGE
+3eec10e4a8 Delete obsolete activity alias for dev settings
+05902a0634 DO NOT MERGE Give PBAP permission only after user confirms
+
+   * packages/providers/DownloadProvider/
+acb664c Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+5442947 Remove "public" download feature.
+a9435e1 DO NOT MERGE: Update DownloadProvider for correct meteredness
+
+   * system/bt/
+4e5954dd Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+371fd00d HID Host: Check L2CAP packet data length
+2c969372 DO NOT MERGE Fix OOB read in process_l2cap_cmd
+17870281 Add packet length checks in l2cble_process_sig_cmd
+9bf4ff61 Don't use Address after it was deleted
+2d7f1b14 HFP: Fix out of bound access in phone number processing
+3652ed82 SDP: return error on offset bigger than atribute length
+e026780a HIDD: Prevent integer underflow in bta_hd_act
+b5bea22d DO NOT MERGE: Don't reuse buffer when building response
+a43a0fc0 Add BT_HDR length check for received AVCTP packets
+5c1fc818 Add packet length check for received AVCTP packets
+57ebe9f7 Add checks whether the AVDTP element data length is valid
+b2e0e073 BNEP: Fix OOB access in bnep_data_ind
+8a3175e5 RESTRICT AUTOMERGE: Fixes two bluetooth causing remote overreads (2/2)
+ecdf0b8a RESTRICT AUTOMERGE: Fixes two bluetooth bugs causing remote overreads (1/2)
+04be7ae5 DO NOT MERGE: SDP: Recalculate param_len after max_list_len
+6a999cab Decrease length after reading from array in process_service_attr_req
+5a7f49f4 DO NOT MERGE SMP: Check p_cb->role in smp_br_state_machine_event
+d6cfce1f GATT: Handle too short Error Response PDU
+3af7c23d Add PDU size checks in process_service_search_attr_rsp
+89ad038f Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ
+ae90f707 DO NOT MERGE: Check number of attributes before writing to a buffer
+4b1ab46a DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE
+cc11dc82 DO NOT MERGE Prevent stack overflow in btif_storage
+add56606 DO NOT MERGE SMP: Validate remote elliptic curve points
+487158d8 DO NOT MERGE Add bounds check for BNEP_Write
+79b297ba DO NOT MERGE Initialize local variable in gatts_process_read_by_type_req
+eda0346e DO NOT MERGE Fix OOB read in process_l2cap_cmd
+fc9dc800 PAN: Always allocate in bta_pan_data_buf_ind_cback
+e9546029 DO NOT MERGE Handle bad packet length in gatts_process_read_req
+ab0d8ca3 DO NOT MERGE Drop LE CoC fragments when frame size is too big
+3d6d7731 DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result
+fb594ae5 DO NOT MERGE Fix unexpected behavior in smp_sm_event
+
+   * system/libhidl/
+a2617c8 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+b1bbb2c hidl_memory: fail on transfer if size > SIZE_MAX
+f358fe3 mapMemory: Do not map if size is > SIZE_MAX
+
+   * system/media/
+e693a2b6 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+34118d3a Merge commit 'f9e3022c474619c69a46ae7dbe11b5b531dbad57' into am-0d58d39a-0539-474e-b9c8-36cc976d15e8
+
+   * system/sepolicy/
+aefde2e9 Merge cherrypicks of [4741663, 4741664, 4741665, 4741666, 4743080, 4743081, 4743082, 4743083, 4741262, 4741263, 4741264, 4741265, 4741266, 4741667, 4743084, 4741242, 4741243, 4741741, 4741742, 4741743, 4741744, 4741822, 4743085, 4741668, 4741338, 4743055, 4743056, 4743070, 4743073, 4743075, 4743076, 4743078, 4743079, 4743161, 4743162, 4743164, 4743165, 4743167, 4743168, 4743169, 4743170, 4741681, 4741682, 4741683, 4741684, 4741685, 4741686, 4741687, 4741688, 4741689, 4741690, 4741691, 4741692, 4741693, 4741694, 4741695, 4741696, 4741697, 4741698, 4741699, 4743240, 4743241, 4743242, 4743243, 4741745, 4741823, 4741824, 4741825, 4741267, 4741268, 4743244, 4743280, 4743281, 4743224, 4743203, 4743204, 4743205, 4741746, 4741747, 4743245, 4741826, 4741827, 4741828, 4741829, 4741748, 4741749, 4741750, 4743233, 4743282, 4741244, 4741245, 4741246, 4741247, 4743206, 4743207, 4743208, 4743209, 4743210, 4743211, 4743212, 4743213, 4743214, 4743215, 4743216, 4743217, 4743218, 4743219, 4743360, 4743361, 4743362, 4743363, 4743364, 4743365, 4743366, 4743367, 4743368, 4743369, 4743370, 4743371, 4743372, 4743373, 4743374, 4743375, 4743376, 4743377, 4743283, 4743284, 4741830, 4742501, 4743246, 4743086, 4743087, 4743378, 4743379, 4741751] into sparse-4749909-L04200000199131547
+25364abd crash_dump: disallow ptrace of TCB components
+
+====================
+     08-09-2018
+====================
+
+
+   * external/openssh/
+2f4766ce upstream: The script that cooks up PuTTY format host keys does not
+e1b26ce5 upstream: improve
+7c712966 upstream: Describe pubkey format, prompted by bz#2853
+ef100a2c upstream: fix numbering
+
+   * hardware/qcom/power/
+8169e39 power-8084: document performance settings
+0ef4cb4 power-8084: drop POWER_HINT_LAUNCH handling
+f23b333 power-8084: reduce interactive boost
+7dd0696 power-8084: clean up code
+
+====================
+     08-08-2018
+====================
+
+
+   * external/e2fsprogs/
+81fe13e1 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * frameworks/av/
+f1f657bb8 Merge tag 'android-8.1.0_r43' into HEAD
+
+   * frameworks/native/
+332163f5a Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * frameworks/opt/telephony/
+1e612ae44 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * hardware/lineage/lineagehw/
+82d586c lineagehw: Add support for sysfs ReadingEnhancement
+7f833b8 lineagehw: Update ReadingEnhancement for new API
+
+   * packages/apps/Messaging/
+3686c41 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+af0e887 Revert "Messaging: Request external storage permission before handling shared files"
+
+   * packages/apps/PackageInstaller/
+e57050ae Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/apps/Settings/
+c28cb4de21 Update Lenovo P2 maintainer
+
+   * packages/apps/UnifiedEmail/
+d2fc4bd94 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/providers/DownloadProvider/
+5ee3e34 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/services/Telephony/
+ce5915c74 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * system/bt/
+37b2ade8 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * system/vold/
+2aa8eba Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+====================
+     08-07-2018
+====================
+
+
+   * external/openssh/
+ed7bd5d9 upstream: Use new private key format by default. This format is
+
+   * frameworks/native/
+926683498 SF: Backport "Fix landscape LCM issue" for legacy hwc
+1827cd59d SF: Backport "Need GSI to support landscape LCM" for legacy hwc
+a15be7bf3 DO NOT MERGE: Fix landscape LCM issue
+b3eca0515 DO NOT MERGE: Need GSI to support landscape LCM
+cb28a6ca0 Revert "SF: Squashed hwrotation support"
+62f62c32a Revert "SF: Fix hwrotation screenshots at surfaceflinger layer"
+
+====================
+     08-06-2018
+====================
+
+
+   * hardware/qcom/power/
+34c7410 power: Fix several typos in power profiles
+
+   * packages/apps/AudioFX/
+
+====================
+     08-05-2018
+====================
+
+
+   * external/openssh/
+967226a1 upstream: invalidate dh->priv_key after freeing it in error path;
+
+   * frameworks/base/
+7196f52c8b4 Add a ripple effect to the power menu items
+91530594249 StatusBar: Bluetooth icon transparent when disconnected
+4c6fcefd25c FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+723c739723f Ripple all things!
+0fb223816b2 Move Navigation QS tile vectors to drawable folder
+3d8159c66ea camera: Check if aux camera whitelist is set before restricting cameras
+e6f82224d67 base: ROM size calculation error on 4GB ROM device
+37fd3361aaf Fix possible NPE
+
+   * hardware/qcom/fm/
+
+   * packages/apps/Bluetooth/
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CellBroadcastReceiver/
 
    * packages/apps/Contacts/
+19916d503 Allow calling contacts via specific phone accounts.
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Email/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Messaging/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/Profiles/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Stk/
+
+   * packages/apps/StorageManager/
+
+   * packages/apps/Tag/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+   * packages/providers/MediaProvider/
+
+   * packages/services/BuiltInPrintService/
+
+   * packages/services/Telephony/
+613cdfede Use proper summary for network select list preference on dsds/dsda/tsts
+
+====================
+     08-04-2018
+====================
+
+
+   * build/make/
+6cf1ad1ab Create 0 compression ratio jar files
+373fdff8d core: use 0 compression when creating the target_files package
+
+   * external/f2fs-tools/
+3aac42a fsck: Fix conflicts with libext2_quota
+e4ea681 fsck: Update libf2fs_fsck source file list
+2dcd2b0 Android.bp/mk: update strings to reflect v1.11.0 release
+
+   * frameworks/base/
+e73bae6d0a5 Add DNS_TETHER to the list of UIDs in the framework.
+38ae1c4f7f4 aapt: enforce 0 compression
+359e79d1e44 aapt: allow opting out of uncompressed aapt
+153d179f37b aapt: Default to 0 compression ratio
+a0bace4462c Scroll: modified velocitytracker
+9f6200c3f95 Frequently used OpenGL ES methods whitelisted for fast JNI path
+
+   * packages/apps/Email/
+430cc8757 Update strings for crowdin
+
+   * packages/apps/Settings/
+
+   * packages/apps/SnapdragonCamera2/
+79e555b8b SnapdragonCamera2: fix some ui disturbances
+
+   * system/vold/
+3fc5dbb secdiscard: should pin_file to avoid moving blocks in F2FS
+
+====================
+     08-03-2018
+====================
+
+
+   * packages/apps/SnapdragonCamera2/
+5536dd8e0 SnapdragonCamera2: fix setting icon for redeye reduction
+939759228 remove deepportrait for now
+7728f0a08 what the....
+
+====================
+     08-02-2018
+====================
+
+
+   * bootable/recovery/
+9367537d uncrypt: fix f2fs ioctl argument for pin_file
+806de779 f2fs: support f2fs by setting unmovable bit for package file
+
+   * packages/apps/Settings/
+f3a071b2a8 Add Maintainer for Taco: Yu Yureka 2
+
+   * packages/apps/SnapdragonCamera2/
+16a4a19e7 Merge tag 'LA.UM.6.3.r4-04700-sdm845.0' into android-8.1
+
+====================
+     08-01-2018
+====================
+
+
+   * packages/apps/Settings/
+a46165f7a0 Update potter maintainer
+
+   * packages/services/Telephony/
+a326beb41 Use proper summary for network select list preference on dsds/dsda/tsts
+
+====================
+     07-31-2018
+====================
+
+
+   * external/openssh/
+74287f5d upstream: delay bailout for invalid authentic
+1a66079c upstream: fix some memory leaks spotted by Coverity via Jakub Jelen
+87f08be0 Remove support for S/Key
+
+   * frameworks/opt/telephony/
+b55111385 IMS: Sudden deregisteration takes place soon after registeration.
+
+====================
+     07-30-2018
+====================
+
+   * android/
+ecf9898 Enable LineageCustomizer
+
+   * build/make/
+2f96522d9 core: config: Use host ijar if requested
+4509180c7 dex2oat: disable multithreading for WSL
+1f9d4d68e Add detection for WSL
+349911a3b Adapt ijar for WSL
+
+   * external/openssh/
+5d14019b upstream: avoid expensive channel_open_message() calls; ok djm@
+e655ee04 upstream: Now that ssh can't be setuid, remove the
+73ddb25b upstream: Remove uid checks from low port binds. Now that ssh
+
+   * frameworks/base/
+b44aaa35477 Proper supplementary service notification handling (1/5).
+
+   * hardware/qcom/audio-caf/msm8998/
+cc24d968c hal: Add missing compress voip PCM device ID
+
+   * lineage-sdk/
+
+   * packages/apps/Dialer/
+2e4c33a01 Proper supplementary service notification handling (5/5).
+9c5a91147 Re-add call statistics.
+0f4ccb29f Allow per-call account selection.
+
+   * packages/apps/LineageParts/
+58478f2 LineageParts: res: Delete duplicated and unused strings
+
+   * packages/apps/Settings/
+
+   * packages/apps/SnapdragonCamera2/
+454d7dc11 Don't use sub thread before fix the sync issue.
+
+   * packages/services/Telecomm/
+246a1652 Proper supplementary service notification handling (3/5)
+
+   * packages/services/Telephony/
+c27def373 Proper supplementary service notification handling (4/5).
+
+   * system/core/
+498c2dd4d bsdgrep: for -r, use the working directory if none specified
+
+   * vendor/rr/
+46f261ba ATV: Build LineageCustomizer
+95ca5f6c prebuilt: apn: Sprint 2: Drop http definition from MMSC proxy
+a4e98c8e tools: Bump baksmali/smali to v2.2.4
+4f6b313f config/common: Organize filesystems tools
+eeae7bc3 prebuilt: apn: Sprint 2: Make IPv6 MMS Proxy default for the apn
+e2b60df1 config/common: Remove BluetoothExt from PRODUCT_PACKAGES
+
+====================
+     07-29-2018
+====================
+
+
+   * packages/apps/AudioFX/
+1be86c7 AudioFX: bump to api27
+
+   * packages/apps/SnapdragonCamera2/
+ba3a7a15e add notch_size config
+
+====================
+     07-28-2018
+====================
+
+
+   * external/f2fs-tools/
+8273bd0 fsck: Fix 1.11.0 compilation
+235999b f2fs-tools: release 1.11.0
+b93ced9 check_f2fs: return 0 all the time
+e18e1e3 sload.f2fs: fix the missing of bit mask for file type
+2be1f00 sload.f2fs: give correct file type
+fb6547e fsck.f2fs: fix check order in -p1
+4baf0ce mkfs.f2fs: avoid selinux denial for unnecessary sysfs node
+e6742ab fsck.f2fs: fix stack overflow when reading out nat block
+
+   * packages/apps/Jelly/
+5cfd61b Jelly: Show a Snackbar when removing an HistoryItem
+
+====================
+     07-27-2018
+====================
+
+
+   * external/openssh/
+c12033e1 upstream: ssh(1) no longer supports being setuid root. Remove reference
+4492e2ec correct snprintf truncation check in closefrom()
+149cab32 Include stdarg.h in mkdtemp for va_list.
+
+   * hardware/qcom/display-caf/apq8084/
+d22c48f90 libgralloc: Fix adding offset to the mapped base address
+
+   * hardware/qcom/display-caf/msm8960/
+d442734cf libgralloc: Fix adding offset to the mapped base address
+
+   * packages/apps/SnapdragonCamera2/
+2df733e05 Merge "Merge 01e6b9d992ea181780268c5ee4b50052234e858f on remote branch"
+2eaa98390 Don't use sub thread before fix the sync issue.
+2a8a5bc1a Merge 01e6b9d992ea181780268c5ee4b50052234e858f on remote branch
+
+   * system/tools/hidl/
+2626915 Add DT_UNKNOWN handling
+4b19c46 Revert "Use stat() to determine file type from readdir()"
+
+====================
+     07-26-2018
+====================
+
+
+   * external/openssh/
+6728f31b upstream: Don't redefine Makefile choices which come correct from
+21fd477a upstream: fix indent; Clemens Goessnitzer
+8e433c20 upstream: Use the caller provided (copied) pwent struct in
+e2127abb upstream: oops, failed to notice that SEE ALSO got messed up;
+ddf1b797 upstream: Point to glob in section 7 for the actual list of special
+01c98d96 upstream: Switch authorized_keys example from ssh-dss to ssh-rsa
+
+   * frameworks/av/
+fefb0b147 NdkMediaCodec: add AMediaCodec_getBufferFormat
+
+====================
+     07-25-2018
+====================
+
+
+====================
+     07-24-2018
+====================
+
+
+   * hardware/qcom/power/
+651aa0f power-8084: rework power profiles
+
+   * hardware/ril-caf/
+5380335 libril: Protect against NULL unsolicited response function
+
+   * packages/apps/Email/
+8e69d0e22 Remove max aspect ratio.
+
+====================
+     07-23-2018
+====================
+
+
+   * external/bson/
+ec09ff2 bson: Allow building a vendor copy
+33e6a7d bson: Convert to Android.bp
+
+====================
+     07-22-2018
+====================
+
+   * android/
+828060c manifest: Switch to forked external/libdrm
+2d95bf6 Add hardware/lineage/telephony to the manifest
+
+   * bionic/
+a7b7640a8 libc: Mark libstdc++ as vendor available
+
+   * build/make/
+7d0effa1d build: Never set persist.sys.usb.config=none in recovery
+
+   * frameworks/base/
+690ae711090 frameworks/base: squash import translations from LineageOS
+
+   * lineage-sdk/
+e4c84e1 Add vendor security patch level to device info
+eda2ae7 ProfileManager: Make PROFILE_SELECTED broadcast explicit
+
+   * packages/apps/Contacts/
+867a3a7fc Revert "Automatically set SIM number to my profile"
+
+   * packages/apps/DUI/
+
+   * packages/apps/Dialer/
+cc5dc5fae Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * packages/apps/Settings/
+d5444dffdd Fix Kirin GSI strings
+4ccdf378d6 [1/2] Add vendor security patch level to device info
+98106656b4 Settings: squash update translations from LineageOS
+
+   * system/core/
+2385c9f06 core: Lockscreen Charging info (1/3)
+
+   * system/sepolicy/
+7e7228a7 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * vendor/rr/
+406a251a kernel: Allow installing modules on system
+90462d84 privapp-permissions: Add new Dialer permissions
+c90d6a3c addonsu: Fix installation on TWRP A/B
+347060d9 apns: sprint: Default to legacy n.*, allow x.* as an alternative
+
+====================
+     07-21-2018
+====================
+
+
+   * packages/apps/SnapdragonCamera2/
+01e6b9d99 Change target SDK to 26.
+
+====================
+     07-20-2018
+====================
+
+
+   * external/openssh/
+472269f8 upstream: slightly-clearer description for AuthenticationMethods - the
+c59aca8a Create control sockets in clean temp directories
+6ad8648e upstream: remove unused zlib.h
+3ba6e688 upstream: Fix typo in comment. From Alexandru Iacob via github.
+c77bc73c Explicitly include openssl before zlib.
+
+   * hardware/qcom/display-caf/msm8974/
+740e9f9ef libgralloc: Fix adding offset to the mapped base address
+
+   * packages/apps/LineageCustomizer/
+8907bcd Initial bringup to tvlauncher config style
+
+====================
+     07-19-2018
+====================
+
+
+   * build/make/
+8678e5f07 Make change and version bump to OPM6.171019.030.H1
+27513996d [DO NOT MERGE] Update Platform Security String to 2018-08-05 for August Bug:109889880 (cherry picked from commit f6bee62b8eb5819f23e31d1dfb1622d48f5ab554)
+49da9c2ea DO NOT MERGE: Update Platform Security String to 2018-07-05 for oc-mr1-dev Bug:79883349 (cherry picked from commit cfbe84b8a0ac6ad680edad1c21b08672ed96127d)
+4044f639b DO NOT MERGE: Updating security string for oc-mr1-dev to 2018-06-05
+
+   * external/e2fsprogs/
+8f324dd5 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+f2a5ea88 Ignore quotes in safe_print().
+
+   * external/openssh/
+95d41e90 upstream: Deprecate UsePrivilegedPort now that support for running
+258dc8bb upstream: Remove support for running ssh(1) setuid and fatal if
+ac590760 upstream: Slot 0 in the hostbased key array was previously RSA1,
+26efc2f5 upstream: Remove support for loading HostBasedAuthentication keys
+
+   * frameworks/av/
+b511459ef Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+402ffe426 Fix possible out of bounds read
+7178d4de3 OMXNodeInstance: Allow dynamic native handle mode for input buffers
+4065c5201 Speed up id3v2 unsynchronization
+5b2bbbf73 Fix security vulnerability in CryptoHal
+ec427fcfb omx: restrict useBuffer according to buffer type and port mode
+534a1aa64 aaudio: use weak pointer to prevent UAF
+dde0d76c5 Add minimum size check for ImageGrid atom
+e4950ed3a Sanitize effect descriptors for AudioPolicyService binder calls.
+a7e4d2268 Add check preventing div0 issue
+42dc855dc Init gain config to prevent uninit leak.
+
+   * frameworks/base/
+9522ef334b7 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+3c0f405f653 Fix DynamicRefTable::load security bug
+8f63958530b ResStringPool: Prevenet boot loop from se fix
+b3d874c9e7c Make safe label more safe
+196e5cf25d5 WM: Prevent secondary display focus while keyguard is up
+b4c5afe8b5b DO NOT MERGE: Add unit tests to ensure VPN meteredness
+dcdeaf8b957 DO NOT MERGE: Fix ConnectivityController meteredness checks
+f10472c419e clearCallingIdentity before calling into getPackageUidAsUser
+65e567a369a Nullcheck to fix Autofill CTS
+c45926949a3 Osu: fixed Mismatch between createFromParcel and writeToParcel
+d60d18690c6 DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name
+e1c5b945e3f Fix broken check for TelephonyManager#getForbiddenPlmns
+0c9517a6508 DO NOT MERGE (O) Revoke permision when group changed
+458134f723e ResStringPool: Fix security vulnerability
+774d6ea7e84 RESTRICT AUTOMERGE: Prevent reporting fake package name - framework (backport to oc-mr1-dev)
+133ec0e4c99 Use concrete CREATOR instance for parceling lists
+49690f8ae23 Rework thumbnail cleanup
+14029e40439 DO NOT MERGE - fix AFM.getComponentNameFromContext()
+21765ed660d Proper autofill fix to let phone process autofill Settings activity.
+3f89a390d26 Make sure apps cannot forge package name on AssistStructure used for Autofill.
+
+   * frameworks/native/
+4d7973136 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+51208e7ff Don't pad before calling writeInPlace().
+d99db4352 Increment when attempting to read protected Parcel Data
+9abaea41f Disallow reading object data from Parcels with non-object reads
+
+   * frameworks/opt/telephony/
+0230f2f64 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+9b9e465d0 DO NOT MERGE: Update ConnectivityServiceMock for VPN meteredness bug
+5a18857a6 Fixed invalid pdu issue
+
+   * packages/apps/Messaging/
+966ce87 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+6d624e6 Messaging ignores file URIs shared via intent
+
+   * packages/apps/PackageInstaller/
+8e8d77ec Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+967a3ac2 RESTRICT AUTOMERGE: Always use safe labels
+
+   * packages/apps/Settings/
+a4461cbc65 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+9e36bb7f4b Import translations. DO NOT MERGE
+e4f3c6f55e DO NOT MERGE Give PBAP permission only after user confirms
+
+   * packages/apps/SnapdragonCamera2/
+eb87a877a SnapdragonCamera:Avoid index out of bounds
+5650976a6 Merge "SnapdragonCamera: version info 2.02.011"
+d2a54855b Merge "Move close camera to sub-thread for avoiding ANR."
+5bb592608 Merge "SnapdragonCamera:Fix recording state"
+
+   * packages/apps/UnifiedEmail/
+0c29ebcb3 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+f4a012522 Filter Attachment file name of forward slashes for .eml attachments.
+
+   * packages/providers/DownloadProvider/
+971bdbf Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+33c105b DO NOT MERGE: Update DownloadProvider for correct meteredness
+
+   * packages/services/Telephony/
+36c4666f3 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+6313e3766 DO NOT MERGE Revise security requirements for TelephonyManager#endCall.
+f4160960c Fix potential NPE in EmergencyCallbackModeExitDialog.
+70aa4a8f6 DO NOT MERGE Add Safety Net Log for getForbiddenPlmns security hole
+98e97ea04 Fix broken permission check for TelephonyManager#getForbiddenPlmns
+
+   * system/bt/
+5ad6b0c6 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+62a2cdf7 DO NOT MERGE: Don't reuse buffer when building response
+ca25313d Add BT_HDR length check for received AVCTP packets
+86393850 Add packet length check for received AVCTP packets
+83326685 Add checks whether the AVDTP element data length is valid
+036ec33c BNEP: Fix OOB access in bnep_data_ind
+927155a6 RESTRICT AUTOMERGE: Fixes two bluetooth causing remote overreads (2/2)
+ea7f83d9 RESTRICT AUTOMERGE: Fixes two bluetooth bugs causing remote overreads (1/2)
+279341be DO NOT MERGE: SDP: Recalculate param_len after max_list_len
+c9ce1d4c Decrease length after reading from array in process_service_attr_req
+2f300925 DO NOT MERGE SMP: Check p_cb->role in smp_br_state_machine_event
+3efa01cc GATT: Handle too short Error Response PDU
+bba59ce8 Add PDU size checks in process_service_search_attr_rsp
+ef079db7 Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ
+88418579 DO NOT MERGE: Check number of attributes before writing to a buffer
+accfb612 DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE
+03a0b87f DO NOT MERGE Prevent stack overflow in btif_storage
+c7b1b343 DO NOT MERGE SMP: Validate remote elliptic curve points
+b2ef3171 DO NOT MERGE Add bounds check for BNEP_Write
+6bee1946 DO NOT MERGE Initialize local variable in gatts_process_read_by_type_req
+a787467d DO NOT MERGE Fix OOB read in process_l2cap_cmd
+9610a231 PAN: Always allocate in bta_pan_data_buf_ind_cback
+df480029 DO NOT MERGE Handle bad packet length in gatts_process_read_req
+ac715003 DO NOT MERGE Drop LE CoC fragments when frame size is too big
+5635aa75 DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result
+2e04897e DO NOT MERGE Fix unexpected behavior in smp_sm_event
+
+   * system/vold/
+11dc897 Merge cherrypicks of [4586293, 4586294, 4586295, 4584365, 4584366, 4584367, 4584368, 4584369, 4584370, 4587544, 4584705, 4586296, 4587545, 4587546, 4586297, 4586298, 4586299, 4586300, 4584371, 4586301, 4584706, 4586302, 4586303, 4587584, 4587585, 4587586, 4587587, 4587588, 4587589, 4587590, 4587591, 4587644, 4587645, 4587646, 4587647, 4587648, 4587649, 4587650, 4587651, 4587652, 4587653, 4587654, 4587655, 4587656, 4587657, 4587658, 4587659, 4587660, 4587661, 4587662, 4584536, 4587547, 4587548, 4587549, 4584707, 4584708, 4587550, 4587551, 4587593, 4586516, 4584372, 4584373, 4584374, 4587595, 4584375, 4584376, 4587552, 4587596, 4587597, 4587598, 4587599, 4584414, 4584415, 4584416, 4584417, 4584418, 4584419, 4584420, 4584421, 4584422, 4584423, 4587804, 4587805, 4587806, 4587807, 4587808, 4587809, 4587810, 4587811, 4587812, 4587813, 4587814, 4587815, 4587816, 4587817, 4587818, 4587884, 4587885, 4587600, 4587601, 4587819, 4584709] into sparse-4749909-L91900000192339903
+9b04987 Merge commit '635193ab36302e5f65e99c7df2f256cfd37068c7' into am-b7f1a67b-2024-4274-aa7d-e88e8cceb407
+
+====================
+     07-18-2018
+====================
+
+
+   * packages/apps/Dialer/
+b9d2a3a90 Re-add call recording.
+
+   * packages/apps/SnapdragonCamera2/
+d896e925c SnapdragonCamera:Fix recording state
+e453ddc6a Add a property to set video snapshot size
+
+   * packages/apps/UnifiedEmail/
+4ab14c11a Don't re-show search bar on query click.
+
+====================
+     07-17-2018
+====================
+
+
+====================
+     07-16-2018
+====================
+
+
+   * external/openssh/
+3eb7f103 upstream: keep options.identity_file_userprovided array in sync when we
+2f131e1b upstream: memleak in unittest; found by valgrind
+de2997a4 upstream: memleaks; found by valgrind
+
+   * frameworks/native/
+73be23d0b Revert "InputDispatcher: On keypress, deliver keycode to pokeUserActivity"
+50886a095 Revert "PowerManager.h: Define USER_ACTIVITY_FLAG values"
+
+   * hardware/lineage/telephony/
+24f40ad telephony: Actually pull in telephony-ext into final build
+
+   * packages/apps/Recorder/
+07eb6ad Recorder: Use native functions to get H264 info
+
+   * packages/apps/Settings/
+90023a512f settings: Add platform and RAM to "Model & Hardware" dialogue
+cafb6b8aff DisplaySettings: Allow devices to opt out from lift to wake detection
+865dbc8c74 Settings: handle decrypting larger pattern sizes for sw600dp
+
+   * packages/apps/SnapdragonCamera2/
+9d930f1d7 Merge "SnapdragonCamera: Added stats visualizer"
+
+====================
+     07-15-2018
+====================
+
+
+   * build/make/
+6e02efb43 build: Allow devices to provide prebuilt vbmeta image
+b6748fa8c build: recovery: add vendor to exclusion list
+
+   * device/qcom/sepolicy/
+6c5a9ef Allow binderized keymaster HAL access to firmware files.
+
+   * frameworks/base/
+2d0e747856e Disable warning in StaticLayout
+d783d4ede90 Don't spoil printservice log if not needed
+6da1fb7ada1 Don't crash if there is IR HAL is not declared
+12e3f4bb4ca Fix janky traffic indicator tint
+4b2e66790cf Fix broadcast receiver leak issue
+6c8a24c2918 base: recents: properly size task lock icon in stock recents
+0d49c9ddf08 Check for null path in getInternalPathForUser
+164c789f197 ScanRecord.getServiceData NPE fix
+d4ffa2c3967 Return null if a provider died before acquisition
+42b4e4bb649 MtpDatabase: Fix potential NULL dereference errors
+adb9085e8af core: ChooserActivity: fix android crash from null object
+ef18b2da65d fix synchronization bug when notification enqueue/cancel
+7c89073c28e Themes: fix vpn status dialog
+152f3bcf7cd Move BT state to OFF when BLE app count is zero
+c35ab599f45 Account: Fix the risk of sqliteconnection leak
+0985684c185 base: SystemUI: center roaming indicator correctly
+3b333e512a0 SystemUI: stop filling logcat with useless stacktrace
+61e4a35b1a7 Release SQLite page cache as much as it can
+ada22db37db Remove unused calling for better performance
+c7ad2b0ea3a core: Fix long overflow issue in NetworkStats
+c5665c1812b Fix problems caused by multithreading in VibratorService
+fb3ccee690e SystemUI: Wallpaper is black or cut in half vertically
+8d7cb273c60 SystemUI: Keyguard: fix sim pin
+ed7c02a49aa SystemUI: Fix Data Usage tile to match Settings
+83f2f663ced Speed up the speed of computer MTP query
+b3321d7e9b2 Fix a 'memory leak'
+8d97e428160 Location: Skip processing when reciever pointer is null
+f96972b675c SystemUI: require auth for adb wireless
+4918f1bf775 base: limit direct share targets to reduce lag
+
+   * hardware/lineage/telephony/
+0f1392f Cleanup usage of static
+27c445e Return proper value for isDsdaEnabled
+
+   * lineage-sdk/
+eeedd60 styles: do not enforce permission when it's not needed
+52327bb sdk: Trust: better warnings management
+2f82f79 Regen lineage_current
+1c89928 lineage-sdk: Introduce TelephonyExtUtils
+3b194b4 Trust: warn if build is signed with insecure keys
+de27973 TrustInterface: Handle unsupported encryption state
+c9aece2 Trust: add action to disable alerts to notifications
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+0b1c696 parts: Trust: better warnings management
+00f4bfa LineageParts: Complete and correct SMS limits port
+179c9b4 parts: add SMS rate limit setting
+92d3a99 Align trust onboarding welcome change
+a1ec635 Parts: expose toggle for disabling trust alerts
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+d10c8ba109 Settings: Update maintainers for Z00L & Z00T
+
+   * packages/apps/Snap/
+
+   * packages/services/OmniJaws/
+
+   * vendor/rr/
+3098b318 extract_utils: Newline love for adb extraction
+201e1714 apns: sprint mms: mms.sprintpcs.com > oap7.sprintpcs.com
+dfc742c4 apns: sprint: n.ispsn -> x.ispsn
+34b3f589 build: Add support for sdm845 platform
+a146fcf1 envsetup: Filter unique push paths in dopush
+2089e8c9 envsetup: Fix adb recovery state detections
+8c664c0a extract_utils: make get_file() able to search paths with and w/o /system prefix
+f96411ce extract_utils: extract(): fix src not being searched in "src:dst;args" spec
+2d86bf75 extract_utils: extract(): rename DEST variable to VENDOR_REPO_FILE
+8be64ee3 extract_utils: extract(): rename ARGS variable to SPEC_ARGS
+041190a3 extract_utils: extract(): rename FILE variable to SPEC_SRC_FILE
+86d1f208 extract_utils: extract(): rename FROM variable to SPEC_DST_FILE
+73e25ddf extract_utils: create src_file() function to mirror behavior of target_file()
+441d8af9 extract_utils: prefix_match(): do not strip target_args from its output
+0a0db4a2 extract_utils: target_file() and target_args() cleanup
+184690b2 Revert "extract_files: Add support for paths without system/"
+89aaf943 Revert "extract_utils: Fix makefile generation issues"
+
+====================
+     07-14-2018
+====================
+
+
+   * device/qcom/sepolicy/
+627d16b msm8960: Fix compilation
+
+   * device/rr/sepolicy/
+f1ad321 sepolicy: recovery: Allow (re)mounting system
+
+   * external/openssh/
+61cc0003 Undef a few new macros in sys-queue.h.
+
+   * frameworks/native/
+44e3085b5 sensorservice: customize sensor fusion mag filter via prop
+
+   * hardware/lineage/telephony/
+48a1c69 telephony: You have to add telephony-ext to boot jars
+
+   * hardware/qcom/power/
+64de35f power: Allow devices disabling power stats completely
+
+   * packages/apps/Settings/
+ca23d6d706 Update maintainer for merlin
+
+   * system/sepolicy/
+12f18fd0 sepolicy: public: Exclude Recovery from system mount neverallow
+9667a553 sepolicy: Allow init to modify system_blk_device
+
+====================
+     07-13-2018
+====================
+
+
+   * external/libdrm/
+175278e5 libdrm: Avoid additional drm open close
+
+   * external/openssh/
+30a2c213 Include unistd.h for geteuid declaration.
+1dd32c23 Fallout from buffer conversion in AUDIT_EVENTS.
+
+====================
+     07-12-2018
+====================
+
+
+   * external/openssh/
+7449c178 upstream: make this use ssh_proxy rather than starting/stopping a
+dbab02f9 upstream: fix leaks in unit test; with this, all unit tests are
+2f6accff Enable leak checks for unit tests with valgrind
+e46cfbd9 increase timeout to match cfgmatch.sh
+6aa1bf47 rm regress/misc/kexfuzz/*.o in distclean target
+eef1447d repair !WITH_OPENSSL build
+4d3b2f36 missing headers
+3f420a69 Remove key.h from portable files too.
+e2c4af31 upstream: remove prototype to long-gone function
+394a842e upstream: treat ssh_packet_write_wait() errors as fatal; ok djm@
+5467fbcb upstream: remove legacy key emulation layer; ok djm@
+
+   * hardware/qcom/display-caf/sdm845/
+206194d53 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+
+   * packages/apps/SnapdragonCamera2/
+16633cda5 Merge 92d53d986210149235dc2529cd4834eb43f8350b on remote branch
+175b0dd47 SnapdragonCamera: version info 2.02.011
+
+====================
+     07-11-2018
+====================
+
+
+   * external/openssh/
+5dc4c59d upstream: s/wuth/with/ in comment
+
+   * frameworks/av/
+2ad183484 Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
+0f5a5ed7a Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCallback..
+
+   * packages/apps/Settings/
+bb5a36af32 Update device maintainer for YU Yureka Black(garlic)
+
+   * packages/apps/SnapdragonCamera2/
+a6860519d Move close camera to sub-thread for avoiding ANR.
+
+   * vendor/rr/
+5ca74b1c Remove the Official selection from script
+
+====================
+     07-10-2018
+====================
+
+
+   * external/openssh/
+1c688801 Include stdlib.h for declaration of free.
+fccfa239 VALGRIND_CHECK_LEAKS logic was backwards :(
+416287d4 Fix sshbuf_new error path in skey.
+7aab109b Supply missing third arg in skey.
+380320bb Supply some more missing "int r" in skey
+d20720d3 disable valgrind memleak checking by default
+79c9d350 Supply missing "int r" in skey code.
+984bacfa upstream: re-remove some pre-auth compression bits
+120a1ec7 Adapt portable to legacy buffer API removal
+0f3958c1 upstream: kerberos/gssapi fixes for buffer removal
+c74ae8e7 upstream: buffer.[ch] and bufaux.c are no more
+a881e5a1 upstream: one mention of Buffer that almost got away :)
+49f47e65 upstream: replace cast with call to sshbuf_mutable_ptr(); ok djm@
+cb30cd47 upstream: remove legacy buffer API emulation layer; ok djm@
+235c7c4e upstream: sshd: switch monitor to sshbuf API; lots of help & ok
+b8d9214d upstream: sshd: switch GSSAPI to sshbuf API; ok djm@
+c7d39ac8 upstream: sshd: switch authentication to sshbuf API; ok djm@
+c3cb7790 upstream: sshd: switch config to sshbuf API; ok djm@
+2808d18c upstream: sshd: switch loginmsg to sshbuf API; ok djm@
+89dd615b upstream: ttymodes: switch to sshbuf API; ok djm@
+f4608a70 upstream: client: switch mux to sshbuf API; with & ok djm@
+cecee2d6 upstream: client: switch to sshbuf API; ok djm@
+ff55f4ad upstream: pkcs11: switch to sshbuf API; ok djm@
+168b46f4 upstream: Revert previous two commits
+ab39267f upstream: Rename COMP_DELAYED to COMP_ZLIB
+95db395d upstream: Remove leftovers from pre-authentication compression
+f28a4d5c upstream: Remove unused ssh_packet_start_compression()
+
+   * hardware/lineage/telephony/
+41d2768 Add README for how to use this repo
+b32bdc9 Allow opting out of building this jar
+208646f Minor thread safety fixes
+b8e1462 Store provisioning pref separately from SIM status
+8fe9d76 Reenable both SIM cards on hotswap
+6374c2a Reset default sims on deactivation
+01b8f28 Implement crude manual SIM provisioning
+b18c7bf Implement a dummy IExtTelephony service
+a4efe66 Implement a fake qti-telephony-common.jar
+
+   * system/update_engine/
+7e347c2 update_engine: Add performance mode
+
+====================
+     07-09-2018
+====================
+
+
+   * frameworks/native/
+74b51bcc3 native: drop hwui properties on O-MR1
+
+   * hardware/qcom/fm/
 
    * packages/apps/Dialer/
 
@@ -644,70 +1588,102 @@ cf917b0e76a Revert "Revert "OMS: Only allow trusted overlays to be registered.""
 
    * packages/apps/Gallery2/
 
-   * packages/apps/Nfc/
-7a040e81 NFC: Adding new vendor specific interface to NFC Service
+   * packages/apps/Jelly/
+
+   * packages/apps/LockClock/
 
    * packages/apps/Recorder/
 
-   * packages/apps/Settings/
-a7f78633c5 Settings: Introduce Substratum changes.
-b85defef65 Revert "Revert "Update the way OMS records details about overlays""
-7687152792 RR: add new osprey maintainer name
-
    * packages/apps/Snap/
 
-   * system/sepolicy/
-47034fdb Merge branch 'o' of https://github.com/SubstratumResources/platform_system_sepolicy into HEAD
+   * packages/apps/SnapdragonCamera2/
+c4cfc15ec Revert change 2323574/7
+1c419411b SnapdragonCamera: Added stats visualizer
+
+   * packages/apps/Terminal/
+
+   * packages/providers/WeatherProvider/
+
+   * packages/services/Telephony/
+3a339fecc Proper supplementary service notification handling (4/5).
+
+   * system/core/
+338ddb19c adb: Add wait-for-online command
 
 ====================
-     04-01-2018
-====================
-
-
-   * external/f2fs-tools/
-ffcf3fa Merge branch 'master' of https://android.googlesource.com/platform/external/f2fs-tools into HEAD
-
-   * hardware/qcom/fm/
-bb6007c fm_hci/helium: Exclude from OSS builds
-
-   * hardware/qcom/media-caf/msm8952/
-b349c61d0 fix circular dependency libnativewindow <-> libui
-15e38737f media: Adjust for new header Android.bp requirements
-
-   * vendor/nxp/opensource/external/libnfc-nci/
-03a6521 pn54x: Set nq1xx chips to pn547 and nq2xx to pn548
-380c9a0 pn54x: set NXP_CHIP_TYPE based on BOARD_NFC_CHIPSET
-9110528 pn54x: Always build as nfc_nci.nqx.default
-
-====================
-     03-31-2018
+     07-08-2018
 ====================
 
 
-   * device/rr/sepolicy/
-43701f1 sepolicy: Change recovery_prop to lineage_recovery_prop
+   * system/security/
+169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
 
-   * external/f2fs-tools/
-d043a26 Merge "Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size""
-723be0a Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size"
+====================
+     07-07-2018
+====================
+
+   * android/
+96deb58 manifest: android-8.1.0_r30 -> android-8.1.0_r36
+
+   * build/make/
+a3f693d79 Add support for ZSH arrays
+e216ed536 build: Allow building disabled vbmeta images in signing process
+e9c662b61 Merge tag 'android-8.1.0_r36' into HEAD
 
    * frameworks/base/
+3afdcffcee8 Merge tag 'android-8.1.0_r36' into HEAD
 
    * frameworks/native/
-774b044b8 Update InputTransport.cpp
-05c058073 Update InputTransport.h
+079197489 Merge tag 'android-8.1.0_r36' into HEAD
 
-   * frameworks/opt/telephony/
-0198a40ab IMS: Use proper phone to route emergency calls
-574722a49 Fix a cherrypick mistake
+   * hardware/qcom/power/
+2d1ce22 power-845: Fix compilation errors
+9e76194 Fix interaction boost higher cpu freq perflock
+b06e15f power: Adding hints for SDM845
 
-   * hardware/qcom/audio-caf/msm8996/
-549e801a2 qahw_api: Ignore missing dependency
+   * packages/apps/Settings/
+3a3df84389 Now we have Official Kirin GSI's
 
-   * hardware/qcom/audio-caf/msm8998/
-56eeef325 audio: add amplifier hooks for stream parameter manipulation
+   * packages/services/Telephony/
+c0559462b Merge tag 'android-8.1.0_r36' into HEAD
 
-   * lineage-sdk/
+   * vendor/rr/
+8d6d0fb5 Add Iliad APN
+28ca80bc apns: Add missing sprint roaming APN and set bearer_bitmasks
+567bf638 bfqio: Fix warning when building with BOARD_VNDK_VERSION := current
+7c825214 vendor: fix ro.adb.secure for vendor-building devices
+d566e589 apns: Adjust Sprint LTE internet to allow tether
+
+====================
+     07-06-2018
+====================
+
+   * android/
+80179f9 manifest: Switch to our fork of art
+c1ccb7f lineage: Add sdm845 platform    *s
+
+   * build/soong/
+3dbdf11 soong: Add kryo300 cpu variant to build/song
+
+   * external/openssh/
+872517dd Defer setting bufsiz in getdelim.
+
+   * frameworks/av/
+cdbf4e1b1 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * hardware/interfaces/
+813c5f18 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * hardware/qcom/display-caf/msm8998/
+9fa84679e gralloc: Add missing BT601_6_625 handing
+20bd3e874 gralloc1: Add support for secure display.
+6c718aacd liblight: Use char array instead of char pointer array for file name
+
+   * kernel/motorola/msm8952/
+f5b935e0721d RK: Update defconfig
+
+   * packages/apps/Bluetooth/
+0a28daca Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
 
    * packages/apps/DUI/
 
@@ -715,312 +1691,697 @@ d043a26 Merge "Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sect
 
    * packages/apps/ResurrectionOTA/
 
+   * packages/services/Telephony/
+b617e9064 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * system/bt/
+9ed246cb Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * system/libhidl/
+c5df720 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+====================
+     07-05-2018
+====================
+
+
+   * art/
+6a1401ba3 art: extend the supported cpu_variant list for arm64
+
+   * device/rr/sepolicy/
+f126e29 Make fuseblk use vfat context
+
+   * external/openssh/
+3deb56f7 Fix other callers of read_environment_file.
+
+   * hardware/qcom/audio-caf/sdm845/
+8c36c2ad2 audio: Use direct    * pathmap
+
+   * hardware/qcom/display-caf/sdm845/
+d84e91012 libdisplayconfig: Remove android.hidl.base
+40e1f9e0a Don't build lights module if vendor supplies it
+af5514f39 display: Use    * pathmap
+
+   * hardware/qcom/media-caf/sdm845/
+48ace00d9 media: libOmxSw encoders require prop headers :(
+bf3b85e33 media: Use    * pathmap
+
+   * kernel/motorola/msm8952/
+f669ef4dae58 compiler-gcc: integrate the various compiler-gcc[345].h files
+70968aa04668 Revert "scripts: gcc-wrapper: Use wrapper to check compiler warnings"
+cb02e8954c76 Makefile: Fix device not booting with GCC 7.x and above
+
+   * packages/apps/Email/
+5776d08fa Search in folder specified via URI parameter, if possible.
+c7daa4346 email: junk icon
+5d8fa3540 email: return default folder name for subfolders
+7a4bb6eef Email: Clean duplicated WRITE_CONTACTS permission
+21ccf8946 Email: Fix the ActivityNotFoundException when click "Update now"
+e1e040261 Improve notification coalescence algorithm.
+49b4fceb2 email: fix empty body update
+8f3de6c01 Allow download of compressed attachments.
+23c06e6c6 Fix crash when attempting to view EML files.
+4e325cd1a Request battery optimization exemption if IMAP IDLE is used.
+b39efdde7 Implement IMAP push using IMAP IDLE.
+1d41c1805 email: fix eas autodiscover
+1703c88d5 Rewrite MailboxSettings loading logic.
+
+   * packages/apps/UnifiedEmail/
+18ca9e750 Disable animations for translucent activities.
+
+====================
+     07-04-2018
+====================
+
+
+   * bionic/
+8325732f0 libc: kryo300 specific memory routine
+
+   * external/openssh/
+314908f4 upstream: deal with API rename: match_filter_list() =>
+89f54cdf upstream: exercise new expansion behaviour of
+187633f2 upstream: add a comment that could have saved me 45 minutes of wild
+312d2f28 upstream: repair PubkeyAcceptedKeyTypes (and friends) after RSA
+
+   * kernel/motorola/msm8952/
+c983edf32b41 configs: Remove unused defconfigs
+fd0bbf057984 cpufreq: include err.h to fix build error
+6626f0083d3a Read WLAN MAC addresses from UTAG
+c30deeec0431 kgsl: Increase priority of RT thread
+a92dd2c76a7a display: add a simple api to query the display state (on/off) at any.
+102d4eeb201d ksm: check and skip page, if it is already scanned
+fc8c83f0f096 touch: sweep2sleep
+2bb70ebd1198 msm8952: Use all cpu's to increase boot time
+09c5af005a00 msm8952: command line overclock option
+2bce12c11851 msm8952: overclock big cluster and add back lower frequencies
+a87b43ab88f8 block: add MAPLE I/O scheduler and set it as default
+
+   * packages/apps/SnapdragonCamera2/
+3326ad208 Change property from vendor to sys.
+
+====================
+     07-03-2018
+====================
+
+
+   * external/openssh/
+303af580 upstream: some magic for RSA-SHA2 checks
+7d68e262 depend
+b4d4eda6 upstream: some finesse to fix RSA-SHA2 certificate authentication
+d78b75df upstream: check correct variable; unbreak agent keys
+2f30300c upstream: crank version number to 7.8; needed for new compat flag
+4ba0d547 upstream: Improve strictness and control over RSA-SHA2 signature
+95344c25 upstream: allow sshd_config PermitUserEnvironment to accept a
+
+====================
+     07-02-2018
+====================
+
+
+   * bionic/
+818d4e48e linker: Don't involve shim in for_each_dt_needed
+73fda2ad6 linker: Ensure active matching pairs
+
+   * device/qcom/sepolicy/
+ccbad05 Allow binderized keymaster HAL access to firmware files.
+
+   * external/openssh/
+6f56fe4b upstream: Fix "WARNING: line 6 disappeared in /etc/moduli, giving up"
+1eee79a1 upstream: One ampersand is enough to backgroud an process. OpenBSD
+6301e6c7 Add implementation of getline.
+
+   * kernel/motorola/msm8952/
+645c97728a79 Boost HBM
+657235694727 ARM: dts: msm: Early mount of system partition for msm8952
+2757c4122822 soc: qcom: Add a knob to disable the core_ctl
+b75a740bcf95 homebutton: update and fix lock vibration
+6c76515b82bf Makefile: Update -O2 flags
+c73feb5a30f7 boeffla_wl_blocker: export get_active_wakeup_sources
+47984bc5ac53 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+cfa703b0872b boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+0ac08253a8ac boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+d322ea70e75c cpufreq: cache tunables for ondemand and conservative governors
+8c258442bb9f athene: use a lower power level for GPU
+0a0e40624619 adreno_idler: Declare display_on correctly
+a5e7fe29a04e adreno_idler: Add display state awareness
+f19c1121d0b7 adreno idler: Ramp down more agressively
+04aa6ae75b8f Introduce Adreno idler for devfreq-based Adreno devices
+eca6aa87aa62 arm64: issue isb when trapping CNTVCT_EL0 access
+28df2119e39a BACKPORT: arm64: Add CNTFRQ_EL0 trap handler
+96071ebdf863 BACKPORT: arm64: Add CNTVCT_EL0 trap handler
+115125aac67c BACKPORT: arm64: hw_breakpoint: Handle inexact watchpoint addresses
+cd5fad4b388c BACKPORT: arm64: Allow hw watchpoint at varied offset from base address
+2bb59f426438 ARM64: Wire up getrandom.
+46cce182085c clocksource: arch_timer: Disable user access to the physical counter
+ccd4c14aaddd clocksource: arch_timer: make virtual counter access configurable
+4809d48aed14 sched: cpu_power: enable ARCH_POWER
+e332db5cd38b tcp_output: set initial TCP window size to 64K (speed improvement)
+718dd69fe097 [SQUASHED] Sound Control
+bfca0a87485e block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
+7a339e6458e4 block: zen: crashing on selection fixup
+6a462ea47c7d block: scheduler: add ZEN
+2cead6ca3429 Add SIO and FIOPS i/o schedulers
+e342b9531b66 athene: DTS: Decrease BCL low battery threshold to 5%
+b993f35cfabd Don't hotplug the perf cluster on BCL event, it destroys performance.
+1be8c95b6a8f qpnp-linear-charger: queue work on system_power_efficient_wq
+670aef857808 power: bcl: queue work on system_power_efficient_wq
+8dab53660ca5 drivers: thermal: queue work on system_power_efficient_wq
+44a46e8bd6f1 netfilter: xt_hashlimit: perform garbage collection from process context
+2c6861a847de workqueue: Remove config guard for power_efficient
+7d692faea94e workqueue: squashed: Add system wide power_efficient workqueues
+c07875dfc6ec block: queue work on power efficient wq
+a9b760fb13e8 Power efficient workqueue patches (squashed)
+719fa0795bb3 net/wireguard: add wireguard importer
+e107378db7c2 athene: Fix local version
+4c8c1e25aaf4 disable crc check
+41bdd9b26476 athene: arm64: Create resurrected defconfig
+2da654d41a0d clocksource: Fix abs() usage w/ 64bit values
+b0fa9d158d92 arm64: topology: fix cpu power calculation
+4973e84e43c4 crypto: lz4,lz4hc - fix decompression
+74901219f626 lib/decompress: set the compressor name to NULL on error
+9b2e33445b80 lib/decompress.c: consistency of compress formats for kernel image
+8c4b1b543da2 lib/decompressors: use real out buf size for gunzip with kernel
+19cfe59d9f7f initramfs: support initramfs that is bigger than 2GiB
+abb075eba8df initrd: fix lz4 decompress with initrd
+9bce4a82e5c1 lib/decompress_unlz4.c: always set an error return code on failures
+dba63b57f70c lib: add support for LZ4-compressed kernel
+11f9f2a3861c .gitignore: ignore *.lz4 files
+0b68b6e6353d arm: add support for LZ4-compressed kernel
+6c4bfd8ef4bd Apply CFLAGS, -Os to decompress.o to improve decompress performance during boot-up process
+4128726a0a05 crypto: add lz4 Cryptographic API
+3039ec333e52 sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire
+e0d28a339ac6 kthread: Backport queuing_blocked()
+a4e622b9ec26 arm64: strcmp: Align to cache and preload
+eab08b1496e7 arm64: Import optimized strrchr from newlib
+122e20fd55b6 arm64: Use optimized memcmp
+a64aa498229d lib: Don't enable DEBUG_BUGVERBOSE by default
+29f385521e84 net: ipc_router: Fix memory leaks when releasing a remote port
+11b6dc741ac6 cpufreq: stats: Fix memory leaks when updating stats table
+c7aa5399005b mm/slub: don't wait for high-order page allocation
+fb5642b6c209 drivers: cpuidle: lpm-levels: Fix untrusted pointer dereference.
+7d4ce3326497 mmc: core: Fix possbile memory leak
+d4e5aeb1a841 proc: Remove additional SafetyNet flags from /proc/cmdline
+12114e905754 proc: Remove verifiedbootstate flag from /proc/cmdline
+f699ffb8d10b msm: camera: sensor: Fix memory leaks when sensor probe fails
+62ee6900577d zram: Switch to lz4 as default commpressor
+3c495db48669 sched/idle: Avoid spurious wakeup IPIs
+b76cb45e65e3 sched: s/do_each_thread/for_each_process_thread/ in core.c
+033966dce559 sched: fix task-priority when using SCHED_RESET_ON_FORK
+3b5b61b17994 UPSTREAM: sched: Introduce preempt_count accessor functions
+735c847b6ea9 msm: Fix high load average from uninterruptible waits
+18db441e95b2 AIO: Don't plug the I/O queue in do_io_submit()
+dc72fd2ee4bd workqueue: allow rescuer thread to do more work.
+faf94c213a49 mmc: clk_scaling: add sysfs for avoiding scale down in write
+c53218a644ef arm64, jump label: detect %c support for ARM64
+e7cefd19e4bb UPSTREAM: arm64: jump labels: NOP out NOP -> NOP replacement
+403c59b8bb88 msm: vidc: disable CPU L2 cache PC during video sessions
+cc9dec8e87ea writeback: fix occasional slow sync(1)
+ba599bc73a46 UPSTREAM: drivers/input/evdev.c: don't kfree() a vmalloc address
+6b4e2691f9e0 msm: sps: fix kernel panic
+aebe4d2b74f2 include: asm-generic: do not hard code HZ to 100
+9d4cab3f85b1 IKKRNBSP-3173 arm64: lib: memory utilities optimization
+f6c77e3d7089 crypto: Update ARM64 CRC32 hw accelerated module
+9a5848c87cb0 crypto: arm64/crc32 - bring in line with generic CRC32
+0716ba9229cb devfreq: Use high priority workqueue
+c31db0c089df UPSTREAM: staging/android/ion : fix a race condition in the ion driver
+51458b4d3098 sched/fair: Avoid integer overflow
+a4a4ae17ddc8 sched: Optimize task_sched_runtime()
+45e4d857f757 sched: Queue RT tasks to head when prio drops
+fed1f6ce67c3 fs/block_dev: always invalidate cleancache in invalidate_bdev()
+16d854ce79d7 ipv6: sctp: fix lockdep splat in sctp_v6_get_dst()
+793ab2793020 ANDROID: ARM64: smp: disable preempt in backtracing across all cores
+05e134872143 sched/fair: Implement fast idling of CPUs when the system is partially loaded
+242b578149e4 sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target
+c495b95ad37e sched: Fix exec_start/task_hot on migrated tasks
+03d4d3047edd sched/balancing: Reduce the rate of needless idle load balancing
+c20cbbae64df sched/fair: Stop searching for tasks in newidle balance if there are runnable tasks
+d3039eaafd41 sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
+6f5a2209730e vmstat: squash 4 patches from upstream
+ca11666ac3ac arm64: irq: remove affinity logging. Makes it hard to use dmesg with this spam
+9dd92e62a0be qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
+4fa1d4b5d466 msm: Use interruptible wait to not affect load average
+55652714a29a qcom: mpm: use interruptible wait to reduce load avg
+509fe69b2480 Optimized Integer SQRT. for upto 3x faster operation
+2dce4f0922a3 athene: Initial changes for 64-bits support.
+33eedae62b14 seccomp: arm64: Fix compile time errors
+
+   * packages/apps/SnapdragonCamera2/
+204966342 SnapdragonCamera: Update the method for save warmstart AWB
+
+   * system/extras/su/
+ae77c1a su.c: fix property check due to lineage rebranding
+
+====================
+     07-01-2018
+====================
+
+
+   * external/selinux/
+66de5710 libsepol/cil: Improve processing of context rules
+
+   * external/vim/
+cd2a2dfda Remove xxd Android.mk
+
+   * frameworks/av/
+e0578a080 audiopolicy: update APM to use custom audio policy configuration
+
+====================
+     06-30-2018
+====================
+
+
+   * frameworks/base/
+94975d480e3 Randomize the local Wifi IPv4 address
+1f1d85ff399 frameworks/base: Fix ContentService JNI leaks
+c2c921cc04e Resolve status bar battery percentage tints
+96ec818830e Resolve status bar VPN icon tints
+
+   * hardware/qcom/audio-caf/msm8996/
+3248c6424 Merge tag 'LA.UM.6.6.r1-08900-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-15.1-caf-8996
+
+   * hardware/qcom/audio-caf/msm8998/
+7951da34b Merge tag 'LA.UM.6.4.r1-09000-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into lineage-15.1-caf-8998
+
+   * hardware/qcom/display-caf/msm8998/
+ce4c7f677 Merge tag 'LA.UM.6.4.r1-08500-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into lineage-15.1-caf-8998
+
+   * hardware/qcom/media-caf/msm8916/
+844c3d4ec Merge tag 'LA.BR.1.2.9.1-02310-8x16.0' into lineage-15.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8998/
+5866fde34 Merge tag 'LA.UM.6.4.r1-09000-8x98.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into lineage-15.1-caf-8998
+
+====================
+     06-29-2018
+====================
+
+
+   * development/
+71d87907e Grant dev tools system permission to trigger media-scan service
+
+   * frameworks/base/
+c10aeec0f3c NetworkManagement : Add ability to restrict app data/wifi usage
+
+   * hardware/qcom/display-caf/sdm845/
+976091f4c Merge 1f7ec103fa374c2b030a89988921682c6e64a267 on remote branch
+
+   * hardware/qcom/media-caf/sdm845/
+019fd9dbb Merge e453f8322e231f26c8e3b4f8e29212dfe12b5549 on remote branch
+
    * packages/apps/Settings/
+dd528272ca Settings: fix the background color for the expanded desktop settings
+140ce44408 Fix RR configurations "Panels" titles
+
+   * packages/apps/SnapdragonCamera2/
+92d53d986 SnapdragonCamera: version info 2.02.010
+a1d7d1d88 Merge "SnapdragonCamera: Hide the deepzoom and deepportrait mode"
+723ce0f49 Merge 3948e62eeb92ae12a06526c8669b74ac46dea272 on remote branch
+31ebdd18e Merge "SnapdragonCamera:Fix CTS issue"
 
 ====================
-     03-30-2018
+     06-28-2018
 ====================
 
 
-   * external/f2fs-tools/
-a2ef5f8 check_f2fs: integrate into android build
-30a495f Merge remote-tracking branch 'aosp/master' into HEAD
+   * hardware/qcom/display-caf/msm8996/
+1ca654775 gralloc1: Add support for secure display.
+984ae720e liblight: Use char array instead of char pointer array for file name
+
+   * packages/apps/Email/
+a67f3baa7 email: support per-folder notifications
+6bf14a3ee email: Add an ActionBar to the mail app's PreferenceActivity
+
+   * packages/apps/SnapdragonCamera2/
+0ae35c823 SnapdragonCamera: Hide the deepzoom and deepportrait mode
+eb2cfffc1 SnapdragonCamera:Fix CTS issue
+2eedcde61 Fix can't zoom to 8x level
 
 ====================
-     03-29-2018
+     06-27-2018
 ====================
 
 
-   * external/f2fs-tools/
-fdd1b1a Fix typo userata with userdata
+   * frameworks/opt/telephony/
+2f05fd19c Proper supplementary service notification handling (2/5).
 
-   * hardware/qcom/wlan-caf/
-1321254 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' into lineage-15.1-caf
+   * packages/apps/SnapdragonCamera2/
+f77535628 Merge "SnapdragonCamera: Complete the function of AWB Gains and CCT"
+14c18f2a5 Merge "SnapdragonCamera:Fix unbind error"
+80ecd85df Merge "SnapdragonCamera: Modify the previewSize"
+5c49edc0e SnapdragonCamera: Add 480fps in app menu for video
+18c424628 SnapdragonCamera: Modify the previewSize
+6ad2c3462 SnapdragonCamera: Complete the function of AWB Gains and CCT
+8198d64b9 SnapdragonCamera:Fix unbind error
 
-   * packages/apps/Dialer/
-4756df409 Dialer: comply with EU's GDPR
-
-   * packages/apps/Settings/
-ea81cfbd92 BatterySettings: Dont disable percentage options on square style
-
-   * system/sepolicy/
-ad3b42ff SELinux: added to the policies without entries into the compatibility mapping file
-7022b6a3 Initial sepolicy rules for substratum service
-fd8a0ec2 Introduce sepolicy exceptions for theme assets
+   * packages/apps/UnifiedEmail/
+680d6c632 Make navigation drawer extend over status bar.
 
 ====================
-     03-28-2018
+     06-26-2018
+====================
+
+
+   * device/rr/sepolicy/
+65ae242 Revert "sepolicy: qcom: Allow nfc to read and execute files in /vendor on full treble"
+
+   * external/toybox/
+4841a344 toybox: Add install to symlinks
+
+   * hardware/qcom/audio-caf/msm8998/
+2957f2e20 hal: Fix VNDK_VERSION=current build for a2dp extension
+d9c1cb8b4 hal: Fix VNDK_VERSION=current build for msm8916
+
+   * hardware/ril-caf/
+7fd9ea4 Make RIL command headers overlayable by devices.
+c8b03a3 libril: Bounds check s_commands
+
+   * packages/apps/Email/
+cda66307c email: support for auto-sync multiple IMAP folders
+0ff70a025 Allow account deletion.
+
+   * packages/apps/SnapdragonCamera2/
+0e830bed2 Fix FC in MonkeyTest
+
+   * system/core/
+4ae40c5ec camera: Add L-compatible camera feature enums
+
+   * vendor/nxp/opensource/external/libnfc-nci/
+ae86e8d Build nfc_nci.nqx.default with BOARD_VNDK_VERSION
+801109e Revert "Fix description path for libnqp61-jcop-kit and move to vendor"
+
+   * vendor/nxp/opensource/packages/apps/Nfc/
+9625348f Revert "Look for libnqp61-jcop-kit.so in the vendor"
+
+====================
+     06-25-2018
+====================
+
+
+   * external/openssh/
+84623e00 upstream: whitespace
+90e51d67 upstream: fix NULL dereference in open_listen_match_tcpip()
+f535ff92 upstream: spelling;
+
+   * frameworks/opt/telephony/
+a448840d3 Revert "Don't assume 3GPP as active app on CDMA with LTE device"
+
+====================
+     06-24-2018
 ====================
 
    * android/
-d439319 lineage: Sync system/tools/dtbtool
+3588a30 manifest: update rr remote
 
-   * device/qcom/common/
-8dbb469 Remove dtbtool
+   * device/qcom/sepolicy/
+7290a34 sepolicy: Allow perf HAL to set freq props
+c601ff4 legacy: allow gnss to create dir for xtra data
+a5d6ea2 legacy: Add rules for init.qcom.bt.sh
 
-   * external/f2fs-tools/
-98ca6c5 ANDROID: check_f2fs: redirect errors to stdout
-46322b2 FROMLIST: f2fs-tools: change to use #pragma pack(push, 1)
-457c992 FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size
-6b39975 FROMLIST: resize.f2fs: fix access out-of memory boundary
+   * external/ant-wireless/ant_native/
+bd59ba7 vfs: selectively revert caf updates
 
    * frameworks/base/
-c493d01c37f BatteryMeterDrawable: add square style (1/2)
-c39284966ea base: SystemUI: bring back the google assist qs tiles
-961e6bdb1c2 Ambient battery level: use a ⚡ symbol when charging
-31ab5dfd508 Ambient: show battery level on bottom
-dbad6617b98 Add Google Sound Search Tile
-
-   * hardware/qcom/bootctrl/
-70633f5 Add sdm660 to the filter
-
-   * hardware/qcom/gps/
-9846829 msm8084: Handle race condition in HAL post SSR
-ce8f4a3 msm8084: Memory management fixes
-2808a93 msm8084: Add new event mask for timezone
-38395e9 msm8084: Remove reporting gps status from loc eng layer
-10d1698 msm8084: Remove Redundant Log
-2552d38 msm8084: LocTimer repeated expiration
-26e1031 msm8084: MsgTask thread must call associator function always
-4d26814 msm8084: Adding a number of utilities
-de3415d msm8084: gps.conf parameters are in sap.conf table
-081c255 msm8084: Adding Mutex for Creating Context
-71adb97 msm8084: Removed unused code and unnecessary notice files
-23be84f msm8084: Avoiding race conditions during the pallellized builds in Android system
+99386d15307 frameworks: base: Port password retention feature
+c3190d5b772 SystemUI: CellularTile: Don't call showDetail() when device is locked
+9f8d1d6227a SystemUI: Toggle USB tethering only when USB is connected
+86d9a4554c2 Stop crashing qs tiles during boot
 
    * packages/apps/Settings/
-84ac5d997d BatteryMeterDrawable: add square style [2/2]
+93be16b922 [1/3] Settings: per-app cellular data and wifi restrictions
 
-   * vendor/rr/
-6d500b4f Fix vendor path
-
-====================
-     03-27-2018
-====================
-
-
-   * device/motorola/athene/
-b6219d2e LineageActions: Fix list preference force close
-63df9c67 LineageActions: update preferences on change
-4e0255d3 LineageActions: Add Fingerprint Lock feature
-016722e8 LineageActions: Break dependencies on Lineage SDK
-
-   * device/qcom/sepolicy/
-add2b7a legacy: Remove wfdservice_service policy
-
-   * frameworks/base/
-f7870e6a0c8 Revert "Add Google Sound Search Tile"
-083c7d1a2b2 Add Pulse Lava Lamp start and end colors (1/3)
-dfd7c4234b2 Add Google Sound Search Tile
-9666346b1f3 Use Auto brightness for Ambient Display
-
-   * packages/apps/DUI/
-fde3680 Add Pulse Lava Lamp start and end colors (2/3)
-
-   * packages/apps/Settings/
-b88f2b4ec1 Add Pulse Lava lamp start and end colors (3/3)
-
-====================
-     03-26-2018
-====================
-
-
-   * device/motorola/athene/
-aca6a866 LineageActions: add adaptive icon
-6309f31a LineageActions: Update Lineage SDK dependencies
-5bb60244 LineageActions: Remove ACCESS_NOTIFICATION_POLICY check
-bcdb8123 LineageActions: Switch from legacy Settings injection to IA
-87b95bf4 LineageActions: Use IA for Doze Gestures
-8b4b96b3 LineageActions: Add summary to Moto Actions
-f238a8cf LineageActions: Rename Gestures to Moto Actions
-
-   * device/qcom/common/
-6ec9f73 Revert "Rules to enable LTO for Adreno GFX driver."
-
-   * device/qcom/sepolicy/
-2918ad2 Merge f17538977d842e8d1096abc10a4bdf7da01c5dc5 on remote branch
-
-   * device/rr/sepolicy/
-f9542e0 recovery: Use r_dir_file macro
-8a5f68a sepolicy: recovery: Allow reading battery and usb status
-a0f89b0 sepolicy: Allow vold to exec sgdisk
-a64277c sepolicy: Improve external storage rules
-045fcdc sepolicy: allow untrusted app to find styleInterface
-
-   * frameworks/base/
-4c41cbe07e6 PackageManager: Don't dereference mPlatfromPackage until available
-675e9c01c5e Camera: Expose Aux camera to apps present in the whitelist
-
-   * hardware/qcom/power/
-ce3ca5c power: msm8916: Code clean up
-817963a power: Avoid interaction build errors
-fc62e7c power: Introduce is_ondemand_governor and is_msmdcvs_governor
-be1a5d5 power: Simplify display_boost checks
-c931ea0 power: Undo video decode hint for ondemand
-5a81c9a power: Simplify display_hint_sent
-6fe5252 power: Simplify soc_id checks
-28dff06 power: Don't send obsolete DISPLAY_OFF opcode
-d4fe61e power: Use ARRAY_SIZE macro where possible
-4b4acdf power: Use is_interactive_governor
-a42f4a8 power: Use log/log.h instead of utils/Log.h
-1add9ac power: Use consistent LOG_TAG
-90608e2 power: Enable 4+0 core config for display off cases
-e9f9c98 power: introduce 8992-specific handling
-8434621 power: modify return value for display off hint in 8994
-
-   * kernel/motorola/msm8952/
-e922363e226 RK: Update defconfig
-3c67fdc9758 soc: qcom: Add a knob to disable the core_ctl
-44f96786ec6 homebutton: update and fix lock vibration
-3bca1bad2b4 net: mac80211 injection patch
-06fec73b3e8 drivers: usb: Use Android device as a USB keyboard/mouse
-b2bed738713 Makefile: Update -O2 flags
-66c9d2266c6 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
-e0ea18aa9bc boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
-276b4cfd8f9 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
-4cf9a1f3262 [SQUASHED] Sound Control
-c48c45851d9 athene: DTS: Decrease BCL low battery threshold to 5%
-398bf9f9068 cpufreq: cache tunables for ondemand and conservative governors
-50eff1d1f1c tcp_output: set initial TCP window size to 64K (speed improvement)
-8c93b94009b msm_performance: don't let userspace change min/max freq policy by default
-180e9aa3e57 msm_performance: fix input boosting disable not sticking on big cluster
-bbf59dc3eb3 msm_performance: Make input boosting optional
-548d391bebb cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0
-2e9849714a2 cpufreq: cpu-boost: don't boost over user set max freq
-d482c010305 drivers: cpu-boost: optimize policy update loop on input cpufreq boost
-0cfa7d5bc9b cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value
-4f66c4a89c4 msm: kgsl: Report correct GPU frequency in sysfs
-d1d6bc27e37 PM: devfreq: Always reflect a change of polling interval
-cb91c1674a4 PM: devfreq: Fix simple_ondemand crashing on startup
-512ddc112a3 fs: fsync: add a toggle to enable or disable fsync() operations
-2f7d795e899 msm: qpnp-haptic: Use a high-priority workqueue for haptics
-dabaaf9f92e msm: qpnp-haptic: Process haptics asynchronously
-82cc4c3bd15 msm: qpnp-haptic: Dejank the haptics
-0871f351fae msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
-1161058d10e qpnp-haptic: Add sysfs interface to control intensity
-c11d4e58936 Revert "platform/msm: haptic: add sysfs node for vmax_mv"
-cb2273aef0b fs: default to noatime
-5ee91c07a77 block: deadline: Optimize for non-rotational
-8d3987254f4 arm64: Fix the ARM userspace build
-ccede694be7 ARM: 7948/1: hw_breakpoint: Add ARMv8 support
-c4e6e519edd arm: traps: emulate a MRRC instruction reading CNTVCT register
-feeb94022c4 clocksource: arch_timer: Disable user access to the physical counter
-9a2b03a1b6b clocksource: arch_timer: make virtual counter access configurable
-7716fce04dd arm64: issue isb when trapping CNTVCT_EL0 access
-3f5cb16d253 BACKPORT: arm64: Add CNTFRQ_EL0 trap handler
-945da5ffe68 BACKPORT: arm64: Add CNTVCT_EL0 trap handler
-ccf59d651ed BACKPORT: arm64: hw_breakpoint: Handle inexact watchpoint addresses
-9acdc95f0a4 BACKPORT: arm64: Allow hw watchpoint at varied offset from base address
-731e8295e0d ARM64: Wire up getrandom.
-82586d79bee block: zen: set fifo batch to 16 to reduce overload on eMMC and CPU.
-829f9b2ea1c block: zen: crashing on selection fixup
-c628f6e1240 block: scheduler: add ZEN
-784728f71a9 Add SIO and FIOPS i/o schedulers
-22f61ada586 net/wireguard: add wireguard importer
-158c5342c22 athene: fix local version
-bcefcd8ee33 Power efficient workqueue patches (squashed)
-80f24eb9644 athene: use a lower power level for GPU
-bdea5bac006 disable crc check
-2cd603d2a83 athene: Import resurrected 64bit config
-
-   * packages/services/OmniJaws/
-63208d4 OmniJaws: fill incomplete forecast list with dummies
-
-   * system/nfc/
-81b278f bcm2079x: Hardcode nci_ctrl_size to the Nougat value
+   * packages/apps/Snap/
+1dccab48b Snap: turn developer category title into a translatable string
 
    * system/sepolicy/
-17d7a3b0 Sepolicy: Fix perfprofd path
+6a2b4014 sepolicy: allow update_engine to bypass neverallows for backuptool
 
    * vendor/rr/
-77e31d5d soong: Add TARGET_USES_QTI_CAMERA_DEVICE
-34acdacc lineage: add generic lineage targets
+1a0485e5 rr: update backuptool checks
+b6562c74 addonsu: Fix package for modern devices
+ff5b90e5 backuptool: introduce addon.d script versioning
+68f7ef0f vendor: add custom backuptools and postinstall script for A/B OTAs
+8bac5f6c apns-conf: Remove obsolete APNs for PT carriers
+88a7815a vendor: update repopick to work with RR's gerrit
 
 ====================
-     03-25-2018
+     06-23-2018
 ====================
 
-
-   * device/rr/sepolicy/
-467738e recovery: Use r_dir_file macro
-
-   * frameworks/av/
-ffd2754f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
-8a6a2c381 Camera: CameraHardwareInterface changes to support Extended FD
-
-   * hardware/interfaces/
-c20158f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
-
-   * hardware/libhardware/
-510a5f06 audio_amplifier: add hooks for stream parameter manipulation
-
-   * system/sepolicy/
-50f651db Sepolicy: Fix perfprofd path
-
-====================
-     03-24-2018
-====================
-
-
-   * device/rr/sepolicy/
-bc6bf77 sepolicy: recovery: Allow reading battery and usb status
-
-   * external/bash/
-35cebb9 bashrc: change cm to lineage
-
-   * system/extras/
-9f2a027a Perfprofd: Fix service definition
-
-====================
-     03-23-2018
-====================
-
-
-   * frameworks/base/
-819cd416885 Revert "Revert "OMS: Only allow trusted overlays to be registered.""
-
-   * packages/apps/DUI/
-fdd1279 Fix potential Smartbar FC for buttons custom application
-aef4ed1 Fix Pulse disappearing sometimes after skipping tracks
-f11893e Pulse: don't elaborate useless waveform
-2b85973 Fix smartbar media arrows not showing sometimes
-
-   * vendor/rr/
-f542fd42 Merge changes from Lineage OS (#111)
-
-====================
-     03-22-2018
-====================
-
+   * android/
+b0ac8aa manifest: set review URL
+03b3832 snippets: rr.xml: cleanup
 
    * device/qcom/sepolicy/
-d7ae220 Merge tag 'LA.UM.6.6.r1-06700-89xx.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD
-337f424 Merge tag 'LA.UM.6.4.r1-06900-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD
-
-   * external/bash/
-a4e7995 bashrc: remove resize and ps alias
+bb0743b sepolicy: Allow perf HAL to set freq props
 
    * frameworks/base/
+4a4369db63b Don't show confirm dialog on disable Cellular QS tile
+
+====================
+     06-22-2018
+====================
+
+
+   * bootable/recovery/
+ac258a4f update_verifier: skip verity to determine successful on lineage builds
+97d1ae90 Add runtime checks for A/B vs traditional updates
+
+   * device/rr/sepolicy/
+c9b0d95 sepolicy: add rules for updater and update_engine
+37422f7 common: add update_engine policies
 
    * lineage-sdk/
+b4c2ab6 lineage-sdk: Add vendor platform signature overlay
 
-   * packages/apps/DUI/
+   * packages/apps/Settings/
+eb8ec76f4a Remove A6020 as OFFICIAL
+
+   * packages/apps/SnapdragonCamera2/
+5c6f94ef0 SnapdragonCamera:Fix CTS issue
+
+   * packages/apps/UnifiedEmail/
+26ffab793 Properly close body InputStreams.
+dc86f1d58 Pass selected folder to message search.
+51a61f785 Fix cut off notification sounds.
+285eb0ad8 MimeUtility: ensure streams are always closed
+c20669b4c Remove mail signatures from notification text.
+94f1026f7 unifiedemail: junk icon
+731afb412 email: allow move/copy operations to more system folders
+ddd702866 Add an ActionBar to the mail app's PreferenceActivity.
+6f931a787 Don't assume that a string isn't empty
+f296be5b6 Remove obsolete theme.
+711e60d33 email: linkify phone numbers
+24c6805f4 email: do not close the input attachment buffer in Conversion#parseBodyFields
+b9c89c1b5 email: linkify urls in plain text emails
+7448dba4a unified-email: respect swipe user setting
+a26e5e5c8 unified-email: check notification support prior to create notification objects
+f91c4b893 email: fix back button
+a31d906d6 unified email: prefer account display name to sender name
+
+   * system/sepolicy/
+6838c2fc sepolicy: allow update_engine to bypass neverallows for backuptool
+
+====================
+     06-21-2018
+====================
+
+
+   * bionic/
+ed4c3a6bd bionic: Sort and cache hosts file data for fast lookup
+
+   * bootable/recovery/
+bc57208d recovery: Scale logo image if necessary
+45e8b038 recovery: minui: Implement image scaling
+118d8481 recovery: Allow bypassing signature verification on non-release builds
+e895ce41 recovery: Allow detecting user/release build at compile time
+cd840c41 recovery: Rework sideload threading code for flexibility
+
+   * device/rr/sepolicy/
+41ac4fa sepolicy: Label aw2013 HIDL light HAL
+
+   * hardware/lineage/interfaces/
+1951e03 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+
+   * hardware/qcom/audio-caf/msm8916/
+8747be17d Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/audio-caf/msm8974/
+e43a121ad visualizer: Build with BOARD_VNDK_VERSION
+3c29a7e51 voice_processing: Build with BOARD_VNDK_VERSION
+9ee58e793 post_proc: Build with BOARD_VNDK_VERSION
+ded474f6e mm-audio: Build with BOARD_VNDK_VERSION
+4325e02fb hal: Build with BOARD_VNDK_VERSION
+
+   * hardware/qcom/display-caf/msm8916/
+e7f80390c Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8916/
+55e0ac7d4 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+
+   * hardware/qcom/media-caf/msm8974/
+7d2d0cb51 Build libstagefrighthw with BOARD_VNDK_VERSION
+
+   * packages/apps/Settings/
+60bd552209 Official GSI Images
+
+====================
+     06-20-2018
+====================
+
+
+   * bootable/recovery/
+896f9d34 recovery: Allow device specific backlight path
+ebb529cb recovery: Add statusbar margin for panels with rounded corners
+
+====================
+     06-19-2018
+====================
+
+
+   * external/openssh/
+80e199d6 upstream: test PermitListen with bare port numbers
+87ddd676 upstream: allow bare port numbers to appear in PermitListen directives,
+
+   * frameworks/base/
+0c9df02f24a Merge pull request #236 from alex9yust/oreo
+
+   * hardware/qcom/media-caf/sdm845/
+e453f8322 mm-video-v4l2: Initialize clip to progressive by default.
+
+====================
+     06-18-2018
+====================
+
+
+   * bootable/recovery/
+85b7010e recovery: Do not show emulated when data is encrypted
+
+   * frameworks/base/
+31bd24b615a SyetmUI: fix the behavior of QS with isDualTarget=true
+
+   * hardware/lineage/interfaces/
+2b941ed livedisplay: Fix uninitialized default PA
+
+   * hardware/qcom/display-caf/sdm845/
+1f7ec103f SDM: Change log category to avoid excessive logging
+
+   * hardware/qcom/fm/
+
+   * packages/apps/AudioFX/
+
+   * packages/apps/Dialer/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
 
    * packages/apps/LockClock/
-918094f LockClock: explicitly include android support libs
 
-   * packages/apps/Profiles/
-f84a40f Profiles: explicitly include android support libs
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+====================
+     06-17-2018
+====================
+
+   * android/
+b723055 manifest: Remove external/libvorbis
+c2c7d39 lineage: Sync qcom thermal and vr HALs
+f8608e1 Switch to our system/security fork
+
+   * device/qcom/sepolicy/
+7cef5c0 legacy: allow gnss to create dir for xtra data
+a0ec9dc legacy: Add rules for init.qcom.bt.sh
+
+   * frameworks/base/
+d3ec0733cb6 Merge pull request #235 from alex9yust/oreo
+b6e16612a8f start ScreenStateService after reboot It is necessary for the Suspend Actions from Miscellaneous settings.
+7290cbb75cf SystemUI: Fix status bar bluetooth <50% drawable
+
+====================
+     06-16-2018
+====================
+
+
+   * bootable/recovery/
+7a926465 recovery: Add resize2fs
+
+   * device/qcom/sepolicy/
+4e72121 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
+
+   * frameworks/base/
+2ffe68a2c28 SystemUI: Add Lineage statusbar item holder
+9ea9e0b1872 Sometimes this happens when changing the theme (#234)
+
+   * lineage-sdk/
+ce9185e lineage-sdk: Add LineageStatusBarItem interfaces
+
+   * packages/apps/LineageParts/
+2021bb5 Exclude trust onboarding from recents
 
    * packages/apps/ResurrectionOTA/
 
    * packages/apps/Settings/
+ba69025d3d Add Samsung A3 2016 (#984)
+22620b4c9e Kenzo maintainer change
+6052bec2c7 Update pt-PT cm_strings
+5e83a7000a Fixes in strings/translations
 
-   * packages/providers/WeatherProvider/
-4d3d407 WeatherProvider: explicitly include android support libs
+   * vendor/rr/
+81417b0c lineage: qcom: Set thermal & vr HAL pathmaps
+91d783bd repopick: Update SSH queries result to match HTTP queries
 
-   * packages/services/OmniJaws/
+====================
+     06-15-2018
+====================
 
-   * system/vold/
-5928eba Revert "vold: Add path to cryptfs_hw"
+
+   * external/openssh/
+26f96ca1 upstream: invalidate supplemental group cache used by
+
+   * hardware/lineage/interfaces/
+995cd62 livedisplay: Use RAII semantics for ColorBackend initialization
+35484bb livedisplay: Move initialization of mActiveModeId to constructor
+af12c6e livedisplay: Convert controller singletons to regular objects
+21c71ae livedisplay: Move Color::check function to implementation
+cfd7b99 livedisplay: Don't use a singleton for Color service
+d6be15d livedisplay: Fix bogus print
+
+   * hardware/qcom/audio-caf/sdm845/
+d74435578 Merge 49f0dab06c10c728dd15bde207d514f13a351b9c on remote branch
+
+   * hardware/qcom/display-caf/sdm845/
+f56cdf99e Merge 06ff84daa62b974cc4c9d81209e69b9e04a02624 on remote branch
+
+   * hardware/qcom/media-caf/sdm845/
+f33419fcc Merge 6699df878056331ce793a1cd04c4035f882859f7 on remote branch
+
+   * packages/apps/SnapdragonCamera2/
+26dba9852 Merge 24a4a56411b7c0c1276db521a98c8169adacf767 on remote branch
+3948e62ee SnapdragonCamera: CancelTouchFocus when exit camera.
+037393493 Merge "Fix force close when init camera info on P" into camera-SnapdragonCamera.lnx.1.0
+
+====================
+     06-14-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+8127346 Revert "livedisplay: Don't use singletons for the stack"
+
+   * packages/apps/Nfc/
+45d2faf5 NFC: Clean duplicated and unknown permissions
+
+====================
+     06-13-2018
+====================
+
+
+   * hardware/qcom/media-caf/msm8916/
+02d14db22 mm-video-v4l2: Protect buffer access and increase input buffer size.
+
+   * packages/apps/SnapdragonCamera2/
+1730a10e4 Fix force close when init camera info on P
+d8c97a077 SDCamera: Fix thumbnail is black when filter enabled
 
